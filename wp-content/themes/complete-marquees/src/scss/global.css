@@ -3859,14 +3859,13 @@ header .email {
   }
   #navigation li.current-menu-item a:after {
     content: '';
-    width: 50px;
     height: 3px;
     background: #51b848;
     z-index: 1;
     position: absolute;
     bottom: 0px;
-    left: 50%;
-    margin-left: -25px;
+    left: 10px;
+    right: 10px;
   }
   #navigation a {
     color: #cacaca;
