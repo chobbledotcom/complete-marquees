@@ -83,9 +83,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
-    <script type="text/javascript">
-        var ajaxurl = 'https://www.completemarquees.co.uk/wp-admin/admin-ajax.php';
-    </script>
     <!--[if lt IE 9]><script src="/wp-content/themes/complete-marquees/build/js/default.min.js"></script><![endif]--><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">
 			footer .footer__top .area__list ul li{width:24% !important;}		</style>
   <!-- Google Tag Manager -->
@@ -129,7 +126,21 @@ src="https://www.facebook.com/tr?id=544825305720178&ev=PageView&noscript=1"
 /></noscript>
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
+  {%- assign js_bundle = layout | getJsBundle: config.design_system_layouts -%}
+  {%- assign uses_design_system = layout | usesDesignSystem: config.design_system_layouts -%}
+
   {%- include "js-config-script.html" -%}
 
-  <!-- chobble-template JS bundle -->
-  <script type="module" src="{{ '/assets/js/bundle.js' | cacheBust }}"></script>
+  <script
+    type="module"
+    src="{{ js_bundle | cacheBust }}"
+  ></script>
+
+  {%- if blocks.size > 0 and uses_design_system == false -%}
+  <script
+    type="module"
+    src="{{ '/assets/js/design-system.js' | cacheBust }}"
+  ></script>
+  {%- endif -%}
+
+  {%- include "head-scripts.html" -%}
