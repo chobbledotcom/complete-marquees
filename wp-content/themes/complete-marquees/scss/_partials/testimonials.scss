@@ -1,0 +1,33 @@
+section.testimonials {
+  background: #474e52;
+  padding: $gutter 0;
+
+  h2 {
+    color: #f5f5f5;
+  }
+
+  .testimonial {
+    padding-left: 36px;
+    position: relative;
+    margin-bottom: $gutter;
+    
+    &:before {
+      content: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/build/css/img/quote.png');
+      color: $color1;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  p {
+    color: #f5f5f5;
+    margin-bottom: 0;
+  }
+
+  @include bp(portable) {
+    .testimonial {
+      margin-bottom: 0;
+    }
+  }
+}

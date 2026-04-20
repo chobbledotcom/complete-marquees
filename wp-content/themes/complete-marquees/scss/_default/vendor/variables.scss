@@ -1,0 +1,89 @@
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** *****          DEFAULT VARIABLES          ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+//  This file contains the default values for the variables in '/_config.scss'
+//
+//  You should never need to edit anything in here unless you are looking to
+//  create a branch with your own project defaults.
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  TYPOGRAPHY
+
+$font1: 'Source Sans Pro', sans-serif !default;
+$mono:  'Courier', monospace !default;
+
+$font_base: 1.6 !default;
+
+$font_small: 1.2 !default;
+$font_large: 2 !default;
+
+$h1: 2.6 !default;
+$h2: 2.4 !default;
+$h3: 2.2 !default;
+$h4: 2 !default;
+$h5: 1.8 !default;
+$h6: 1.6 !default;
+
+$line_height: 1.5 !default;
+
+
+//  COLORS
+
+$font_color: #333 !default;
+
+$color1: #f59125 !default;
+
+$white:      #fff !default;
+$black:      #000 !default;
+$gray_light: #ddd !default;
+$gray_dark:  #333 !default;
+
+$notify_failed:  #be4c4c !default;
+$notify_warning: #eac282 !default;
+$notify_success: #8cc36e !default;
+
+
+//  LAYOUT
+
+$gutter: 24px !default;
+
+$container_small:   670px !default;
+$container_default: 960px !default;
+$container_large:   1024px !default;
+$container_xlarge:   1250px !default;
+
+
+//   BREAKPONTS
+
+$viewport_palm: 500px !default;
+$viewport_lap:  800px !default;
+$viewport_desk: 1024px !default;
+
+
+//   PATHS
+
+$root_dir:  "../../" !default;
+$img_dir:   "../../img/" !default;
+$font_dir:  "../../fonts/" !default;
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  QUEEN'S ENGLISH
+
+//  Providing alternative variables for those who like to use the proper
+//  British spelling of certain terms.
+
+$colour1: $color1;
+$colour2: $color2;
+$colour3: $color3;
+
+$grey_light: $gray_light;
+$grey_dark:  $gray_dark;

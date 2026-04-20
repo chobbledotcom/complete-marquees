@@ -1,0 +1,90 @@
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** *****               TABLES                ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+//  HTML Tables are raley used now, but sometimes they're the only option.
+//  This module ensures they look good when you need them.
+//
+//  There are two modifiers available for additional styling; minimal and bordered.
+//
+//  USAGE: <table class=:"table--minimal";> ... </table>
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+table {
+  width:100%;
+  margin-bottom: $gutter;
+  
+  thead tr { border-bottom: 2px solid $gray_light; }
+ 
+  th { 
+    padding: 0.5em;
+    text-align: left;
+    font-family: $font2;
+  }
+  
+  td { padding: 0.5em; }
+  
+  &.table--minimal {
+    
+    thead tr { border-bottom: 2px solid $color1; }
+    
+    tbody tr { 
+      border-bottom: 1px solid $gray_light;
+      &:nth-child(even) { background: lighten($gray_light, 11); }
+    }
+    
+  }
+  
+  &.table--bordered {
+    border: 1px solid $gray_light;
+    border-radius: 4px;
+    
+    td, th { 
+      padding: 0.5em;
+      border: 1px solid $gray_light;
+    }
+    
+    tbody tr {
+      &:nth-child(odd) { background: lighten($gray_light, 11); }
+      &:nth-child(even) { background: lighten($gray_light, 6); }
+    }
+  }
+}
+
+#table {
+  width:100%;
+  margin-bottom: $gutter;
+  border: 1px solid $gray_light;
+  @include font-size($font_small);
+  
+  .content {
+    padding: $gutter;
+  }
+  
+  .table__item--row {
+    
+    &:first-child { 
+      .colour {
+        border-bottom: 1px $gray_light solid;
+      }
+    }
+    
+    &:nth-child(odd) { 
+      .colour {
+        background: white;
+      }
+    }
+    &:nth-child(even) { 
+      .colour {
+        background: lighten($grey_light, 5%);
+      }
+    }
+    
+  }
+  
+}

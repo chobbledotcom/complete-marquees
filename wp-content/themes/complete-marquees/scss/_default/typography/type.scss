@@ -1,0 +1,207 @@
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** *****             TYPOGRAPHY              ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+//  All the basic type styles for any web project. Pretty straight forward stuff.
+//
+//  [_1_] BASE STYLES
+//  [_2_] LISTS
+//  [_3_] QUOTES & BLOCKQUOTES
+//  [_4_] PREFORMATTED TEXT
+//  [_5_] TYPOGRAPHIC EXTRAS
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+//font-face declarations
+
+@font-face {
+    font-family: 'ek_muktabold';
+    src: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/fonts/ekmukta-bold-webfont.eot');
+    src: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/fonts/ekmukta-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/fonts/ekmukta-bold-webfont.woff2') format('woff2'),
+         url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/fonts/ekmukta-bold-webfont.woff') format('woff'),
+         url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/fonts/ekmukta-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ek_muktaregular';
+    src: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/fonts/ekmukta-regular-webfont.eot');
+    src: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/fonts/ekmukta-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/fonts/ekmukta-regular-webfont.woff2') format('woff2'),
+         url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/fonts/ekmukta-regular-webfont.woff') format('woff'),
+         url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/fonts/ekmukta-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//  [_1_] BASE STYLES
+
+//  First our basic font stack is styled with the font settings from '_config.scss'.
+//  An important part of this is to set the global font size at 62.5% as this makes
+//  the math easier, so that 1rem = 10px.
+
+%font-stack {
+  font-family: $font1;
+  font-size: 62.5%;  // Important for the math to work.
+  line-height: $line_height;
+  -webkit-font-smoothing: antialiased;
+}
+
+//  The <html> must use our font stack so that when we set the <body> font size
+//  rem and pixel units match up.
+
+html { @extend %font-stack; }
+
+body {
+  @include font-size(1.7, 1.4);
+  color: #f5f5f5;
+  background: #2d3235;
+}
+
+small {
+  @include font-size(1.7, 1.4);
+}
+
+h1, h2, h3, h4, h5, h6, b, strong { font-family: $font2; }
+
+h1 { @include font-size(3,1); }
+h2 { @include font-size(3,1); }
+h3 { @include font-size(2.5,1); }
+h4 { @include font-size(2,1); }
+h5 { @include font-size(2,1); }
+h6 { @include font-size(2,1); }
+
+em, i { font-style: italic; }
+
+s, strike, del { text-decoration: line-through; }
+
+u { text-decoration: underline; }
+
+a {
+  color: $white;
+  text-decoration: none;
+  font-family: $font2;
+
+  &:hover {
+  text-decoration: underline;
+  }
+}
+
+.required {
+  color: $notify_failed; //Red colour
+  font-family: $font2;
+}
+
+//  Block level typographic elements have a margin bottom equalling the gutter size,
+//  they can be modified to have half or double that, or none at all.
+
+p, ul, ol, blockquote, pre, h1, h2, {
+  margin-bottom: $gutter;
+}
+
+h3, h4, h5, h6 {
+  margin-bottom: $gutter / 2;
+}
+
+.margin--half { margin-bottom: $gutter / 2; }
+.margin--double { margin-bottom: $gutter * 2; }
+.margin--none { margin-bottom: 0; }
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+// [_2_] LISTS
+
+//  By default lists are styled with discs for <ul> and numericals for <ol>. These
+//  can be overwritten with the 'list--unstyled' and 'list--inline' modifiers, both
+//  of which remove the list style type altogether.
+
+ul, ol {
+  margin-left: 30px;
+
+  &.list--unstyled {
+    list-style: none;
+    margin-left: 0;
+  }
+
+  &.list--inline {
+    list-style: none;
+    margin-left: 0;
+
+    li { display: inline-block; }
+  }
+}
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+// [_3_] QUOTES & BLOCKQUOTES
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+blockquote {
+  margin-left: 0;
+  padding-left: $gutter;
+  border-left: 2px solid $gray_light;
+  @include font-size(2, 1.5);
+}
+
+cite {
+  color: $gray_light;
+  @include font-size($font_base);
+}
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  [_4_] PREFORMATTED TEXT
+
+code, pre {
+  font-family: $mono;
+  color: darken($gray_light, 50);
+  border: 1px solid $gray_light;
+  @include font-size(1.4);
+}
+
+code { padding: 2px 5px; }
+
+pre {
+  padding: 14px;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  [_5_] TYPOGRAPHIC EXTRAS
+
+//  <hr> isn't really a typographic element, but it's nice to have all the same.
+
+hr {
+  margin: 45px 0;
+  border: 0;
+  background: #5a5a5a;
+  height: 1px;
+}
+
+//  Controls the highlight color of text in the browser. Doesn't work everywhere.
+
+::selection { background: lighten($color1, 40); }
+::-moz-selection { background: lighten($color1, 40); }

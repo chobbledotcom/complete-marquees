@@ -1,0 +1,109 @@
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** *****               IMAGES                ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+//  Sets images to 100% max width so they always fit. Also specifies float
+//  classes for inline images, along with captions.
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  Default <img> is left aligned with 100% max width, can specify positioning
+//  with class names.
+//
+//  USAGE: .img--center, .img--left, .img--right
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0;
+
+  &[src$=".svg"] {
+    max-width: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  &.img--center {
+    display: block;
+    margin: 0 auto $gutter auto;
+  }
+
+  &.img--left {
+    display: block;
+    margin-bottom: $gutter;
+    @include bp(portable) {
+      display: inline-block;
+      float: left;
+      margin: 0 $gutter $gutter 0;
+    }
+  }
+
+  &.img--right {
+    float: right;
+    margin: 0 0 $gutter $gutter;
+  }
+
+  &.aligncenter {
+    display: block;
+    margin: 0 auto $gutter auto;
+  }
+
+  &.alignleft {
+    display: block;
+    margin-bottom: $gutter;
+    @include bp(portable) {
+      display: inline-block;
+      float: left;
+      margin: 0 $gutter $gutter 0;
+    }
+  }
+
+  &.alignright {
+    float: right;
+    margin: 0 0 $gutter $gutter;
+  }
+
+}
+
+//  Image captions should be contained within an element with the image they are
+//  referencing. The class goes on the parent, not the image.
+//
+//  USAGE: <div class="img--caption">
+//           <img src="/path/to/image.jpg" alt="">
+//           <p>This is the caption for the image here</p>
+//         </div>
+
+.img--caption {
+  @include font-size($font-small);
+
+  display: inline-block;
+  background: lighten($gray_light, 10);
+  padding: 8px;
+  border-radius: 2px;
+  border: 1px solid $gray_light;
+  text-align: center;
+  margin-bottom: $gutter;
+
+  img { margin-bottom: 8px; }
+
+  p { margin-bottom: 0; }
+
+  &.img--center {
+    display: block;
+    margin: 0 auto $gutter auto;
+  }
+
+  &.img--left {
+    float: left;
+    margin: 0 $gutter $gutter 0;
+  }
+
+  &.img--right {
+    float: right;
+    margin: 0 0 $gutter $gutter;
+  }
+}

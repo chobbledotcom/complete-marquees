@@ -1,0 +1,14 @@
+/*
+Theme Name: Complete Marquees
+Theme URI: --
+Author: Midas Media ( Nick Jephson )
+Author URI: http://midasmedia.co.uk/
+Description: Complete Marquees are a friendly and family run marquee and event hire company based in Havant near Southampton and Portsmouth in Hampshire.
+Version: 1.0.0
+Tags:
+
+Use the SCSS!
+
+*/
+
+footer .footer__top .area__list ul li{width:24% !important;}

@@ -1,0 +1,107 @@
+footer {
+    border-top: 3px solid $color1;
+    background: $white;
+    color: $font_color;
+    .social_li {
+        margin-top: 20px;
+    }
+    .footer__top {
+        background: $grey_light;
+        padding: $gutter 0;
+        color: $font_color;
+        a {
+            color: $font_color;
+        }
+        .title {
+            font-family: $font2;
+        }
+        ul {
+            margin-left: 0;
+            li {
+                display: block;
+                margin-bottom: 8px;
+            }
+            a {
+                font-family: $font1;
+            }
+        }
+        .area__list {
+            ul {
+                li {
+                    width: 50%;
+                    display: inline-block;
+                }
+            }
+        }
+        i {
+            @include font-size(2, 1);
+        }
+        i.fa.fa-twitter {
+            &:hover {
+                color: #55acee;
+            }
+        }
+        i.fa.fa-facebook {
+            margin-right: 11px;
+            &:hover {
+                color: #3b5998;
+            }
+        }
+    }
+    .footer__bottom {
+        padding: $gutter / 2;
+    }
+    .area__list a {
+        margin-bottom: 10px;
+        display: block;
+    }
+    .copyright {
+        margin-bottom: 10px;
+    }
+    .created__by img {
+        max-width: 50px;
+    }
+    @include bp(portable) {
+        .footer__top {
+            ul {
+                li {
+                    margin-bottom: 0;
+                }
+            }
+            .area__list {
+                ul {
+                    li {
+                        width: 25%;
+                        margin-bottom: 0px;
+                        a {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__bottom {
+            @include font-size(1.2, 1);
+            color: #7a7a7a;
+            .copyright {
+                text-align: left;
+                padding-top: 4px;
+            }
+            .exvat__prices {
+                text-align: center;
+                padding-top: 4px;
+            }
+            .created__by {
+                align-items: center;
+                display: flex;
+                float: right;
+                span {
+                    margin-right: 5px;
+                }
+            }
+            .copyright {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,375 @@
+.slider {
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    z-index: 1;
+    .container--large {
+        width: 100%;
+        border-bottom: 3px solid $color1;
+    }
+    .slider-before,
+    .slider-after {
+        display: none;
+        -webkit-filter: opacity(0.7);
+        -moz-filter: opacity(0.7);
+        -o-filter: opacity(0.7);
+        -ms-filter: opacity(0.7);
+        filter: opacity(0.7);
+    }
+    //&:before {
+    //background-image: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/img/seatingslide.jpg');
+    //background-size: cover;
+    //background-position: center;
+    //content: "";
+    //position: absolute;
+    //left: 0;
+    //right: 0;
+    //z-index: -1;
+    //-webkit-filter: blur(3px) grayscale(.6) opacity(0.6);
+    //-moz-filter: blur(3px) grayscale(.6) opacity(0.6);
+    //-o-filter: blur(3px) grayscale(.6) opacity(0.6);
+    //-ms-filter: blur(3px) grayscale(.6) opacity(0.6);
+    //filter: blur(3px) grayscale(.6) opacity(0.6);
+    //height: 100%;
+    ////}
+    .slider-bg {
+        padding: $gutter 0;
+        background-image: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/img/seatingslide.jpg');
+        background-size: cover;
+        background-position: center;
+        @include bp(portable) {
+            padding: $gutter*2 0;
+        }
+        @include bp(desk) {
+            -webkit-box-shadow: 0px -14px 33px 6px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px -14px 33px 6px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px -14px 33px 6px rgba(0, 0, 0, 0.75);
+        }
+    }
+    .default-bg {
+        background-image: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/img/seatingslide.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .hero__box {
+        background: rgba(45, 50, 53, 0.65);
+        border-radius: 5px;
+        padding: $gutter;
+        max-width: 666px;
+        margin-left: $gutter / 2;
+        margin-right: $gutter / 2;
+        .title {
+            @include font-size(2.8,
+            1);
+            margin-bottom: $gutter / 2;
+            color: $white;
+            text-shadow: 3px 3px 5px $black;
+            font-family: $font2;
+        }
+        .btn {
+            width: 100%;
+            margin-right: 10px;
+        }
+        .btn--green {
+            width: 100%; 
+        }
+        @include bp(portable) {
+            .btn {
+                width: 185px;
+                &--green {
+                    width: 185px;
+                }
+            }
+        }
+        p {
+            color: $white;
+            text-shadow: 2px 2px 2px $black;
+            margin-bottom: $gutter / 2;
+        }
+        @include bp(portable) {
+            margin-left: $gutter;
+            .title {
+                @include font-size(4,
+                1);
+                margin-bottom: $gutter;
+            }
+            p {
+                margin-bottom: $gutter;
+            }
+        }
+    }
+}
+
+@include bp(desk) {
+    .slider {
+        //&:before {
+        //  background-image: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/img/slidersprite.jpg');
+        //  background-size: 500%;
+        //  transition: background-position 0.5s ease-in-out;
+        //}
+        .container--large {
+            position: relative;
+            z-index: 2;
+        }
+        .slider-before,
+        .slider-after {
+            display: block;
+            position: absolute;
+            top: 0;
+        }
+        .slider-before {
+            left: 0;
+        }
+        .slider-after {
+            right: 0;
+        }
+        &.default-bg {
+            &:before {
+                background-position: 0;
+            }
+        }
+        &.wedding-bg {
+            &:before {
+                background-position: 25%;
+            }
+        }
+        &.party-bg {
+            &:before {
+                background-position: 50%;
+            }
+        }
+        &.event-bg {
+            &:before {
+                background-position: 75%;
+            }
+        }
+        &.special-bg {
+            &:before {
+                background-position: 100%;
+            }
+        }
+        .slider-bg {
+            background-image: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/img/slidersprite.jpg');
+            background-size: 500%;
+            transition: background-position 0.5s ease-in-out;
+        }
+        .default-bg {
+            background-position: 0;
+        }
+        .wedding-bg {
+            background-position: 25%;
+        }
+        .party-bg {
+            background-position: 50%;
+        }
+        .event-bg {
+            background-position: 75%;
+        }
+        .special-bg {
+            background-position: 100%;
+        }
+    }
+}
+
+
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    margin-bottom: 30px;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+    display: none;
+    &.dragging img {
+        pointer-events: none;
+    }
+    .slick-initialized & {
+        display: block;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+//slick custom styles
+.slick-slide img {
+    display: block;
+    width: 100%;
+}
+
+button.slick-prev.slick-arrow {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    z-index: 10;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+button.slick-next.slick-arrow {
+    position: absolute;
+    right: 23px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+
+/*vars*/
+
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    &:hover,
+    &:focus {
+        outline: none;
+        background: transparent;
+        color: transparent;
+    }
+}
+
+.slick-prev {
+    overflow: visible;
+    left: 25px;
+    [dir="rtl"] & {
+        left: auto;
+        right: -25px;
+    }
+    &:before {
+        content: "\f053";
+        font-family: FontAwesome;
+        color: $white;
+        @include font-size(2,
+        1);
+        padding: 9px 13px 9px 10px;
+        background: $color1;
+        border-radius: 50%;
+        [dir="rtl"] & {
+            font-family: FontAwesome;
+            content: "\f054";
+        }
+    }
+}
+
+.slick-next {
+    overflow: visible;
+    right: 25px;
+    [dir="rtl"] & {
+        left: -25px;
+        right: auto;
+    }
+    &:before {
+        content: "\f054";
+        font-family: FontAwesome;
+        color: $white;
+        padding: 9px 10px 9px 13px;
+        background: $color1;
+        border-radius: 50%;
+        @include font-size(2,
+        1);
+        [dir="rtl"] & {
+            font-family: FontAwesome;
+            content: "\f053";
+        }
+    }
+}

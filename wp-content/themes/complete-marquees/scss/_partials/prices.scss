@@ -1,0 +1,38 @@
+.mobile__table {
+	margin-bottom: $gutter * 2;
+	background: $grey_light;
+	padding: 0 15px;
+	color: $font_color;
+	.mobile__table__item {
+    	padding: 15px 0;
+    	border-bottom: 1px solid #d5d5d5;
+	}
+	.mobile__table__item:last-child {
+		border-bottom: none;
+	}	
+	.attribute, .value{
+		display: inline-block;
+		width: 49%;
+	}
+	.attribute {
+		font-family: $font2;
+	}
+
+	@include bp(lap) {
+		display: none;
+	}
+}
+.lap__table {
+	display: none;
+	color: $font_color;
+	@include bp(lap) {
+		display: table;
+		background: $grey_light;
+		tr {
+   	 border-bottom: 1px solid #d5d5d5;
+   	 &:last-child {
+   	 	border-bottom: none;
+   	 }
+		}
+	}
+}
