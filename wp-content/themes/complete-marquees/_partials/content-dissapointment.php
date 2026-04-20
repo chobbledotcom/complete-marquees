@@ -1,0 +1,5 @@
+<div class="dissapointment">
+	<div class="title">To avoid disappointment we always advise checking your potential dates availability with us as soon as possible.</div>
+	<a href="/contact-us/" class="btn">Get in touch today</a>
+	<div class="number rulertel">02392 717 925</div>
+</div>

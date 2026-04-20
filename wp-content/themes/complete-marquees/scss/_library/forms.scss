@@ -1,0 +1,232 @@
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** *****                FORMS                ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+//  Adds basic styling to forms and form elements (inputs, buttons etc).  It also
+//  has an advance modifier that makes improvements to the style and UX of forms
+//  The modifier requires Javascript in order to work.
+//
+//  DEPENDENCIES: /js/_library/forms.js
+//
+//  [_1_] BASIC STYLES
+//  [_2_] ADVANCED MODIFIER
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  [_1_] BASIC STYLES  //
+
+input[type="text"], input[type="password"], 
+input[type="email"], input[type="search"],
+input[type="number"], input[type="file"],
+input[type="tel"], input[type="url"],
+textarea, select {
+  @include font-size(1.4, 1.2);
+  font-family: $font1;
+  width: 100%;
+  padding: 10px;
+  color: #f5f5f5;
+  border: 1px solid #5a5a5a;
+  border-radius: 2px;
+  position: relative;
+  z-index: 2;
+  background: none;
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 200px;
+  border: 1px solid #5a5a5a;
+}
+
+select {
+  box-shadow: none;
+  @include svg(_library/select-arrow);
+  background-size: 17px auto;
+  background-position: right 20px top 18px;
+  position: relative;
+  z-index: 2;
+  
+  &:focus { outline: none; }
+}
+
+.check {
+  display: none;
+}
+
+// Contact Form 7 specific styling
+
+.wpcf7-not-valid-tip {
+  margin: -10px 0 $gutter / 2 0;
+  @include font-size($font_small);
+}
+
+//  <radio> and <checkbox> elements are best styled within a list element to make
+//  use of the default styles.
+//
+//  USAGE: <ul class=".form__radio">
+//           <li><input type="radio"> Radio Label One</li>
+//           <li><input type="radio"> Radio Label Two</li>
+//         </ul>
+
+.form__radio, .form__checkboxes {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: $gutter / 2;
+  
+  &.list--inline li {
+    margin-right: $gutter / 2;
+  }
+}
+
+//  form submits and buttons are styled from '_default/type/btns.scss'. If you do
+//  not have that module installed in your manifest, these styles will not work
+
+input[type="button"], input[type="submit"] {
+  @extend .btn--small;
+  @include font-size($font_base);
+  
+  font-family: $font1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  [_2_] ADVANCED MODIFIER  //
+
+//  The advanced form modifier takes the styling and user experience of a form
+//  one step further. Fields are visually validated using HTML5 pseudo classes
+//  and labels follow the theory behind Brad Frost's 'Float Label Pattern'
+//  (bradfrostweb.com/blog/post/float-label-pattern/).
+//
+//  This modifier requires a few small lines of Javascript in order to detect when
+//  a user starts tying in a field. This is already included in 'global.js'.
+//  Everything else is handling in pure CSS.
+//
+//  USAGE: <form class="form--advanced">
+//
+//           <div class="form__input">                          [* 1 *]
+//             <input name="your-name" type="text" required>    [* 2 *]
+//             <label for="your-name">Your Name</label>         [* 3 *]
+//           </div>
+//
+//         </form>
+//
+//         1. Both field and label must be wrapped in a parent element with the
+//            class 'form__#{input-type}'.
+//         2. Field must have a specified name and HTML5 required tag.
+//         3. Label must appear after the field so that the '+ label' identifier
+//            will work. Also the for tag must match the field name.
+
+.form__input,
+.form__textarea,
+.form__select {
+  position: relative;
+  
+  label {
+    color: darken($gray_light, 30);
+    background: none;
+    padding: 0;
+    z-index: 1;
+    
+    @include absolute(top 13px left 11px);
+    @include transition(top 0.3s ease, color 0.3s ease);
+  }
+}
+
+.form__select { margin-top: -0.4em; }  // Shameless hack fixing ambiant space
+
+//  <select> uses many of the same pseudo styles as the standard <input> does
+//  however with slight tweaks. For that reason we need to call silent classes
+//  here for each pseudo element.
+
+%invalid-field {
+  &:invalid {
+    color: $notify_failed;
+    border-color: $notify_failed;
+    
+    & + label {
+      color: $notify_failed;
+    }
+  }
+}
+
+%valid-field {
+  &:valid {
+    color: $notify_success;
+    border-color: $notify_success;
+    
+    & + label {
+      color: $notify_success;
+    }
+  }
+}
+
+%focus-field {
+  &:focus {
+    border-color: $color1;
+    color: $color1;
+
+    & + label {
+      color: $color1;
+    }
+  }
+}
+
+//  The class 'filled' is added to <input> and <textarea> with Javascript when
+//  the user starts typing. This stops the fields as showing up as :invalid
+//  before the user has entered any information.
+
+.form--advanced .filled {
+  z-index: 0;
+  
+  & + label {
+    @include font-size($font_small);
+    top: -0.5em;
+    left: 1px;
+    background: $white;
+    padding: 0 4px;
+  }
+  
+  @extend %invalid-field;  
+  @extend %valid-field;  
+  @extend %focus-field;
+}
+
+//  The <select> element does not need an :invalid field, also needs the color
+//  to be transparent before an option has been selected.
+
+.form--advanced select {
+  color: rgba(0, 0, 0, 0);
+  
+  @extend %focus-field; 
+  @extend %valid-field; 
+  
+  &:focus,
+  &:valid {
+    z-index: 0;
+    
+    & + label {
+      @include font-size($font_small);
+      top: -0.5em;
+      left: 1px;
+      background: $white;
+      padding: 0 4px;
+    }
+  }
+}

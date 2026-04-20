@@ -1,0 +1,315 @@
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** *****                GRID                 ***** ***** *****  //
+//  ***** ***** *****                                     ***** ***** *****  //
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+//  Adaption of CSS Wizardry Grids (github.com/csswizardry/csswizardry-grids)
+//
+//  For more information on using the grid system, please read the docs or
+//  the original CSS Wisardy write up from the link above.
+//
+//  [_1_] MIXINS
+//  [_2_] SETUP
+//  [_3_] WIDTHS
+//  [_4_] COMPILING
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  [_1_] MIXINS  //
+
+//  Set our breakpoints for the grid system using the values already defined in
+//  '_config.scss'. Doubles up on code so not the DRYest method, but helps keep
+//  things modular.
+
+$breakpoints: (
+  'palm'     'max' '#{$viewport_palm}',
+  'lap'      'min' '#{$viewport_palm}',
+  'portable' 'min' '#{$viewport_lap}',
+  'desk'     'min' '#{$viewport_desk}'
+);
+
+
+@mixin grid-media-query($media-query){
+  
+  @each $breakpoint in $breakpoints {
+    
+    $name: nth($breakpoint, 1);
+    $rule: nth($breakpoint, 2);
+    $size: nth($breakpoint, 3);
+    
+    @if $media-query == $name and $rule and $size {
+      
+      @media only screen and (#{$rule}-width: #{$size}) {
+        @content;
+      }
+      
+    }
+  }
+}
+
+//  Check whether or not to use normal or silent class types from '_config.scss'
+
+$class_type: unquote("%");
+
+@if $use-silent-classes == false{
+    $class_type: unquote(".");
+}
+
+//  This mixin will generate the widths for each of our columns, and the push
+//  and pull widths if those options have been turned on.
+
+@mixin device-type($rule, $namespace:'') {
+  
+  $prefix: $class-type + $namespace;
+  
+  @each $column in $column-widths {
+    
+    $space: nth($column, 1);
+    $width: nth($column, 2);
+    
+    #{$prefix}#{$space} { 
+      
+      #{$rule}: #{$width};
+      
+      @if $rule == left { position:relative; }
+      @else if $rule == right { position:relative; }
+    
+    }
+    
+  }
+  
+  @each $repeat in $column-repeats {
+    
+    $space:  nth($repeat, 1);
+    $width: nth($repeat, 2);
+    
+    #{$prefix}#{$space} { @extend #{$prefix}#{$width} }
+    
+  }
+}
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  [_2_] SETUP  //
+
+//  Set up the 'grid' class and 'grid__item' class for child elements.
+
+#{$class_type}grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -$gutter;
+}
+
+#{$class_type}grid__item {
+  padding-left: $gutter;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+}
+
+//  Next set up any grid modifiers we might need. The gutter width can be altered
+//  with 'grid--full', 'grid--narrow', and 'grid--wide'
+
+#{$class-type}grid--full {
+  margin-left: 0;
+
+  > #{$class-type}grid__item {
+    padding-left:  0;
+  }
+}
+
+#{$class-type}grid--narrow {
+  margin-left: -$gutter / 2;
+
+  > #{$class-type}grid__item {
+    padding-left:  $gutter / 2;
+  }
+}
+
+#{$class-type}grid--wide {
+  margin-left: -$gutter * 2;
+
+  > #{$class-type}grid__item {
+    padding-left:  $gutter * 2;
+  }
+}
+
+//  The alignment can be altered with 'grid--right', 'grid--center', 'grid--middle'
+//  and 'grid--bottom'
+
+#{$class-type}grid--right {
+  text-align:right;
+
+  > #{$class-type}grid__item {
+    text-align:left;
+  }
+}
+
+#{$class-type}grid--center {
+  text-align:center;
+
+  > #{$class-type}grid__item {
+    text-align:left;
+  }
+}
+
+#{$class-type}grid--middle {
+
+  > #{$class-type}grid__item {
+    vertical-align:middle;
+  }
+}
+
+#{$class-type}grid--bottom {
+
+  > #{$class-type}grid__item {
+    vertical-align:bottom;
+  }
+}
+
+//  The modifier 'grid--rev' will reverse the direction the the markup appears
+//  from the way it is written in the source.
+
+#{$class-type}grid--rev {
+  direction:rtl;
+  text-align:left;
+
+  > #{$class-type}grid__item {
+    direction:ltr;
+    text-align:left;
+  }
+}
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  [_3_] WIDTHS  //
+
+//  To keep the code DRY, our column widths are specified using the maps below.
+//  First we specifiy each unique width that will make up our grid.
+
+$column-widths: (
+  'one-whole'       '100%',
+
+  'one-half'        '50%',
+
+  'one-third'       '33.333%',
+  'two-thirds'      '66.666%',
+
+  'one-quarter'     '25%',
+  'three-quarters'  '75%',
+
+  'one-fifth'       '20%',
+  'two-fifths'      '40%',
+  'three-fifths'    '60%',
+  'four-fifths'     '80%',
+
+  'one-sixth'       '16.666%',
+  'five-sixths'     '83.333%',
+
+  'one-eighth'      '12.5%',
+  'three-eighths'   '37.5%',
+  'five-eighths'    '62.5%',
+  'seven-eighths'   '87.5%',
+
+  'one-tenth'       '10%',
+  'three-tenths'    '30%',
+  'seven-tenths'    '70%',
+  'nine-tenths'     '90%',
+
+  'one-twelfth'     '8.333%',
+  'five-twelfths'   '41.666%',
+  'seven-twelfths'  '58.333%',
+  'eleven-twelfths' '91.666%',
+  
+  'none'            '0'
+);
+
+//  Next we lay out all of the column options that are repeats of previously
+//  specified widths.
+
+$column-repeats: (
+  'two-quarters'   'one-half',
+  
+  'two-sixths'     'one-third',
+  'three-sixths'   'one-half',
+  'four-sixths'    'two-thirds',
+  
+  'two-eighths'    'one-quarter',
+  'four-eighths'   'one-half',
+  'six-eighths'    'two-quarters',
+  
+  'two-tenths'     'one-fifth',
+  'four-tenths'    'two-fifths',
+  'five-tenths'    'one-half',
+  'six-tenths'     'three-fifths',
+  'eight-tenths'   'four-fifths',
+  
+  'two-twelfths'   'one-sixth',
+  'three-twelfths' 'one-quarter',
+  'four-twelfths'  'one-third',
+  'six-twelfths'   'one-half',
+  'eight-twelfths' 'two-thirds',
+  'nine-twelfths'  'three-quarters',
+  'ten-twelfths'   'five-sixths'
+);
+
+
+//  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****  //
+
+
+//  [_4_] COMPILING  //
+
+//  Finally we call everything together. First, if the grid is not responsive
+//  we call each of our columns without the breakpoint name, using the mixin
+//  we have already written.
+
+@include device-type(width);
+
+//  If push and pull classes have been enabled, we use the same mixin to set
+//  these up with the same column widths.
+
+@if $push {
+  
+  [class*="push--"] { position:relative; }
+  
+  @include device-type(left, 'push--');
+  
+}
+
+@if $pull {
+  
+  [class*="pull--"] { position:relative; }
+  
+  @include device-type(right, 'pull--');
+  
+}
+
+//  If the grid is responsive, we will instead call our columns and push/pull
+//  selectors including the breakpoint names.
+
+@if $responsive == true {
+  
+  @each $viewport in $breakpoints {
+    
+    $name: nth($viewport, 1);
+    
+    @include grid-media-query($name) {
+      
+      @include device-type(width, '#{$name}--');
+      
+      @if $push { @include device-type(left, '#{$name}--push--'); }
+      
+      @if $pull {  @include device-type(right, '#{$name}--pull--'); }
+      
+    }
+    
+  }
+  
+}

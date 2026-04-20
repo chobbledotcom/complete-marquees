@@ -1,0 +1,67 @@
+header {
+    @extend %cf;
+    padding: 65px 0 15px;
+    border-bottom: 1px solid $grey_light;
+    background: $white;
+    color: $font_color;
+    text-align: center;
+    &.entry-header {
+        background: $grey_dark;
+        color: $white;
+    }
+    a {
+        color: $font_color;
+    }
+    .social__links {
+        display: none;
+    }
+    .logo {
+        max-width: 60%;
+        margin: 0 auto;
+        img {
+            max-width: 225px;
+            width: 100%;
+        }
+    }
+    .telephone__number {
+        @include font-size(3.5, 1);
+        font-family: $font2;
+    }
+    .email {
+        display: none;
+    }
+    @include bp(lap) {
+        .logo {
+            float: left;
+            width: 60%;
+            margin: 0;
+        }
+        .contact__info {
+            float: left;
+            width: 40%;
+            text-align: right;
+            padding-top: 5px;
+        }
+        .email {
+            display: block;
+            @include font-size(1.5, 1);
+        }
+        .telephone__number {
+            @include font-size(3, 1);
+            margin-top: 9px;
+        }
+    }
+    @include bp(portable) {
+        text-align: left;
+        .telephone__number {
+            @include font-size(3.5, 1);
+        }
+        .email {
+            @include font-size(1.6, 1);
+        }
+    }
+    @include bp(desk) {
+        padding: $gutter/2 0;
+        border-bottom: none;
+    }
+}

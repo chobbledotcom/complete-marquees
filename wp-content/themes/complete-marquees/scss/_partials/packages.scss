@@ -1,0 +1,66 @@
+.packages__area {
+	.package {
+		@extend %cf;
+		padding-bottom: 60px;
+		margin-bottom: 60px;
+		border-bottom: 1px solid #5a5a5a;
+		.title {
+			font-family: $font2;
+			margin-bottom: 20px;
+			@include font-size(2.5, 1);
+			span {
+				@include font-size(3, 1);
+			}
+		}
+		.list__title {
+			@include font-size(1.8, 1);
+			font-family: $font2;
+			margin-bottom: 5px;
+		}
+		ul {
+			list-style: none;
+			li {
+				position: relative;
+				&:before {
+					content: "• ";
+					color: $color1;
+					@include font-size(3, 0.6);
+					position: absolute;
+					top: 0;
+					left: -22px;
+				}
+			}
+		}
+		img {
+			display: block;
+			margin: 30px auto 0px;
+		}
+		&.last {
+			border: none;
+			margin-bottom: 0;
+		}
+		@include bp(lap) {
+			img {
+				display: inline-block;
+				margin: 30px 0 0 0;
+			}
+		}
+		@include bp(portable) {
+			img {
+				display: block;
+				margin: 30px auto 0px;
+			}
+		}
+		@include bp(desk) {
+			.info {
+			width: 60%;
+			display: inline-block;
+			} 
+			img {
+				display: inline-block;
+				float: right;
+				margin: 30px 0 0 0;
+			}
+		}
+	}
+}

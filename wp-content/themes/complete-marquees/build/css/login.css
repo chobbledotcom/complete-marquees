@@ -1,0 +1,10 @@
+/*-----Welcome to the Login CSS File-----*/
+/*-----This is where you can change the logo for the wp-admin log in page.-----*/
+
+body.login div#login h1 a {
+  background-image: url("../../../../../../wp-content/uploads/2016/07/logo.png");
+  background-size: 90%;
+  background-position: 50%;
+  width: 100%;
+  height: 100px;
+}

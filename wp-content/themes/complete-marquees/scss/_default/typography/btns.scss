@@ -1,0 +1,71 @@
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: $color2;
+  color: $white;
+  border-radius: 5px;
+  border: none;
+  text-align:center;
+  cursor: pointer;
+  margin-bottom: 5px;
+
+  @include transition(background 0.3s ease);
+
+
+  &:hover {
+    color: $white;
+    background: darken($color2, 15);
+    @include transition(background 0.3s ease);
+    text-decoration: none;
+  }
+
+  &--green {
+    @extend .btn;
+    background: $color1;
+    &:hover {
+      background: darken($color1, 15);
+    }
+  }
+
+  &--small {
+    @extend .btn;
+    padding: 5px 15px;
+  }
+  &--small--full {
+    @extend .btn;
+    padding: 5px 15px;
+    display: block;
+  }
+  &--small--full--green {
+    @extend .btn;
+    padding: 5px 15px;
+    display: block;
+    background: $color1;
+    &:hover {
+      background: darken($color1, 15);
+    }
+  }
+
+  &--green--small {
+    @extend .btn;
+    background: $color1;
+    padding: 5px 15px;
+    &:hover {
+      background: darken($color1, 15);
+    }
+  }
+
+  &--full {
+    @extend .btn;
+    display: block;
+  }
+
+  &--green--full {
+    @extend .btn;
+    background: $color1;
+    display: block;
+    &:hover {
+      background: darken($color1, 15);
+    }
+  }
+}

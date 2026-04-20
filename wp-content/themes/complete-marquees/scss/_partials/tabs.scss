@@ -1,0 +1,41 @@
+section.tabs {
+  background: $grey_dark;
+  padding: $gutter 0;
+}
+.card {
+  background: $white;
+  border: 1px solid #6d6d6d;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: $gutter;
+  color: $font_color;
+
+  img {
+    width: 100%;
+  }
+
+  .title {
+    font-family: $font2;
+    margin-bottom: 8px;
+  }
+
+  .card__lower {
+    padding: 20px;
+    
+    .text {
+      margin-bottom: 15px;
+    }
+  }
+
+  @include bp(portable) {
+    margin-bottom: 0;
+  }
+}
+
+.page-template-page-gallery .tabs {
+    padding-bottom: 115px;
+}
+
+.home .tabs {
+  padding-bottom: 0;
+}

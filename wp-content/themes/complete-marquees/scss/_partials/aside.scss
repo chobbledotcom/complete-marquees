@@ -1,0 +1,82 @@
+aside {
+	margin-top: $gutter;
+	.sidebar_cta {
+		background: $grey_light;
+		border-radius: 5px;
+		overflow: hidden;
+		margin-bottom: $gutter;
+		font-family: $font2;
+		border: 1px solid #6d6d6d;
+		color: $font_color;
+		a {
+			color: #f5f5f5;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.upper {
+			@include font-size(2.5, 1.2);
+			padding: 20px 40px 20px 20px;
+		}
+		.lower {
+			background: $grey_dark;
+			padding: 20px;
+			@include font-size(2.5, 1.2);
+			color: #f5f5f5;
+			span {
+				display: block;
+				@include font-size(5, 1);
+			}
+			i {
+				float: right;
+			}
+		}
+		.lower.clickthrough {
+			background: $color1;
+			padding: 0;
+			a {
+				padding: 20px;
+				display: block;
+				transition: background ease 0.2s;
+				&:hover {
+					background: darken($color1, 20);
+				}
+			}
+		}
+	}
+	.sidebar__testimonials {
+		@include font-size(1.8, 1.4);
+		article {
+			position: relative;
+			padding-top: 25px;
+			margin-bottom: 15px;
+			&:before {
+		      content: url('http://completemarquees.co.uk/wp-content/themes/complete-marquees/build/css/img/quote.png');
+		      color: $color1;
+		      position: absolute;
+		      left: 0;
+		   	top: 0;
+		   }
+		}
+	}
+	.contact__info {
+		margin-bottom: $gutter;
+		padding-bottom: $gutter / 2;
+		border-bottom: 1px solid #5a5a5a;
+		p {
+			margin-bottom: 10px;
+		}
+		.number {
+			@include font-size(2.5, 1);
+			font-family: $font2;
+		}
+	}
+	.area__map iframe {
+		width: 100%;
+		height: 250px;
+		margin-bottom: $gutter / 2;
+	}
+	@include bp(portable) {
+		margin-top: 0;
+	}
+}

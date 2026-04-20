@@ -1,0 +1,12 @@
+[26-Oct-2016 22:57:37 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/404.php on line 9
+[27-Oct-2016 03:28:02 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/404.php on line 9
+[17-Mar-2017 17:17:40 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/404.php on line 9
+[23-Mar-2017 18:08:24 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/404.php on line 9
+[28-Mar-2017 01:31:36 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/404.php on line 9
+[16-Feb-2018 07:40:57 UTC] PHP Fatal error:  Call to undefined function post_password_required() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/comments.php on line 13
+[16-Feb-2018 07:40:59 UTC] PHP Fatal error:  Call to undefined function post_password_required() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/comments.php on line 13
+[09-Apr-2018 05:51:03 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/404.php on line 9
+[10-Apr-2018 19:41:35 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/archive.php on line 9
+[07-May-2018 12:53:48 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/404.php on line 9
+[03-Feb-2019 16:29:31 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/index.php on line 7
+[03-Feb-2019 16:48:39 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/completemarquees/public_html/wp-content/themes/complete-marquees/index.php on line 7
