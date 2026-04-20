@@ -126,21 +126,11 @@ src="https://www.facebook.com/tr?id=544825305720178&ev=PageView&noscript=1"
 /></noscript>
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
-  {%- assign js_bundle = layout | getJsBundle: config.design_system_layouts -%}
-  {%- assign uses_design_system = layout | usesDesignSystem: config.design_system_layouts -%}
-
   {%- include "js-config-script.html" -%}
 
   <script
     type="module"
-    src="{{ js_bundle | cacheBust }}"
-  ></script>
-
-  {%- if blocks.size > 0 and uses_design_system == false -%}
-  <script
-    type="module"
     src="{{ '/assets/js/design-system.js' | cacheBust }}"
   ></script>
-  {%- endif -%}
 
   {%- include "head-scripts.html" -%}
