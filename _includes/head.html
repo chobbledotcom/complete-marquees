@@ -130,7 +130,8 @@ src="https://www.facebook.com/tr?id=544825305720178&ev=PageView&noscript=1"
 
   <script
     type="module"
-    src="{{ '/assets/js/design-system.js' | cacheBust }}"
+    src="{{ '/assets/js/bundle.js' | cacheBust }}"
+    data-decrypt-key="{{ encryptKey }}"
   ></script>
 
   {%- include "head-scripts.html" -%}
