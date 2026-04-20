@@ -142,5 +142,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 
 <!-- CF7 redirect -->
 
+  {%- include "js-config-script.html" -%}
+
   <!-- chobble-template JS bundle -->
   <script type="module" src="{{ '/assets/js/bundle.js' | cacheBust }}"></script>
