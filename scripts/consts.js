@@ -24,7 +24,5 @@ export const sourceExcludes = [
   "bun.lock",
   "_site",
   "old_site",
-  "wp-content",
-  "wp-includes",
   ...(process.env.PLACEHOLDER_IMAGES === "1" ? ["images"] : []),
 ];

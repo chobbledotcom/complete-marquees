@@ -1,3 +1,4 @@
+import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import {
   buildDir,
@@ -48,6 +49,8 @@ export const prep = () => {
     sourceExcludes,
   });
 
+  addMirrorPassthroughCopy(join(dev, ".eleventy.js"));
+
   sync();
 
   if (!fs.exists(join(dev, "node_modules"))) {
@@ -57,6 +60,26 @@ export const prep = () => {
 
   fs.rm(join(dev, "_site"));
   console.log("Build ready.");
+};
+
+const MIRROR_PASSTHROUGH_MARKER = "// chobble-client: wp mirror passthrough";
+
+const addMirrorPassthroughCopy = (configPath) => {
+  const source = readFileSync(configPath, "utf8");
+  if (source.includes(MIRROR_PASSTHROUGH_MARKER)) return;
+  const target = '.addPassthroughCopy("src/assets")';
+  if (!source.includes(target)) {
+    throw new Error(
+      `Could not find passthrough anchor in ${configPath}; wp mirror assets will not be copied`,
+    );
+  }
+  const replacement = [
+    target,
+    `    ${MIRROR_PASSTHROUGH_MARKER}`,
+    '    .addPassthroughCopy("src/wp-content")',
+    '    .addPassthroughCopy("src/wp-includes")',
+  ].join("\n    ");
+  writeFileSync(configPath, source.replace(target, replacement));
 };
 
 export const sync = () => {
