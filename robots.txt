@@ -1,0 +1,6 @@
+User-agent: Scrapy
+Allow: /
+
+User-agent: *
+Allow: /
+sitemap: https://completemarquees.co.uk/sitemap_index.xml
