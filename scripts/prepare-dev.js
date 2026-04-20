@@ -64,7 +64,7 @@ export const prep = () => {
 
 const MIRROR_PASSTHROUGH_MARKER = "// chobble-client: wp mirror passthrough";
 
-const addMirrorPassthroughCopy = (configPath) => {
+export const addMirrorPassthroughCopy = (configPath) => {
   const source = readFileSync(configPath, "utf8");
   if (source.includes(MIRROR_PASSTHROUGH_MARKER)) return;
   const target = '.addPassthroughCopy("src/assets")';
