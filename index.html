@@ -129,6 +129,29 @@ permalink: "/"
 
 
   {% include "head.html" %}
+  <style>
+    section.tabs .grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+    }
+    section.tabs .grid > .grid__item--quarter {
+      display: block;
+      padding-left: 30px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    @media only screen and (min-width: 500px) {
+      section.tabs .grid > .grid__item--quarter {
+        width: 50%;
+      }
+    }
+    @media only screen and (min-width: 800px) {
+      section.tabs .grid > .grid__item--quarter {
+        width: 25%;
+      }
+    }
+  </style>
 </head>
 
 <body class="home wp-singular page-template page-template-_templates page-template-page-home page-template-_templatespage-home-php page page-id-2 wp-theme-complete-marquees"> <!-- Google Tag Manager (noscript) -->
@@ -253,8 +276,8 @@ permalink: "/"
             </div>
           </div>
 
-        </div><!--
-      -->
+        </div>
+
         <div class="grid__item--quarter">
 
           <div id="party__marquees" class="card" itemscope itemtype="http://schema.org/Service">
@@ -267,8 +290,8 @@ permalink: "/"
             </div>
           </div>
 
-        </div><!--
-      -->
+        </div>
+
         <div class="grid__item--quarter">
 
           <div id="event__marquees" class="card" itemscope itemtype="http://schema.org/Service">
@@ -281,8 +304,8 @@ permalink: "/"
             </div>
           </div>
 
-        </div><!--
-      -->
+        </div>
+
         <div class="grid__item--quarter">
 
           <div id="special__marquees" class="card" itemscope itemtype="http://schema.org/Service">
