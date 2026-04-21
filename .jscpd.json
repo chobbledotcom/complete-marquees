@@ -6,13 +6,16 @@
     "**/node_modules/**",
     "**/_site/**",
     "**/.build/**",
-    "**/packages/**"
+    "**/packages/**",
+    "**/chobble-template/**",
+    "**/wp-content/**",
+    "**/wp-includes/**"
   ],
-  "format": ["javascript"],
+  "format": ["javascript", "markup", "css"],
   "absolute": false,
   "gitignore": true,
   "exitCode": 1,
-  "minLines": 1,
-  "minTokens": 40,
-  "path": ["scripts"]
+  "minLines": 3,
+  "minTokens": 50,
+  "path": ["."]
 }
