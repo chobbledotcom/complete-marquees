@@ -1,5 +1,6 @@
 ---
 header_text: Thank You
+layout: complete-marquees
 meta_description:
 meta_title: Thank You
 navigationParent: Contact
