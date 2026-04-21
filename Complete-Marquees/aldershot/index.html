@@ -140,9 +140,8 @@
         <div class="grid__item--two__thirds">
 
 
-          <div id="crumbs">
-            <p><a href="../../"><span>Home</span></a> <span class="delimiter">&raquo;</span> <span class="current">Marquee Hire in Aldershot</span></p>
-          </div>
+          {% assign breadcrumbCurrent = "Marquee Hire in Aldershot" %}
+          {% include "breadcrumbs.html" %}
           <h1 data-section-id="1o62is1" data-start="222" data-end="269">🎪 Aldershot Marquee Hire – Complete Marquees</h1>
           <p data-start="271" data-end="681">Planning an outdoor event and need reliable <strong data-start="315" data-end="344">marquee hire in Aldershot</strong>? At <strong data-start="349" data-end="370">Complete Marquees</strong>, we supply stylish, weather‑ready marquees that transform any outdoor space into the perfect event venue. Whether it’s a <strong data-start="492" data-end="567">wedding, birthday party, garden celebration, corporate event or fun day</strong>, our marquees offer the shelter, space and versatility your event deserves.</p>
           <p data-start="683" data-end="988">We’ve been helping customers in <strong data-start="715" data-end="750">Aldershot and surrounding areas</strong> since 2002, delivering quality marquees with professional service and punctual setup. From intimate gatherings to larger celebrations, we make sure your marquee is set up and ready in plenty of time.</p>
@@ -238,11 +237,7 @@
           <p data-start="3346" data-end="3453">Turn your next celebration into something special with <strong data-start="3401" data-end="3427">Aldershot Marquee Hire</strong> from Complete Marquees.</p>
           <p data-start="3455" data-end="3519">👉 <strong data-start="3458" data-end="3519">Check availability today or request a personalised quote!</strong></p>
           <p>&nbsp;</p>
-          <div class="dissapointment">
-            <div class="title">To avoid disappointment we always advise checking your potential dates availability with us as soon as possible.If</div>
-            <p><a class="btn" href="../../contact-us/">Get in touch today</a></p>
-          </div>
-          <div class="number rulertel">02392 717 925</div>
+          {% include "disappointment-cta.html" %}
           <div id='gallery-1' class='gallery galleryid-105 gallery-columns-3 gallery-size-full'>
             <figure class='gallery-item'>
               <div class='gallery-icon landscape'>
@@ -307,54 +302,13 @@
 
             <div class="content">
 
-              <div class="sidebar_cta">
-                <a href="../../contact-us/">
-                  <div class="upper orange">
-                    From small gatherings to a royal wedding, we have the right marquee whatever the event.
-                  </div>
-                  <div class="lower white">
-                    Packages from only
-                    <span>£330</span>
-                  </div>
-                </a>
-              </div>
+              {% include "sidebar-cta.html" %}
 
-              <div class="sidebar_cta">
-                <div class="upper">
-                  Find out why capri marquees have become the most popular marquee for any event.
-                </div>
-                <div class="lower clickthrough">
-                  <a href="../../contact-us/">
-                    Enquire Today <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
+              {% include "sidebar-testimonials.html" %}
 
-              <div class="sidebar__testimonials">
-                <h2>What our customers have to say...</h2>
+            </div>
 
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Just a quick e-mail to say how happy i was with the marquee&#8217;s, they looked fantastic, your team were polite on set up and take down, if we ever need a marquee again, we know where to call and will recommend you to all my family and friends.</p>
-                      <p>Judith</p>
-                    </article>
-                  </div>
-                </div>
-
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Dear Joanne</p>
-                      <p>This is somewhat delayed thanks to the wonderful teams that you sent with the marquee for my party last weekend.</p>
-                      <p>We had a lovely party and I&#8217;m still revelling in the joy of having everyone in one place at the the same time!</p>
-                      <p>Please pass on my thanks &#8211; the marquee looked incredible.</p>
-                      <p>Kind regards,</p>
-                      <p>Jane</p>
-                    </article>
-                  </div>
-                </div>
-              </div>
+          </aside>
               <div class="area__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19979.231314833876!2d-0.7611991936750896!3d51.24847205990422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48742b4d2f9cb7cd%3A0x19ae01604385ba3c!2sAldershot%2C+Hampshire!5e0!3m2!1sen!2suk!4v1467793366214" allowfullscreen></iframe>
               </div>

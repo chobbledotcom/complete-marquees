@@ -140,9 +140,8 @@
         <div class="grid__item--two__thirds">
 
 
-          <div id="crumbs">
-            <p><a href="../../"><span>Home</span></a> <span class="delimiter">&raquo;</span> <span class="current">Marquee Hire in Andover</span></p>
-          </div>
+          {% assign breadcrumbCurrent = "Marquee Hire in Andover" %}
+          {% include "breadcrumbs.html" %}
           <p data-start="183" data-end="232">🎪 <strong data-start="186" data-end="230">Andover Marquee Hire – Complete Marquees</strong></p>
           <p data-start="234" data-end="511">Planning an outdoor event in Andover? <strong data-start="272" data-end="334">Complete Marquees provides stylish, weather-ready marquees</strong> that turn any space into the perfect venue. From weddings and birthday parties to corporate events and garden celebrations, our marquees offer comfort, protection, and style.</p>
           <p data-start="513" data-end="696">Since 2002, we’ve been serving Andover and nearby areas. <strong data-start="570" data-end="615">Whether your gathering is small or large,</strong> we ensure your marquee is delivered and set up on time, ready for your guests.</p>
@@ -287,54 +286,13 @@
 
             <div class="content">
 
-              <div class="sidebar_cta">
-                <a href="../../contact-us/">
-                  <div class="upper orange">
-                    From small gatherings to a royal wedding, we have the right marquee whatever the event.
-                  </div>
-                  <div class="lower white">
-                    Packages from only
-                    <span>£330</span>
-                  </div>
-                </a>
-              </div>
+              {% include "sidebar-cta.html" %}
 
-              <div class="sidebar_cta">
-                <div class="upper">
-                  Find out why capri marquees have become the most popular marquee for any event.
-                </div>
-                <div class="lower clickthrough">
-                  <a href="../../contact-us/">
-                    Enquire Today <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
+              {% include "sidebar-testimonials.html" %}
 
-              <div class="sidebar__testimonials">
-                <h2>What our customers have to say...</h2>
+            </div>
 
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Just a quick e-mail to say how happy i was with the marquee&#8217;s, they looked fantastic, your team were polite on set up and take down, if we ever need a marquee again, we know where to call and will recommend you to all my family and friends.</p>
-                      <p>Judith</p>
-                    </article>
-                  </div>
-                </div>
-
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Dear Joanne</p>
-                      <p>This is somewhat delayed thanks to the wonderful teams that you sent with the marquee for my party last weekend.</p>
-                      <p>We had a lovely party and I&#8217;m still revelling in the joy of having everyone in one place at the the same time!</p>
-                      <p>Please pass on my thanks &#8211; the marquee looked incredible.</p>
-                      <p>Kind regards,</p>
-                      <p>Jane</p>
-                    </article>
-                  </div>
-                </div>
-              </div>
+          </aside>
               <div class="area__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19994.85571992393!2d-1.506246964236937!3d51.21249948719346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873f09af8f411c7%3A0x94f77c4aa05e123f!2sAndover%2C+Hampshire!5e0!3m2!1sen!2suk!4v1467795824773" allowfullscreen></iframe>
               </div>

@@ -146,9 +146,8 @@
 
         <div class="grid__item--two__thirds">
 
-          <div id="crumbs">
-            <p><a href="../"><span>Home</span></a> <span class="delimiter">&raquo;</span> <span class="current">About Us</span></p>
-          </div>
+          {% assign breadcrumbCurrent = "About Us" %}
+          {% include "breadcrumbs.html" %}
           <h1 data-section-id="521ddg" data-start="241" data-end="306">About Us – Capri Marquee Hire Hampshire, Surrey &amp; West Sussex</h1>
           <p data-start="308" data-end="626">Looking for <strong data-start="320" data-end="377">Capri marquee hire in Hampshire, Surrey &amp; West Sussex</strong>? At <strong data-start="382" data-end="403">Complete Marquees</strong>, we provide elegant and stylish Capri marquees for weddings, private parties, corporate events, and outdoor celebrations. Our marquees combine classic charm with modern design to create an unforgettable event experience.</p>
           <p data-start="628" data-end="973">We do more than supply a structure—we help you <strong data-start="675" data-end="710">bring your event vision to life</strong>. Every marquee can be customised with premium flooring, professional lighting, stylish furniture, and themed décor. Whether you’re planning an intimate gathering or a large-scale celebration, we ensure your outdoor venue looks stunning and functions perfectly.</p>
@@ -216,60 +215,13 @@
 
             <div class="content">
 
-              <div class="sidebar_cta">
-                <a href="../contact-us/">
-                  <div class="upper orange">
-                    From small gatherings to a royal wedding, we have the right marquee whatever the event.
-                  </div>
-                  <div class="lower white">
-                    Packages from only
-                    <span>£330</span>
-                  </div>
-                </a>
-              </div>
+              {% include "sidebar-cta.html" %}
 
-              <div class="sidebar_cta">
+              {% include "sidebar-testimonials.html" %}
 
-                <div class="upper">
-                  Find out why capri marquees have become the most popular marquee for any event.
-                </div>
-                <div class="lower clickthrough">
-                  <a href="../contact-us/" onclick="ga('send', 'event', 'CTA', 'click', 'Enquire Today');">
-                    Enquire Today <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                  </a>
-                </div>
+            </div>
 
-              </div>
-
-              <div class="sidebar__testimonials">
-                <h2>What our customers have to say...</h2>
-
-
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Just a quick e-mail to say how happy i was with the marquee&#8217;s, they looked fantastic, your team were polite on set up and take down, if we ever need a marquee again, we know where to call and will recommend you to all my family and friends.</p>
-                      <p>Judith</p>
-                    </article>
-                  </div>
-                </div>
-
-
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Dear Joanne</p>
-                      <p>This is somewhat delayed thanks to the wonderful teams that you sent with the marquee for my party last weekend.</p>
-                      <p>We had a lovely party and I&#8217;m still revelling in the joy of having everyone in one place at the the same time!</p>
-                      <p>Please pass on my thanks &#8211; the marquee looked incredible.</p>
-                      <p>Kind regards,</p>
-                      <p>Jane</p>
-                    </article>
-                  </div>
-                </div>
-
-
-              </div>
+          </aside>
 
             </div>
 

@@ -140,9 +140,8 @@
         <div class="grid__item--two__thirds">
 
 
-          <div id="crumbs">
-            <p><a href="../../"><span>Home</span></a> <span class="delimiter">&raquo;</span> <span class="current">Marquee Hire in Oxshott</span></p>
-          </div>
+          {% assign breadcrumbCurrent = "Marquee Hire in Oxshott" %}
+          {% include "breadcrumbs.html" %}
           <div class="dissapointment12">
             <h1>Marquee Hire in Oxshott</h1>
             <p>Marquee hire Oxshott, then here at Complete marquees we would love to help you do exactly that. Looking to hire a Marquee? Maybe it’s for a birthday party, a christening, Wedding, Garden party or just a little family gathering. We have a comprehensive collection that will suit any occasion</p>
@@ -159,11 +158,7 @@
             <p>By linking together our Capri marquees, we can cover a host of different outdoor areas. No matter what your outdoor event is, Complete Marquees can take it to the next level with shelter and furnishings. For images, please see <a class="caption" title="Unique Selection of Marquees" href="/capri-marquee-hire/">our marquee</a> range. To see which package suits you please <a title="Packages" href="/packages/">see the price and package list here</a>.</p>
             <h4>If it&#8217;s a wedding, party, fun day, corporate event or something different that you need to hire a marquee for, Complete Marquees make the perfect choice for your event. With many years of experience, we can ensure your marquee arrives at the appointed time and is ready in plenty of time for the event. We pride ourselves with our service, reliability and time keeping so why not choose us to help make your event a success.</h4>
             <p>If you&#8217;re looking for additional ways to entertain, visit our event hire website at <a href="https://www.monstereventhire.co.uk">Monster Event Hire</a>, we have hundreds of activities to choose from.</p>
-            <div class="dissapointment">
-              <div class="title">To avoid disappointment we always advise checking your potential dates availability with us as soon as possible.If</div>
-              <p><a class="btn" href="../../contact-us/">Get in touch today</a></p>
-            </div>
-            <div class="number rulertel">02392 717 925</div>
+            {% include "disappointment-cta.html" %}
           </div>
           <div id='gallery-1' class='gallery galleryid-720 gallery-columns-3 gallery-size-full'>
             <figure class='gallery-item'>
@@ -200,8 +195,7 @@
             </figure>
           </div>
 
-          <p>Our modern looking Capri marquees offer a totally different look from traditional marquees. We hope you like them too, so please take a look at <a class="caption" title="Unique Selection of Marquees" href="../../capri-marquee-hire/">our marquees</a> and let us know what you think. We offer a wide selection of packages available, please <a title="Packages" href="../../packages/">see the price list here</a>.</p>
-          <p>(Capri marquees can be linked together enabling them to be used for any event)</p>
+          {% include "capri-closing.html" %}
 
 
         </div><!-- 
@@ -212,54 +206,13 @@
 
             <div class="content">
 
-              <div class="sidebar_cta">
-                <a href="../../contact-us/">
-                  <div class="upper orange">
-                    From small gatherings to a royal wedding, we have the right marquee whatever the event.
-                  </div>
-                  <div class="lower white">
-                    Packages from only
-                    <span>£330</span>
-                  </div>
-                </a>
-              </div>
+              {% include "sidebar-cta.html" %}
 
-              <div class="sidebar_cta">
-                <div class="upper">
-                  Find out why capri marquees have become the most popular marquee for any event.
-                </div>
-                <div class="lower clickthrough">
-                  <a href="../../contact-us/">
-                    Enquire Today <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
+              {% include "sidebar-testimonials.html" %}
 
-              <div class="sidebar__testimonials">
-                <h2>What our customers have to say...</h2>
+            </div>
 
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Just a quick e-mail to say how happy i was with the marquee&#8217;s, they looked fantastic, your team were polite on set up and take down, if we ever need a marquee again, we know where to call and will recommend you to all my family and friends.</p>
-                      <p>Judith</p>
-                    </article>
-                  </div>
-                </div>
-
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Dear Joanne</p>
-                      <p>This is somewhat delayed thanks to the wonderful teams that you sent with the marquee for my party last weekend.</p>
-                      <p>We had a lovely party and I&#8217;m still revelling in the joy of having everyone in one place at the the same time!</p>
-                      <p>Please pass on my thanks &#8211; the marquee looked incredible.</p>
-                      <p>Kind regards,</p>
-                      <p>Jane</p>
-                    </article>
-                  </div>
-                </div>
-              </div>
+          </aside>
 
             </div>
 

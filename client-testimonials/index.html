@@ -137,9 +137,8 @@
 
         <div class="grid__item--whole">
 
-          <div id="crumbs">
-            <p><a href="../"><span>Home</span></a> <span class="delimiter">&raquo;</span> <span class="current">Testimonials</span></p>
-          </div>
+          {% assign breadcrumbCurrent = "Testimonials" %}
+          {% include "breadcrumbs.html" %}
           <h1>Testimonials</h1>
 
 
