@@ -3,17 +3,11 @@ permalink: "/privacy/"
 ---
 {% include "html-head-open.html" %}
   <title>Privacy Policy</title>
-  <meta property="og:locale" content="en_GB" />
-  <meta property="og:type" content="article" />
+  {% include "og-meta-static.html" %}
   <meta property="og:title" content="Privacy Policy" />
   <meta property="og:description" content="Privacy Notice This is the privacy notice of Complete Marquees. In this document, &#8220;we&#8221;, &#8220;our&#8221;, or &#8220;us&#8221; refer to Complete Marquees. We are company number 1090110 registered in England, United Kingdom. Our registered office is at Southleigh Farm, Havant, Hampshire, PO9 2NX . In addition to this privacy policy, our cookie policy can be found [&hellip;]" />
   <meta property="og:url" content="https://www.completemarquees.co.uk/privacy/" />
-  <meta property="og:site_name" content="Complete Marquees" />
-  <meta property="article:publisher" content="https://www.facebook.com/completemarquees/" />
   <meta property="article:modified_time" content="2018-05-22T09:39:20+00:00" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@completemarquee" />
-  <meta name="twitter:label1" content="Estimated reading time" />
   <meta name="twitter:data1" content="12 minutes" />
   <script type="application/ld+json" class="yoast-schema-graph">
     {
@@ -55,16 +49,8 @@ permalink: "/privacy/"
   {% include "site-header.html" %}
 
 
-  <section class="section--whole pads">
-
-    <main class="container--large">
-
-      <div class="grid--wide">
-
-        <div class="grid__item--two__thirds">
-
-          {% assign breadcrumbCurrent = "Privacy Policy" %}
-          {% include "breadcrumbs.html" %}
+  {% assign breadcrumbCurrent = "Privacy Policy" %}
+  {% include "page-main-open.html" %}
           <h2>Privacy Notice</h2>
           <p>This is the privacy notice of Complete Marquees. In this document, &#8220;we&#8221;, &#8220;our&#8221;, or &#8220;us&#8221; refer to Complete Marquees.</p>
           <p>We are company number 1090110 registered in England, United Kingdom.</p>
@@ -208,35 +194,5 @@ permalink: "/privacy/"
           <p>If you have any question regarding our privacy policy, please contact us.</p>
 
 
-        </div><!-- 
-       -->
-        <div class="grid__item--third">
-
-          <aside>
-
-            <div class="content">
-
-              {% include "sidebar-cta.html" %}
-
-              {% include "sidebar-testimonials.html" %}
-
-            </div>
-
-          </aside>
-
-            </div>
-
-          </aside>
-        </div>
-
-      </div>
-
-    </main>
-
-  </section>
-
-  {% include "site-footer.html" %}
-</body>
-
-</html>
+{% include "page-sidebar-close.html" %}
 ..........................
