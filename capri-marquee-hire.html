@@ -5,21 +5,15 @@ permalink: "/capri-marquee-hire/"
   <title>Our Marquees: Explore Event Setup Inspirations</title>
   <meta name="description" content="Marquee hire picture gallery see our beautiful Capri and Pagoda style at a variety of events throughout Hampshire, Surrey and West Sussex." />
   <link rel="canonical" href="./" />
-  <meta property="og:locale" content="en_GB" />
-  <meta property="og:type" content="article" />
+  {% include "og-meta-static.html" %}
   <meta property="og:title" content="Our Marquees: Explore Event Setup Inspirations" />
   <meta property="og:description" content="Marquee hire picture gallery see our beautiful Capri and Pagoda style at a variety of events throughout Hampshire, Surrey and West Sussex." />
   <meta property="og:url" content="https://www.completemarquees.co.uk/capri-marquee-hire/" />
-  <meta property="og:site_name" content="Complete Marquees" />
-  <meta property="article:publisher" content="https://www.facebook.com/completemarquees/" />
   <meta property="article:modified_time" content="2026-04-04T16:29:53+00:00" />
   <meta property="og:image" content="https://www.completemarquees.co.uk/wp-content/uploads/2017/05/capri-spring.jpg" />
   <meta property="og:image:width" content="960" />
   <meta property="og:image:height" content="720" />
   <meta property="og:image:type" content="image/jpeg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@completemarquee" />
-  <meta name="twitter:label1" content="Estimated reading time" />
   <meta name="twitter:data1" content="2 minutes" />
   <script type="application/ld+json" class="yoast-schema-graph">
     {
@@ -78,16 +72,8 @@ permalink: "/capri-marquee-hire/"
   {% include "site-header.html", current: "marquees" %}
 
 
-  <section class="section--whole pads">
-
-    <main class="container--large">
-
-      <div class="grid--wide">
-
-        <div class="grid__item--two__thirds">
-
-          {% assign breadcrumbCurrent = "Our Marquees" %}
-          {% include "breadcrumbs.html" %}
+  {% assign breadcrumbCurrent = "Our Marquees" %}
+  {% include "page-main-open.html" %}
           <h1>Our Marquees</h1>
           <img decoding="async" width="300" height="63" class="alignnone size-medium wp-image-217" src="/wp-content/uploads/2016/07/wide-marquee-picture-300x63.jpg" alt="Wide marquee" srcset="../wp-content/uploads/2016/07/wide-marquee-picture-300x63.jpg 300w, ../wp-content/uploads/2016/07/wide-marquee-picture-768x162.jpg 768w, ../wp-content/uploads/2016/07/wide-marquee-picture-1024x217.jpg 1024w, ../wp-content/uploads/2016/07/wide-marquee-picture.jpg 1300w" sizes="(max-width: 300px) 100vw, 300px" />
           <h2>Our Gallery</h2>
@@ -478,35 +464,5 @@ permalink: "/capri-marquee-hire/"
           <div class="pointer-events-none h-px w-px absolute bottom-0" aria-hidden="true" data-edge="true"></div>
 
 
-        </div><!-- 
-       -->
-        <div class="grid__item--third">
-
-          <aside>
-
-            <div class="content">
-
-              {% include "sidebar-cta.html" %}
-
-              {% include "sidebar-testimonials.html" %}
-
-            </div>
-
-          </aside>
-
-            </div>
-
-          </aside>
-        </div>
-
-      </div>
-
-    </main>
-
-  </section>
-
-  {% include "site-footer.html" %}
-</body>
-
-</html>
+{% include "page-sidebar-close.html" %}
 ..........................

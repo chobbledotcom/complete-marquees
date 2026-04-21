@@ -5,21 +5,15 @@ permalink: "/special-events/"
   <title>Special Events Marquee Hire</title>
   <meta name="description" content="Hire stylish Capri marquees for weddings, corporate events, garden parties, and fun days in Surrey and Hampshire." />
   <link rel="canonical" href="./" />
-  <meta property="og:locale" content="en_GB" />
-  <meta property="og:type" content="article" />
+  {% include "og-meta-static.html" %}
   <meta property="og:title" content="Special Events Marquee Hire" />
   <meta property="og:description" content="Hire stylish Capri marquees for weddings, corporate events, garden parties, and fun days in Surrey and Hampshire." />
   <meta property="og:url" content="https://www.completemarquees.co.uk/special-events/" />
-  <meta property="og:site_name" content="Complete Marquees" />
-  <meta property="article:publisher" content="https://www.facebook.com/completemarquees/" />
   <meta property="article:modified_time" content="2026-04-04T16:58:28+00:00" />
   <meta property="og:image" content="https://www.completemarquees.co.uk/wp-content/uploads/2019/10/IMG_8008-1024x683.jpg" />
   <meta property="og:image:width" content="1024" />
   <meta property="og:image:height" content="683" />
   <meta property="og:image:type" content="image/jpeg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@completemarquee" />
-  <meta name="twitter:label1" content="Estimated reading time" />
   <meta name="twitter:data1" content="2 minutes" />
   <script type="application/ld+json" class="yoast-schema-graph">
     {
@@ -78,16 +72,8 @@ permalink: "/special-events/"
   {% include "site-header.html" %}
 
 
-  <section class="section--whole pads">
-
-    <main class="container--large">
-
-      <div class="grid--wide">
-
-        <div class="grid__item--two__thirds">
-
-          {% assign breadcrumbCurrent = "Special Events Marquee Hire" %}
-          {% include "breadcrumbs.html" %}
+  {% assign breadcrumbCurrent = "Special Events Marquee Hire" %}
+  {% include "page-main-open.html" %}
           <h1>Marquee Hire for Special Events</h1>
           <h3><img fetchpriority="high" decoding="async" width="300" height="248" class="alignright size-medium wp-image-336" src="/wp-content/uploads/2016/07/event-polaroid-300x248.png" alt="Event Marquees" srcset="../wp-content/uploads/2016/07/event-polaroid-300x248.png 300w, ../wp-content/uploads/2016/07/event-polaroid.png 369w" sizes="(max-width: 300px) 100vw, 300px" />Marquee Hire for Special Events</h3>
           <h3 data-section-id="4zhnsk" data-start="269" data-end="287">Perfect For:</h3>
@@ -168,35 +154,5 @@ permalink: "/special-events/"
           <div id="secondary" class="widget-area"></div>
 
 
-        </div><!-- 
-       -->
-        <div class="grid__item--third">
-
-          <aside>
-
-            <div class="content">
-
-              {% include "sidebar-cta.html" %}
-
-              {% include "sidebar-testimonials.html" %}
-
-            </div>
-
-          </aside>
-
-            </div>
-
-          </aside>
-        </div>
-
-      </div>
-
-    </main>
-
-  </section>
-
-  {% include "site-footer.html" %}
-</body>
-
-</html>
+{% include "page-sidebar-close.html" %}
 ..........................
