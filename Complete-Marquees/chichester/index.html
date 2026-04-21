@@ -1,18 +1,6 @@
 ---
 ---
-<!doctype html>
-<!--[if lt IE 8 ]> <html lang="en" class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en-GB" class="" itemscope itemtype="http://schema.org/WebPage"> <!--<![endif]-->
-
-<head>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- This site is optimized with the Yoast SEO plugin v26.4 - https://yoast.com/wordpress/plugins/seo/ -->
+{% include "html-head-open.html" %}
   <title>Marquee Hire in Chichester | Chichester Marquee hire</title>
   <meta name="description" content="Complete Marquees is proud to offer marquee hire in Chichester. We provide quality outdoor shelter for events in Chichester and surrounding areas." />
   <link rel="canonical" href="./" />
@@ -77,55 +65,7 @@
           "position": 2,
           "name": "Marquee Hire in Chichester"
         }]
-      }, {
-        "@type": "WebSite",
-        "@id": "https://www.completemarquees.co.uk/#website",
-        "url": "https://www.completemarquees.co.uk/",
-        "name": "Complete Marquees",
-        "description": "Complete Marquees are a friendly and  family run marquee and event hire company based in Havant near Southampton and Portsmouth in Hampshire.",
-        "publisher": {
-          "@id": "https://www.completemarquees.co.uk/#organization"
-        },
-        "potentialAction": [{
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://www.completemarquees.co.uk/?s={search_term_string}"
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "search_term_string"
-          }
-        }],
-        "inLanguage": "en-GB"
-      }, {
-        "@type": "Organization",
-        "@id": "https://www.completemarquees.co.uk/#organization",
-        "name": "Complete Marquees",
-        "url": "https://www.completemarquees.co.uk/",
-        "logo": {
-          "@type": "ImageObject",
-          "inLanguage": "en-GB",
-          "@id": "https://www.completemarquees.co.uk/#/schema/logo/image/",
-          "url": "https://www.completemarquees.co.uk/wp-content/uploads/2016/07/logo.png",
-          "contentUrl": "https://www.completemarquees.co.uk/wp-content/uploads/2016/07/logo.png",
-          "width": 300,
-          "height": 95,
-          "caption": "Complete Marquees"
-        },
-        "image": {
-          "@id": "https://www.completemarquees.co.uk/#/schema/logo/image/"
-        },
-        "sameAs": ["https://www.facebook.com/completemarquees/", "https://x.com/completemarquee"]
-      }]
-    }
-
-  </script>
-  <!-- / Yoast SEO plugin. -->
-
-
-  {% include "head.html" %}
+  {% include "schema-org-static.html" %}
 </head>
 
 <body class="wp-singular page-template page-template-_templates page-template-page-area page-template-_templatespage-area-php page page-id-151 wp-theme-complete-marquees"> <!-- Google Tag Manager (noscript) -->
@@ -150,17 +90,9 @@
             Weddings, Parties, Event Marquee Hire</h2>
           <h1><img fetchpriority="high" decoding="async" width="300" height="230" class="alignright wp-image-328 size-medium" src="/wp-content/uploads/2016/07/wedding-marquee-at-night-polaroid-300x230.png" alt="Wedding Marquee Party" srcset="../../wp-content/uploads/2016/07/wedding-marquee-at-night-polaroid-300x230.png 300w, ../../wp-content/uploads/2016/07/wedding-marquee-at-night-polaroid.png 345w" sizes="(max-width: 300px) 100vw, 300px" /></h1>
           <h3>Perfect for</h3>
-          <ul>
-            <li><a href="https://www.completemarquees.co.uk/wedding-marquees/">Wedding Marquee Hire</a></li>
-            <li><a href="https://www.completemarquees.co.uk/party-marquees/">Party Marquee Hire</a></li>
-            <li><a href="../../corporate-event-marquees/">Corporate Event Marquee Hire</a></li>
-            <li><a href="../../special-events/">Fun Day Event Marquee Hire</a></li>
-            <li>Garden Parties of any size…</li>
-          </ul>
+          {% include "location-event-types.html" %}
           <p>Complete Marquees has been delivering marquee hire in Chichester since 2002. As a family run business, it provides hundreds of events in Chichester with wonderfully modern outdoor shelter as well as lighting and furnishing.</p>
-          <p>By linking together our Capri marquees, we can cover a wide range of different outdoor areas. No matter what your outdoor event is, Complete Marquees can take it to the next level with shelter and furnishings. For images, please see <a class="caption" title="Unique Selection of Marquees" href="/capri-marquee-hire/">our marquee</a> range. To see which package suits you please <a title="Packages" href="/packages/">see the price and package list here</a>.</p>
-          <p>If it&#8217;s a wedding, party, fun day, corporate event or something different and you need to hire a marquee, Complete Marquees make the perfect choice for your event so once booked you can consider it taken care of. With many years of experience, we can ensure your marquee arrives at the appointed time and is setup and ready in plenty of time for the event.</p>
-          <p>If you&#8217;re looking for additional ways to entertain your guests, visit our event hire website at <a href="https://www.monstereventhire.co.uk">Monster Event Hire</a>, we have hundreds of activities to choose from including outdoor assault courses and indoor activities.</p>
+          {% include "location-page-body.html" %}
           {% include "disappointment-cta.html" %}
           <p>&nbsp;</p>
           <p>&nbsp;</p>
