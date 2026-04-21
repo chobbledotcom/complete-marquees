@@ -142,9 +142,8 @@
 
         <div class="grid__item--two__thirds">
 
-          <div id="crumbs">
-            <p><a href="../"><span>Home</span></a> <span class="delimiter">&raquo;</span> <span class="current">Equipment Hire</span></p>
-          </div>
+          {% assign breadcrumbCurrent = "Equipment Hire" %}
+          {% include "breadcrumbs.html" %}
           <h1>Equipment Hire Complete Marquees</h1>
           <img fetchpriority="high" decoding="async" width="300" height="174" class=" wp-image-73 alignleft" src="/wp-content/uploads/2016/06/internal4-300x174.jpg" alt="Outdoor Events" srcset="../wp-content/uploads/2016/06/internal4-300x174.jpg 300w, ../wp-content/uploads/2016/06/internal4.jpg 690w" sizes="(max-width: 300px) 100vw, 300px" />
           <h2 data-section-id="ycp1o1" data-start="222" data-end="255">Wedding &amp; Event Marquee Hire</h2>
@@ -330,60 +329,13 @@
 
             <div class="content">
 
-              <div class="sidebar_cta">
-                <a href="../contact-us/">
-                  <div class="upper orange">
-                    From small gatherings to a royal wedding, we have the right marquee whatever the event.
-                  </div>
-                  <div class="lower white">
-                    Packages from only
-                    <span>£330</span>
-                  </div>
-                </a>
-              </div>
+              {% include "sidebar-cta.html" %}
 
-              <div class="sidebar_cta">
+              {% include "sidebar-testimonials.html" %}
 
-                <div class="upper">
-                  Find out why capri marquees have become the most popular marquee for any event.
-                </div>
-                <div class="lower clickthrough">
-                  <a href="../contact-us/" onclick="ga('send', 'event', 'CTA', 'click', 'Enquire Today');">
-                    Enquire Today <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                  </a>
-                </div>
+            </div>
 
-              </div>
-
-              <div class="sidebar__testimonials">
-                <h2>What our customers have to say...</h2>
-
-
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Just a quick e-mail to say how happy i was with the marquee&#8217;s, they looked fantastic, your team were polite on set up and take down, if we ever need a marquee again, we know where to call and will recommend you to all my family and friends.</p>
-                      <p>Judith</p>
-                    </article>
-                  </div>
-                </div>
-
-
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Dear Joanne</p>
-                      <p>This is somewhat delayed thanks to the wonderful teams that you sent with the marquee for my party last weekend.</p>
-                      <p>We had a lovely party and I&#8217;m still revelling in the joy of having everyone in one place at the the same time!</p>
-                      <p>Please pass on my thanks &#8211; the marquee looked incredible.</p>
-                      <p>Kind regards,</p>
-                      <p>Jane</p>
-                    </article>
-                  </div>
-                </div>
-
-
-              </div>
+          </aside>
 
             </div>
 

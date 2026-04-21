@@ -123,9 +123,8 @@
 
         <div class="grid__item--two__thirds">
 
-          <div id="crumbs">
-            <p><a href="../"><span>Home</span></a> <span class="delimiter">&raquo;</span> <span class="current">Privacy Policy</span></p>
-          </div>
+          {% assign breadcrumbCurrent = "Privacy Policy" %}
+          {% include "breadcrumbs.html" %}
           <h2>Privacy Notice</h2>
           <p>This is the privacy notice of Complete Marquees. In this document, &#8220;we&#8221;, &#8220;our&#8221;, or &#8220;us&#8221; refer to Complete Marquees.</p>
           <p>We are company number 1090110 registered in England, United Kingdom.</p>
@@ -277,60 +276,13 @@
 
             <div class="content">
 
-              <div class="sidebar_cta">
-                <a href="../contact-us/">
-                  <div class="upper orange">
-                    From small gatherings to a royal wedding, we have the right marquee whatever the event.
-                  </div>
-                  <div class="lower white">
-                    Packages from only
-                    <span>£330</span>
-                  </div>
-                </a>
-              </div>
+              {% include "sidebar-cta.html" %}
 
-              <div class="sidebar_cta">
+              {% include "sidebar-testimonials.html" %}
 
-                <div class="upper">
-                  Find out why capri marquees have become the most popular marquee for any event.
-                </div>
-                <div class="lower clickthrough">
-                  <a href="../contact-us/" onclick="ga('send', 'event', 'CTA', 'click', 'Enquire Today');">
-                    Enquire Today <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                  </a>
-                </div>
+            </div>
 
-              </div>
-
-              <div class="sidebar__testimonials">
-                <h2>What our customers have to say...</h2>
-
-
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Just a quick e-mail to say how happy i was with the marquee&#8217;s, they looked fantastic, your team were polite on set up and take down, if we ever need a marquee again, we know where to call and will recommend you to all my family and friends.</p>
-                      <p>Judith</p>
-                    </article>
-                  </div>
-                </div>
-
-
-                <div itemscope itemtype="http://schema.org/Service">
-                  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-                    <article itemprop="description">
-                      <p>Dear Joanne</p>
-                      <p>This is somewhat delayed thanks to the wonderful teams that you sent with the marquee for my party last weekend.</p>
-                      <p>We had a lovely party and I&#8217;m still revelling in the joy of having everyone in one place at the the same time!</p>
-                      <p>Please pass on my thanks &#8211; the marquee looked incredible.</p>
-                      <p>Kind regards,</p>
-                      <p>Jane</p>
-                    </article>
-                  </div>
-                </div>
-
-
-              </div>
+          </aside>
 
             </div>
 
