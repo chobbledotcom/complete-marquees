@@ -26,8 +26,8 @@
 		},
 		{
 			"name": "event_postcode",
-			"label": "Event postcode",
-			"placeholder": "Event postcode"
+			"label": "Venue postcode",
+			"placeholder": "Venue postcode"
 		},
 		{
 			"name": "event_date",
