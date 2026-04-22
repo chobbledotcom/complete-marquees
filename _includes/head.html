@@ -6567,4 +6567,75 @@
   src="{{ '/assets/js/design-system.js' | cacheBust }}"
 ></script>
 
+<style>
+  .contact-form {
+    margin-bottom: 30px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+    margin: 20px 0 30px;
+    padding: 0;
+  }
+
+  .gallery-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-icon {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #eee;
+  }
+
+  .gallery-icon a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+  }
+
+  .gallery-icon a:hover img,
+  .gallery-icon a:focus img {
+    transform: scale(1.04);
+  }
+
+  .gallery-caption {
+    font-size: 0.85em;
+    text-align: center;
+    padding: 4px 2px 0;
+    color: #666;
+  }
+
+  .contact-form > button[type=submit] {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #f37321;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: background 0.3s ease;
+  }
+
+  .contact-form > button[type=submit]:hover {
+    color: #fff;
+    background: rgb(222.5692307692, 94.241025641, 12.0307692308);
+    text-decoration: none;
+  }
+</style>
 {%- include "head-scripts.html" -%}
