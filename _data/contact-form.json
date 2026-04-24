@@ -10,6 +10,7 @@
 			"name": "email",
 			"type": "email",
 			"label": "Email",
+			"required": true,
 			"placeholder": "Your email address"
 		},
 		{
@@ -20,7 +21,6 @@
 		{
 			"name": "item",
 			"label": "Item",
-			"required": true,
 			"showOn": "products",
 			"defaultFromPageTitle": true
 		},
