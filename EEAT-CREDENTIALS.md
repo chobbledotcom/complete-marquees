@@ -1,3 +1,8 @@
+---
+permalink: false
+eleventyExcludeFromCollections: true
+---
+
 # Complete Marquees — EEAT Credentials
 
 A working reference of every verifiable trust signal for Complete Marquees, drawn from the existing site. Compiled to demonstrate why customers should choose Complete Marquees over an unestablished or back-garden marquee hirer.
