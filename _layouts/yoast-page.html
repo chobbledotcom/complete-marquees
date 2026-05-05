@@ -1,0 +1,83 @@
+{%- assign title_h = title_html | default: title -%}
+{%- assign meta_description_h = meta_description_html | default: meta_description -%}
+{% include "html-head-open.html" %}
+  <title>{{ title_h }}</title>
+  <meta name="description" content="{{ meta_description_h }}" />
+  <link rel="canonical" href="./" />
+  {% include "og-meta-static.html" %}
+  <meta property="og:title" content="{{ title_h }}" />
+  <meta property="og:description" content="{{ meta_description_h }}" />
+  <meta property="og:url" content="https://www.completemarquees.co.uk{{ page.url }}" />
+  <meta property="article:modified_time" content="{{ date_modified }}" />
+  <meta property="og:image" content="{{ og_image }}" />
+{%- if og_image_width %}
+  <meta property="og:image:width" content="{{ og_image_width }}" />
+  <meta property="og:image:height" content="{{ og_image_height }}" />
+  <meta property="og:image:type" content="{{ og_image_type }}" />
+{%- endif %}
+  <meta name="twitter:data1" content="{{ reading_time }}" />
+  <script type="application/ld+json" class="yoast-schema-graph">
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+        "@type": "WebPage",
+        "@id": "https://www.completemarquees.co.uk{{ page.url }}",
+        "url": "https://www.completemarquees.co.uk{{ page.url }}",
+        "name": "{{ title }}",
+        "isPartOf": {
+          "@id": "https://www.completemarquees.co.uk/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://www.completemarquees.co.uk{{ page.url }}#primaryimage"
+        },
+        "image": {
+          "@id": "https://www.completemarquees.co.uk{{ page.url }}#primaryimage"
+        },
+        "thumbnailUrl": "{{ thumbnail_url }}",
+        "datePublished": "{{ date_published }}",
+        "dateModified": "{{ date_modified }}",
+        "description": "{{ meta_description }}",
+        "breadcrumb": {
+          "@id": "https://www.completemarquees.co.uk{{ page.url }}#breadcrumb"
+        },
+        "inLanguage": "en-GB",
+        "potentialAction": [{
+          "@type": "ReadAction",
+          "target": ["https://www.completemarquees.co.uk{{ page.url }}"]
+        }]
+      }, {
+        "@type": "ImageObject",
+        "inLanguage": "en-GB",
+        "@id": "https://www.completemarquees.co.uk{{ page.url }}#primaryimage",
+        "url": "{{ thumbnail_url }}",
+        "contentUrl": "{{ thumbnail_url }}"{% if image_caption %},
+        "width": {{ image_width }},
+        "height": {{ image_height }},
+        "caption": "{{ image_caption }}"{% endif %}
+      }, {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.completemarquees.co.uk{{ page.url }}#breadcrumb",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.completemarquees.co.uk/"
+        }, {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ breadcrumb_name }}"
+        }]
+      {% include "schema-org-static.html" %}
+
+<body class="{{ body_class }}"> <!-- Google Tag Manager (noscript) -->
+{%- if nav_current %}
+  {% include "site-header.html", current: nav_current %}
+{%- else %}
+  {% include "site-header.html" %}
+{%- endif %}
+
+
+  {% assign breadcrumbCurrent = breadcrumb_name %}
+  {% include "page-main-open.html" %}
+{{ renderedDescription }}{% include "page-sidebar-close.html" %}
+..........................

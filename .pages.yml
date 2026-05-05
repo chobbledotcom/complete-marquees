@@ -30,86 +30,65 @@ content:
           - { name: url, type: string }
       - { name: layout, type: string }
       - { name: permalink, type: string }
-      
-  - name: news
-    label: News
-    path: news
+
+  - name: service-pages
+    label: Service Pages
+    path: service-pages
     type: collection
     subfolders: false
+    view:
+      fields: [permalink, breadcrumb_name, date_modified]
+      primary: breadcrumb_name
+      sort: [breadcrumb_name]
     fields:
-      - { name: title, type: string, label: Title }
-      - { name: header_image, type: image, label: Header Image }
-      - { name: date, label: Date, type: date }
-      - { name: subtitle, type: string, label: Subtitle }
-      - { name: body, label: Body, type: code, options: { language: markdown } }
-      - { name: header_text, type: string, label: Header Text }
-      - { name: meta_description, type: string, label: Meta Description }
-      - { name: meta_title, type: string, label: Meta Title }
-      
-  - name: products
-    label: Products
-    path: products
+      - { name: title, type: string, label: Title (raw, used in JSON-LD) }
+      - { name: title_html, type: string, label: Title (HTML-escaped, optional) }
+      - { name: meta_description, type: string, label: Meta Description (SEO, plain text) }
+      - { name: meta_description_html, type: string, label: Meta Description (HTML-escaped, optional) }
+      - { name: description, type: rich-text, label: Page Body (markdown / inline HTML / Liquid includes) }
+      - { name: breadcrumb_name, type: string, label: Breadcrumb Label }
+      - { name: og_image, type: string, label: OG Image URL }
+      - { name: og_image_width, type: number, label: OG Image Width (optional) }
+      - { name: og_image_height, type: number, label: OG Image Height (optional) }
+      - { name: og_image_type, type: string, label: OG Image MIME (optional) }
+      - { name: thumbnail_url, type: string, label: JSON-LD Thumbnail URL }
+      - { name: image_caption, type: string, label: Image Caption (only if known) }
+      - { name: image_width, type: number, label: Image Width (JSON-LD) }
+      - { name: image_height, type: number, label: Image Height (JSON-LD) }
+      - { name: date_published, type: string, label: Date Published (ISO 8601) }
+      - { name: date_modified, type: string, label: Date Modified (ISO 8601) }
+      - { name: reading_time, type: string, label: Reading Time }
+      - { name: body_class, type: string, label: Body CSS Class }
+      - { name: nav_current, type: string, label: Active Nav Key (e.g. "wedding") }
+      - { name: redirect_from, type: string, list: true, label: Redirect From }
+      - { name: layout, type: string }
+      - { name: permalink, type: string }
+
+  - name: locations
+    label: Locations
+    path: locations
     type: collection
     subfolders: false
+    view:
+      fields: [breadcrumb_name, title, date_modified]
+      primary: breadcrumb_name
+      sort: [breadcrumb_name]
     fields:
-      - { name: title, type: string, label: Title }
-      - { name: header_image, type: image, label: Header Image }
-      - name: categories
-        label: Categories
-        type: reference
-        options:
-          collection: categories
-          multiple: true
-          search: "title"
-          value: "{path}"
-          label: "{title}"
-      - { name: price, label: Price, type: string }
-      - { name: etsy_url, label: Etsy URL, type: string }
-      - { name: body, label: Body, type: code, options: { language: markdown } }
-      - { name: features, type: string, label: Features, list: true }
-      - name: gallery
-        type: image
-        label: Gallery
-        options: { multiple: true }
-      - { name: header_text, type: string, label: Header Text }
-      - { name: meta_description, type: string, label: Meta Description }
-      - { name: meta_title, type: string, label: Meta Title }
-      - { name: subtitle, type: string, label: Subtitle }
-      
-  - name: categories
-    label: Categories
-    path: categories
-    type: collection
-    subfolders: false
-    filename: "{primary}.md"
-    fields:
-      - { name: title, type: string, label: Title }
-      - { name: body, label: Body, type: code, options: { language: markdown } }
-      - { name: featured, label: Featured, type: boolean }
-      - { name: header_image, type: image, label: Header Image }
-      - { name: header_text, type: string, label: Header Text }
-      - { name: meta_description, type: string, label: Meta Description }
-      - { name: meta_title, type: string, label: Meta Title }
-      - { name: subtitle, type: string, label: Subtitle }
-      
-  - name: team
-    label: Team
-    path: team
-    type: collection
-    subfolders: false
-    filename: "{primary}.md"
-    fields:
-      - { name: title, type: string, label: Name }
-      - { name: snippet, type: string, label: Role }
-      - { name: image, type: image, label: Profile Image }
-      - { name: header_image, type: image, label: Header Image }
-      - {
-          name: body,
-          label: Biography,
-          type: code,
-          options: { language: markdown },
-        }
-        
+      - { name: title, type: string, label: Title (raw, used in JSON-LD) }
+      - { name: title_html, type: string, label: Title (HTML-escaped, optional) }
+      - { name: meta_description, type: string, label: Meta Description (SEO, plain text) }
+      - { name: meta_description_html, type: string, label: Meta Description (HTML-escaped, optional) }
+      - { name: description, type: rich-text, label: Page Body (markdown / inline HTML / Liquid includes) }
+      - { name: breadcrumb_name, type: string, label: Breadcrumb Label }
+      - { name: og_image, type: string, label: OG Image URL }
+      - { name: thumbnail_url, type: string, label: JSON-LD Thumbnail URL }
+      - { name: date_published, type: string, label: Date Published (ISO 8601) }
+      - { name: date_modified, type: string, label: Date Modified (ISO 8601) }
+      - { name: reading_time, type: string, label: Reading Time }
+      - { name: map_embed, type: string, label: Google Maps Embed URL (optional) }
+      - { name: layout, type: string }
+      - { name: permalink, type: string }
+
   - name: reviews
     label: Reviews
     path: reviews
@@ -117,114 +96,68 @@ content:
     subfolders: false
     fields:
       - { name: name, type: string, label: Name }
-      - { name: url, type: string, label: URL }
-      - { name: body, label: Body, type: code, options: { language: markdown } }
-      - name: products
-        label: Products
-        type: reference
-        options:
-          collection: products
-          multiple: true
-          search: "title"
-          value: "{path}"
-          label: "{title}"
-        
-  - name: events
-    label: Events
-    path: events
-    type: collection
-    subfolders: false
-    filename: "{primary}.md"
-    view:
-      fields: [title, event_date, recurring_date, event_location]
-      primary: title
-      sort: [title]
-    fields:
-      - { name: header_image, type: image, label: Header Image }
-      - { name: title, type: string, label: Title }
-      - { name: subtitle, type: string, label: Subtitle }
-      - { name: event_date, label: Event Date, type: date, required: false }
-      - { name: recurring_date, type: string, label: Recurring Date (e.g. "Every Friday at 2 PM"), required: false }
-      - { name: event_location, type: string, label: Event Location }
-      - { name: body, label: Body, type: code, options: { language: markdown } }
-      - { name: header_text, type: string, label: Header Text }
-      - { name: meta_title, type: string, label: Meta Title }
-      - { name: meta_description, type: string, label: Meta Description }
+      - { name: date, type: date, label: Date (controls sort order; newest first) }
+      - { name: homepage_excerpt, type: text, label: Homepage Excerpt (single-line summary for the homepage strip) }
+      - { name: body, label: Body (HTML), type: code, options: { language: html } }
+      - { name: url, type: string, label: URL (optional source link) }
 
-  - name: snippets
-    label: Snippets
-    path: snippets
-    type: collection
-    subfolders: false
-    filename: '{primary}.md'
-    fields:
-      - { name: name, type: string, label: Name }
-      - { name: body, label: Body, type: code, options: { language: markdown } }
-
-  - name: menus
-    label: Menus
-    path: menus
-    type: collection
-    subfolders: false
-    fields:
-      - { name: title, type: string, label: Title }
-      - { name: order, type: number, label: Order }
-      - { name: header_image, type: image, label: Header Image }
-      - { name: description, type: string, label: Description }
-      - { name: body, label: Body, type: code, options: { language: markdown } }
-      - { name: meta_title, type: string, label: Meta Title }
-      - { name: meta_description, type: string, label: Meta Description }
-
-  - name: menu-categories
-    label: Menu Categories
-    path: menu-categories
-    type: collection
-    subfolders: false
-    fields:
-      - { name: name, type: string, label: Name }
-      - { name: order, type: number, label: Order }
-      - name: menus
-        label: Menus
-        type: reference
-        options:
-          collection: menus
-          multiple: true
-          search: "title"
-          value: "{path}"
-          label: "{title}"
-      - { name: body, label: Body, type: code, options: { language: markdown } }
-
-  - name: menu-items
-    label: Menu Items
-    path: menu-items
-    type: collection
-    subfolders: false
-    fields:
-      - { name: name, type: string, label: Name }
-      - { name: price, type: string, label: Price }
-      - { name: is_vegan, type: boolean, label: Is Vegan }
-      - { name: is_gluten_free, type: boolean, label: Is Gluten Free }
-      - name: menu_categories
-        label: Menu Categories
-        type: reference
-        options:
-          collection: menu-categories
-          multiple: true
-          search: "name"
-          value: "{path}"
-          label: "{name}"
-      - { name: description, type: string, label: Description }
-      - { name: body, label: Body, type: code, options: { language: markdown } }
-  
   - name: homepage
-    label: Homepage Settings
+    label: Homepage
     type: file
     path: _data/homepage.json
     fields:
-      - { name: show_products, type: boolean, label: Show Products Section, default: true }
-      - { name: show_menus, type: boolean, label: Show Menus Section, default: true }
-      - { name: show_news, type: boolean, label: Show News Section, default: true }
-      
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - { name: title, type: string, label: Hero Title }
+          - { name: body, type: text, label: Hero Body Text }
+          - name: primary_cta
+            label: Primary CTA Button
+            type: object
+            fields:
+              - { name: url, type: string }
+              - { name: label, type: string }
+          - name: secondary_cta
+            label: Secondary CTA Button
+            type: object
+            fields:
+              - { name: url, type: string }
+              - { name: label, type: string }
+          - { name: image_before, type: string, label: Slider Before Image URL }
+          - { name: image_before_alt, type: string, label: Before Image Alt }
+          - { name: image_after, type: string, label: Slider After Image URL }
+          - { name: image_after_alt, type: string, label: After Image Alt }
+      - name: service_cards
+        label: Service Cards (4)
+        type: object
+        list: true
+        fields:
+          - { name: id, type: string, label: HTML ID (e.g. "wedding__marquees") }
+          - { name: image_src, type: string, label: Image URL }
+          - { name: image_alt, type: string, label: Image Alt }
+          - { name: title, type: string, label: Card Title }
+          - { name: description, type: text, label: Card Description }
+          - { name: link_url, type: string, label: Link URL }
+          - { name: link_text, type: string, label: Link Button Text }
+
+  - name: nav
+    label: Header Navigation
+    type: file
+    path: _data/nav.json
+    fields:
+      - name: items
+        type: object
+        list: true
+        fields:
+          - { name: key, type: string, label: Active Key (matches nav_current frontmatter) }
+          - { name: url, type: string, label: URL }
+          - { name: label, type: string, label: Label (raw HTML allowed) }
+          - { name: title, type: string, label: Title attribute }
+          - { name: page_item, type: number, label: WordPress page-item-NN class number }
+          - { name: menu_item, type: number, label: WordPress menu-item-NN class number }
+          - { name: is_home, type: boolean, label: Home item (gets menu-item-home class) }
+
   - name: site
     label: Site Configuration
     type: file
@@ -232,6 +165,13 @@ content:
     fields:
       - { name: name, type: string, label: Site Name }
       - { name: url, type: string, label: Site URL }
+      - name: phone
+        label: Phone Number
+        type: object
+        fields:
+          - { name: display, type: string, label: Display Format (e.g. "02392 717 925") }
+          - { name: tel, type: string, label: Tel Link Format (digits only) }
+      - { name: email, type: string, label: Contact Email }
       - name: opening_times
         label: Opening Times
         type: object
@@ -243,16 +183,13 @@ content:
         label: Social Media Links
         type: object
         fields:
-          - { name: Github, type: string, label: Github }
-          - { name: Forgejo, type: string, label: Forgejo }
           - { name: Facebook, type: string, label: Facebook }
           - { name: Instagram, type: string, label: Instagram }
           - { name: TikTok, type: string, label: TikTok }
           - { name: Google, type: string, label: Google }
           - { name: WhatsApp, type: string, label: WhatsApp }
           - { name: RSS, type: string, label: RSS }
-      - { name: map_embed_src, type: string, label: Map Embed URL }
-      
+
   - name: meta
     label: Meta Configuration
     type: file
@@ -264,14 +201,6 @@ content:
         type: object
         fields:
           - { name: description, type: string, label: Organization Description }
-          - { name: legalName, type: string, label: Legal Name }
-          - { name: foundingDate, type: string, label: Founding Date }
-          - name: founders
-            label: Founders
-            type: object
-            list: true
-            fields:
-              - { name: name, type: string, label: Name }
           - name: address
             label: Address
             type: object

@@ -97,18 +97,18 @@ permalink: "/contact-us/"
                 <div class="widget">
                   <div class="widget__title">Contact Information</div>
                   <div class="contact__info">
-                    <p>Tel: <a class="rulertel" href="tel:02392397722" span class="number">02392 717 925</a></p>
-                    <p><a href="mailto:completemarquee@gmail.com" class="email">Email: completemarquee@gmail.com</a></p>
+                    <p>Tel: <a class="rulertel" href="tel:02392397722" span class="number">{{ site.phone.display }}</a></p>
+                    <p><a href="mailto:{{ site.email }}" class="email">Email: {{ site.email }}</a></p>
                   </div>
                 </div>
               </div>
 
               <div class="widget">
                 <div class="widget__title">Opening hours</div>
-                <strong>Mon-Fri:</strong>
-                8am-9pm<br>
-                <strong>Weekends:</strong>
-                8am-8pm
+{%- for slot in site.opening_times %}
+                <strong>{{ slot.day }}:</strong>
+                {{ slot.hours }}{% unless forloop.last %}<br>{% endunless %}
+{%- endfor %}
               </div>
 
             </div>

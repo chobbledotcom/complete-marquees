@@ -1,0 +1,11 @@
+[
+	{ "key": "home", "url": "/", "label": "Home", "title": "homepage", "page_item": 2, "menu_item": 10, "is_home": true },
+	{ "key": "about", "url": "/about-us-marquee-hire-complete-marquees/", "label": "About Us", "title": "about complete marquees", "page_item": 29, "menu_item": 31 },
+	{ "key": "sizes", "url": "/sizes-prices/", "label": "Sizes &#038; Prices", "title": "marquee sizes and prices", "page_item": 26, "menu_item": 28 },
+	{ "key": "packages", "url": "/packages/", "label": "Capri Marquee Hire Packages", "title": "view package deals at great prices", "page_item": 22, "menu_item": 25 },
+	{ "key": "equipment", "url": "/equipment-marquee-hire/", "label": "Equipment Hire", "title": "additional equipment for events", "page_item": 35, "menu_item": 40 },
+	{ "key": "marquees", "url": "/capri-marquee-hire/", "label": "Our Marquees", "title": "gallery of our marquees at events", "page_item": 37, "menu_item": 39 },
+	{ "key": "testimonials", "url": "/client-testimonials/", "label": "Testimonials", "title": "see what our customers have to say", "page_item": 19, "menu_item": 21 },
+	{ "key": "faqs", "url": "/faqs-complete-marquees/", "label": "FAQs", "title": "frequently asked questions about marquee hire", "page_item": 32, "menu_item": 34 },
+	{ "key": "contact", "url": "/contact-us/", "label": "Contact Us", "title": "contact information about marquee hire", "page_item": 6, "menu_item": 11 }
+]
