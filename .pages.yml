@@ -43,8 +43,9 @@ content:
     fields:
       - { name: title, type: string, label: Title (raw, used in JSON-LD) }
       - { name: title_html, type: string, label: Title (HTML-escaped, optional) }
-      - { name: description, type: string, label: Description (raw) }
-      - { name: description_html, type: string, label: Description (HTML-escaped, optional) }
+      - { name: meta_description, type: string, label: Meta Description (SEO, plain text) }
+      - { name: meta_description_html, type: string, label: Meta Description (HTML-escaped, optional) }
+      - { name: description, type: rich-text, label: Page Body (markdown / inline HTML / Liquid includes) }
       - { name: breadcrumb_name, type: string, label: Breadcrumb Label }
       - { name: og_image, type: string, label: OG Image URL }
       - { name: og_image_width, type: number, label: OG Image Width (optional) }
@@ -60,7 +61,6 @@ content:
       - { name: body_class, type: string, label: Body CSS Class }
       - { name: nav_current, type: string, label: Active Nav Key (e.g. "wedding") }
       - { name: redirect_from, type: string, list: true, label: Redirect From }
-      - { name: body, label: Body (HTML), type: code, options: { language: html } }
       - { name: layout, type: string }
       - { name: permalink, type: string }
 
@@ -76,8 +76,9 @@ content:
     fields:
       - { name: title, type: string, label: Title (raw, used in JSON-LD) }
       - { name: title_html, type: string, label: Title (HTML-escaped, optional) }
-      - { name: description, type: string, label: Description (raw) }
-      - { name: description_html, type: string, label: Description (HTML-escaped, optional) }
+      - { name: meta_description, type: string, label: Meta Description (SEO, plain text) }
+      - { name: meta_description_html, type: string, label: Meta Description (HTML-escaped, optional) }
+      - { name: description, type: rich-text, label: Page Body (markdown / inline HTML / Liquid includes) }
       - { name: breadcrumb_name, type: string, label: Breadcrumb Label }
       - { name: og_image, type: string, label: OG Image URL }
       - { name: thumbnail_url, type: string, label: JSON-LD Thumbnail URL }
@@ -85,7 +86,6 @@ content:
       - { name: date_modified, type: string, label: Date Modified (ISO 8601) }
       - { name: reading_time, type: string, label: Reading Time }
       - { name: map_embed, type: string, label: Google Maps Embed URL (optional) }
-      - { name: body, label: Body (HTML), type: code, options: { language: html } }
       - { name: layout, type: string }
       - { name: permalink, type: string }
 

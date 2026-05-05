@@ -1,13 +1,13 @@
 {%- assign title_h = title_html | default: title -%}
-{%- assign description_h = description_html | default: description -%}
+{%- assign meta_description_h = meta_description_html | default: meta_description -%}
 {% include "html-head-open.html" %}
   <title>{{ title_h }}</title>
-  <meta name="description" content="{{ description_h }}" />
+  <meta name="description" content="{{ meta_description_h }}" />
   <link rel="canonical" href="./" />
   <meta property="og:locale" content="en_GB" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ title_h }}" />
-  <meta property="og:description" content="{{ description_h }}" />
+  <meta property="og:description" content="{{ meta_description_h }}" />
   <meta property="og:url" content="https://www.completemarquees.co.uk{{ page.url }}" />
   <meta property="og:site_name" content="Complete Marquees" />
   <meta property="article:publisher" content="https://www.facebook.com/completemarquees/" />
@@ -37,7 +37,7 @@
         "thumbnailUrl": "{{ thumbnail_url }}",
         "datePublished": "{{ date_published }}",
         "dateModified": "{{ date_modified }}",
-        "description": "{{ description }}",
+        "description": "{{ meta_description }}",
         "breadcrumb": {
           "@id": "https://www.completemarquees.co.uk{{ page.url }}#breadcrumb"
         },
@@ -72,7 +72,7 @@
 
           {% assign breadcrumbCurrent = breadcrumb_name %}
           {% include "breadcrumbs.html" %}
-{{ content }}        </div><!-- 
+{{ renderedDescription }}        </div><!-- 
        -->
         <div class="grid__item--third">
 

@@ -1,12 +1,12 @@
 {%- assign title_h = title_html | default: title -%}
-{%- assign description_h = description_html | default: description -%}
+{%- assign meta_description_h = meta_description_html | default: meta_description -%}
 {% include "html-head-open.html" %}
   <title>{{ title_h }}</title>
-  <meta name="description" content="{{ description_h }}" />
+  <meta name="description" content="{{ meta_description_h }}" />
   <link rel="canonical" href="./" />
   {% include "og-meta-static.html" %}
   <meta property="og:title" content="{{ title_h }}" />
-  <meta property="og:description" content="{{ description_h }}" />
+  <meta property="og:description" content="{{ meta_description_h }}" />
   <meta property="og:url" content="https://www.completemarquees.co.uk{{ page.url }}" />
   <meta property="article:modified_time" content="{{ date_modified }}" />
   <meta property="og:image" content="{{ og_image }}" />
@@ -36,7 +36,7 @@
         "thumbnailUrl": "{{ thumbnail_url }}",
         "datePublished": "{{ date_published }}",
         "dateModified": "{{ date_modified }}",
-        "description": "{{ description }}",
+        "description": "{{ meta_description }}",
         "breadcrumb": {
           "@id": "https://www.completemarquees.co.uk{{ page.url }}#breadcrumb"
         },
@@ -79,5 +79,5 @@
 
   {% assign breadcrumbCurrent = breadcrumb_name %}
   {% include "page-main-open.html" %}
-{{ content }}{% include "page-sidebar-close.html" %}
+{{ renderedDescription }}{% include "page-sidebar-close.html" %}
 ..........................
