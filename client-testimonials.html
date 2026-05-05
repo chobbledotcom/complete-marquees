@@ -77,56 +77,16 @@ permalink: "/client-testimonials/"
           {% include "breadcrumbs.html" %}
           <h1>Testimonials</h1>
 
-
+{% for review in collections.reviews %}
           <article itemscope itemtype="http://schema.org/Service">
             <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-              <h2 itemprop="name">Judith</h2>
+              <h2 itemprop="name">{{ review.data.name }}</h2>
               <div itemprop="description">
-                <p>Just a quick e-mail to say how happy i was with the marquee&#8217;s, they looked fantastic, your team were polite on set up and take down, if we ever need a marquee again, we know where to call and will recommend you to all my family and friends.</p>
-                <p>Judith</p>
-              </div>
+{{ review.templateContent }}              </div>
             </div>
           </article>
 
-
-          <article itemscope itemtype="http://schema.org/Service">
-            <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-              <h2 itemprop="name">Jane</h2>
-              <div itemprop="description">
-                <p>Dear Joanne</p>
-                <p>This is somewhat delayed thanks to the wonderful teams that you sent with the marquee for my party last weekend.</p>
-                <p>We had a lovely party and I&#8217;m still revelling in the joy of having everyone in one place at the the same time!</p>
-                <p>Please pass on my thanks &#8211; the marquee looked incredible.</p>
-                <p>Kind regards,</p>
-                <p>Jane</p>
-              </div>
-            </div>
-          </article>
-
-
-          <article itemscope itemtype="http://schema.org/Service">
-            <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-              <h2 itemprop="name">Lucy</h2>
-              <div itemprop="description">
-                <p>Just a short note to say how great the marquee hire was on Saturday. The guys you sent to set-up were really friendly and efficient. The pirates ahoy was a complete success! Many thanks, and if / when we&#8217;re in need of a marquee again, I will be in touch.<br />
-                  Kind regards, <span itemprop="author">Lucy</span></p>
-              </div>
-            </div>
-          </article>
-
-
-          <article itemscope itemtype="http://schema.org/Service">
-            <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-              <h2 itemprop="name">Johan</h2>
-              <div itemprop="description">
-                <p>This is just to say thank you very much for letting us hire the Capri Marquee! It was so much fun and everyone had a good time!<br />
-                  <span itemprop="author">Johan</span>
-                </p>
-              </div>
-            </div>
-          </article>
-
-
+{% endfor %}
         </div>
 
       </div>

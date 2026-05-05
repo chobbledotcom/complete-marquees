@@ -1,6 +1,15 @@
 {
 	"name": "Complete Marquees",
 	"url": "https://www.completemarquees.co.uk",
+	"phone": {
+		"display": "02392 717 925",
+		"tel": "02392717925"
+	},
+	"email": "completemarquee@gmail.com",
+	"opening_times": [
+		{ "day": "Mon-Fri", "hours": "8am-9pm" },
+		{ "day": "Weekends", "hours": "8am-8pm" }
+	],
 	"socials": {
 		"Facebook": "https://www.facebook.com/completemarquees/",
 		"Instagram": null,

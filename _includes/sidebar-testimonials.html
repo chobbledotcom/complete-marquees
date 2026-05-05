@@ -1,29 +1,16 @@
 <div class="sidebar__testimonials">
   <h2>What our customers have to say...</h2>
 
+{%- for review in collections.reviews limit:2 %}
 
   <div itemscope itemtype="http://schema.org/Service">
     <div itemprop="review" itemscope itemtype="http://schema.org/Review">
       <article itemprop="description">
-        <p>Just a quick e-mail to say how happy i was with the marquee&#8217;s, they looked fantastic, your team were polite on set up and take down, if we ever need a marquee again, we know where to call and will recommend you to all my family and friends.</p>
-        <p>Judith</p>
-      </article>
+{{ review.templateContent }}      </article>
     </div>
   </div>
 
-
-  <div itemscope itemtype="http://schema.org/Service">
-    <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-      <article itemprop="description">
-        <p>Dear Joanne</p>
-        <p>This is somewhat delayed thanks to the wonderful teams that you sent with the marquee for my party last weekend.</p>
-        <p>We had a lovely party and I&#8217;m still revelling in the joy of having everyone in one place at the the same time!</p>
-        <p>Please pass on my thanks &#8211; the marquee looked incredible.</p>
-        <p>Kind regards,</p>
-        <p>Jane</p>
-      </article>
-    </div>
-  </div>
+{%- endfor %}
 
 
 </div>

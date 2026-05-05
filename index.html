@@ -143,7 +143,7 @@ permalink: "/"
 
   <section class="slider default-bg">
 
-    <img class="slider-before" src="wp-content/themes/complete-marquees/img/slider-before.jpg" alt="Night marquee party">
+    <img class="slider-before" src="{{ homepage.hero.image_before }}" alt="{{ homepage.hero.image_before_alt }}">
 
     <div class="container--large">
 
@@ -152,14 +152,13 @@ permalink: "/"
         <div class="hero__box">
 
           <div class="title">
-            Marquee Hire Across Hampshire, Surrey , sussex – Weddings, Parties & Events </div>
+            {{ homepage.hero.title }} </div>
 
-          <p>Friendly, Family-Run Marquee Hire in Hampshire.
-            Complete Marquees is a family-run company based in Havant, near Southampton and Portsmouth. We provide professional marquee hire and event solutions across Surrey, Hampshire & West Sussex.</p>
+          <p>{{ homepage.hero.body }}</p>
 
-          <a class="btn" href="packages/">View Packages</a>
+          <a class="btn" href="{{ homepage.hero.primary_cta.url }}">{{ homepage.hero.primary_cta.label }}</a>
 
-          <a class="btn--green" href="sizes-prices/">View Prices</a>
+          <a class="btn--green" href="{{ homepage.hero.secondary_cta.url }}">{{ homepage.hero.secondary_cta.label }}</a>
 
         </div>
 
@@ -167,7 +166,7 @@ permalink: "/"
 
     </div>
 
-    <img class="slider-after" src="wp-content/themes/complete-marquees/img/slider-after.jpg" alt="stunning marquee event">
+    <img class="slider-after" src="{{ homepage.hero.image_after }}" alt="{{ homepage.hero.image_after_alt }}">
 
   </section>
 
@@ -176,64 +175,21 @@ permalink: "/"
     <div class="container--large">
 
       <div class="grid">
-
+{% for card in homepage.service_cards %}
         <div class="grid__item--quarter">
 
-          <div id="wedding__marquees" class="card" itemscope itemtype="http://schema.org/Service">
-            <img src="wp-content/themes/complete-marquees/img/wedding-1.jpg" alt="Wedding Marquees" itemprop="image" />
+          <div id="{{ card.id }}" class="card" itemscope itemtype="http://schema.org/Service">
+            <img src="{{ card.image_src }}" alt="{{ card.image_alt }}" itemprop="image" />
             <div class="card__lower">
-              <div class="title" itemprop="name">Stunning Wedding Marquee Hire in Hampshire, Surrey & West Sussex</div>
+              <div class="title" itemprop="name">{{ card.title }}</div>
               <div class="text" itemprop="description">
-                Celebrate in style with wedding marquees in Hampshire & Surrey. Tailored designs, flooring, lighting, and furnishings included. Professional setup and removal ensure a seamless, unforgettable day.
-                Wedding specialist Book now! </div>
-              <a href="wedding-marquees/" class="btn--small--full--green">Weddings</a>
+                {{ card.description }} </div>
+              <a href="{{ card.link_url }}" class="btn--small--full--green">{{ card.link_text }}</a>
             </div>
           </div>
 
         </div>
-
-        <div class="grid__item--quarter">
-
-          <div id="party__marquees" class="card" itemscope itemtype="http://schema.org/Service">
-            <img src="wp-content/themes/complete-marquees/img/party.jpg" alt="Party Marquees" itemprop="image" />
-            <div class="card__lower">
-              <div class="title" itemprop="name">Party Marquee Hire in Hampshire, Surrey & West Sussex</div>
-              <div class="text" itemprop="description">
-                Host the ultimate celebration with our party marquees in Hampshire, Surrey & West Sussex. Flexible sizes, weather-proof, fully customisable, with professional setup. Perfect for birthdays, anniversaries, garden parties, and family events. </div>
-              <a href="party-marquees/" class="btn--small--full--green">Parties</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="grid__item--quarter">
-
-          <div id="event__marquees" class="card" itemscope itemtype="http://schema.org/Service">
-            <img src="wp-content/themes/complete-marquees/img/corporate.jpg" alt="Corporate Event Marquees" itemprop="image" />
-            <div class="card__lower">
-              <div class="title" itemprop="name">Event marquees in Hampshire, Surrey & West Sussex</div>
-              <div class="text" itemprop="description">
-                Host unforgettable events with our event marquees in Hampshire, Surrey & West Sussex. Flexible sizes, weather-proof, fully customisable, with professional setup and breakdown. Perfect for corporate events, parties, weddings, and family celebrations. </div>
-              <a href="corporate-event-marquees/" class="btn--small--full--green">Events</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="grid__item--quarter">
-
-          <div id="special__marquees" class="card" itemscope itemtype="http://schema.org/Service">
-            <img src="wp-content/themes/complete-marquees/img/special.jpg" alt="Special Event Marquees" itemprop="image" />
-            <div class="card__lower">
-              <div class="title" itemprop="name">special events in Hampshire, Surrey & West Sussex</div>
-              <div class="text" itemprop="description">
-                Make your special events in Hampshire, Surrey & West Sussex unforgettable. Fully customisable event marquees, flexible sizes, weather-proof, with professional setup and breakdown—perfect for weddings, parties, corporate gatherings, and family celebrations. </div>
-              <a href="special-events/" class="btn--small--full--green">Occasions</a>
-            </div>
-          </div>
-
-        </div>
-
+{% endfor %}
       </div>
 
     </div>
@@ -295,30 +251,16 @@ permalink: "/"
         </div><!--
       --><!--
       -->
+{%- for review in collections.reviews limit:3 %}{% if review.data.homepage_excerpt %}
         <div class="grid__item--third" itemscope itemtype="http://schema.org/Service">
           <div class="testimonial" itemprop="review" itemscope itemtype="http://schema.org/Review">
             <article itemprop="description">
-              Just a quick e-mail to say how happy i was with the marquee&#8217;s, they looked fantastic, your team were polite on set up and take down, if we ever need a marquee again, we know where to call and will recommend you to all my family and friends. Judith </article>
+              {{ review.data.homepage_excerpt }} </article>
           </div>
         </div><!--
       --><!--
       -->
-        <div class="grid__item--third" itemscope itemtype="http://schema.org/Service">
-          <div class="testimonial" itemprop="review" itemscope itemtype="http://schema.org/Review">
-            <article itemprop="description">
-              Dear Joanne This is somewhat delayed thanks to the wonderful teams that you sent with the marquee for my party last weekend. We had a lovely party and I&#8217;m still revelling in the joy of having everyone in one place at the the same time! Please pass on my... </article>
-          </div>
-        </div><!--
-      --><!--
-      -->
-        <div class="grid__item--third" itemscope itemtype="http://schema.org/Service">
-          <div class="testimonial" itemprop="review" itemscope itemtype="http://schema.org/Review">
-            <article itemprop="description">
-              Just a short note to say how great the marquee hire was on Saturday. The guys you sent to set-up were really friendly and efficient. The pirates ahoy was a complete success! Many thanks, and if / when we&#8217;re in need of a marquee again, I will be in... </article>
-          </div>
-        </div><!--
-      --><!--
-      -->
+{%- endif %}{% endfor %}
       </div>
 
     </div>

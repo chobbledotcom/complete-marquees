@@ -1,0 +1,50 @@
+{
+	"hero": {
+		"title": "Marquee Hire Across Hampshire, Surrey , sussex – Weddings, Parties & Events",
+		"body": "Friendly, Family-Run Marquee Hire in Hampshire.\n            Complete Marquees is a family-run company based in Havant, near Southampton and Portsmouth. We provide professional marquee hire and event solutions across Surrey, Hampshire & West Sussex.",
+		"primary_cta": { "url": "packages/", "label": "View Packages" },
+		"secondary_cta": { "url": "sizes-prices/", "label": "View Prices" },
+		"image_before": "wp-content/themes/complete-marquees/img/slider-before.jpg",
+		"image_before_alt": "Night marquee party",
+		"image_after": "wp-content/themes/complete-marquees/img/slider-after.jpg",
+		"image_after_alt": "stunning marquee event"
+	},
+	"service_cards": [
+		{
+			"id": "wedding__marquees",
+			"image_src": "wp-content/themes/complete-marquees/img/wedding-1.jpg",
+			"image_alt": "Wedding Marquees",
+			"title": "Stunning Wedding Marquee Hire in Hampshire, Surrey & West Sussex",
+			"description": "Celebrate in style with wedding marquees in Hampshire & Surrey. Tailored designs, flooring, lighting, and furnishings included. Professional setup and removal ensure a seamless, unforgettable day.\n                Wedding specialist Book now!",
+			"link_url": "wedding-marquees/",
+			"link_text": "Weddings"
+		},
+		{
+			"id": "party__marquees",
+			"image_src": "wp-content/themes/complete-marquees/img/party.jpg",
+			"image_alt": "Party Marquees",
+			"title": "Party Marquee Hire in Hampshire, Surrey & West Sussex",
+			"description": "Host the ultimate celebration with our party marquees in Hampshire, Surrey & West Sussex. Flexible sizes, weather-proof, fully customisable, with professional setup. Perfect for birthdays, anniversaries, garden parties, and family events.",
+			"link_url": "party-marquees/",
+			"link_text": "Parties"
+		},
+		{
+			"id": "event__marquees",
+			"image_src": "wp-content/themes/complete-marquees/img/corporate.jpg",
+			"image_alt": "Corporate Event Marquees",
+			"title": "Event marquees in Hampshire, Surrey & West Sussex",
+			"description": "Host unforgettable events with our event marquees in Hampshire, Surrey & West Sussex. Flexible sizes, weather-proof, fully customisable, with professional setup and breakdown. Perfect for corporate events, parties, weddings, and family celebrations.",
+			"link_url": "corporate-event-marquees/",
+			"link_text": "Events"
+		},
+		{
+			"id": "special__marquees",
+			"image_src": "wp-content/themes/complete-marquees/img/special.jpg",
+			"image_alt": "Special Event Marquees",
+			"title": "special events in Hampshire, Surrey & West Sussex",
+			"description": "Make your special events in Hampshire, Surrey & West Sussex unforgettable. Fully customisable event marquees, flexible sizes, weather-proof, with professional setup and breakdown—perfect for weddings, parties, corporate gatherings, and family celebrations.",
+			"link_url": "special-events/",
+			"link_text": "Occasions"
+		}
+	]
+}
