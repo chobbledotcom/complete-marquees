@@ -75,7 +75,9 @@ const lineConvert = (lines) => {
   const ensureBlank = () => {
     if (out.length > 0 && out[out.length - 1] !== "") out.push("");
   };
-  for (const line of lines) {
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
     const trimmed = line.trim();
 
     // Track div/figure/table/aside/section/article nesting so we don't
@@ -88,6 +90,7 @@ const lineConvert = (lines) => {
     if (wasInBlock || inHtmlBlock > 0) {
       out.push(line);
       lastEmitWasListItem = false;
+      i++;
       continue;
     }
 
@@ -98,6 +101,7 @@ const lineConvert = (lines) => {
       out.push(`${"#".repeat(level)} ${cleanH[2]}`);
       out.push("");
       lastEmitWasListItem = false;
+      i++;
       continue;
     }
 
@@ -107,6 +111,7 @@ const lineConvert = (lines) => {
       out.push(cleanP[1]);
       out.push("");
       lastEmitWasListItem = false;
+      i++;
       continue;
     }
 
@@ -115,14 +120,39 @@ const lineConvert = (lines) => {
       if (!lastEmitWasListItem) ensureBlank();
       out.push(`- ${cleanLi[1]}`);
       lastEmitWasListItem = true;
+      i++;
       continue;
     }
 
-    if (trimmed === "<ul>" || trimmed === "</ul>") continue;
+    // Multi-line <li> ... </li>: gather inner lines, strip blanks and a
+    // single <p>...</p> wrapper, accept if the result is one clean line.
+    if (trimmed === "<li>") {
+      let j = i + 1;
+      while (j < lines.length && lines[j].trim() !== "</li>") j++;
+      if (j < lines.length) {
+        const inner = lines.slice(i + 1, j).map((l) => l.trim()).filter(Boolean);
+        const unwrapped = inner.length === 1
+          ? (inner[0].match(/^<p>(.+)<\/p>$/)?.[1] ?? inner[0])
+          : null;
+        if (unwrapped && isCleanInline(unwrapped)) {
+          if (!lastEmitWasListItem) ensureBlank();
+          out.push(`- ${unwrapped}`);
+          lastEmitWasListItem = true;
+          i = j + 1;
+          continue;
+        }
+      }
+    }
 
-    if (lastEmitWasListItem) ensureBlank();
+    if (trimmed === "<ul>" || trimmed === "</ul>") {
+      i++;
+      continue;
+    }
+
+    if (lastEmitWasListItem && trimmed !== "") ensureBlank();
     out.push(line);
     lastEmitWasListItem = false;
+    i++;
   }
   return out;
 };
