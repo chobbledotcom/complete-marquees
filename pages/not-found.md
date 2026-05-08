@@ -4,6 +4,7 @@ layout: complete-marquees
 meta_description:
 meta_title: Not Found
 no_index: true
+eleventyExcludeFromCollections: true
 
 permalink: /bunnycdn_errors/404.html
 ---

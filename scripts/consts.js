@@ -18,6 +18,7 @@ export const sourceExcludes = [
   ".*",
   "*.nix",
   "README.md",
+  "CLAUDE.md",
   "VOICE.md",
   "EEAT-CREDENTIALS.md",
   "scripts",
