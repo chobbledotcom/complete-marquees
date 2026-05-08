@@ -42,7 +42,7 @@ Sourced from non-AI, long-standing site copy unless noted.
 ### Contact and presence
 - Geographic Portsmouth/Havant landline **02392 717 925**, listed in JSON-LD organization schema and on every page. Not a mobile, not a redirect number.
 - Email **completemarquee@gmail.com** — a free Gmail address, not a domain-aligned mailbox. Worth flagging: a `@completemarquees.co.uk` mailbox would be a stronger signal at very little cost.
-- Owner is named in customer correspondence — **Jane's testimonial opens "Dear Joanne"**, identifying an accountable principal by first name.
+- The business is run as a **husband-and-wife operation by David and Joanne**. Joanne is named explicitly in a customer testimonial that opens *"Dear Joanne"*, evidencing an accountable, named principal answering correspondence personally. David's name is not currently on any public-facing page.
 - **Facebook** page facebook.com/completemarquees and **Twitter/X** @completemarquee both established (vintage of accounts not independently verified here).
 - Google, Bing and Yandex webmaster verification meta tags present — confirms the site has been registered in those search consoles, no more than that.
 
@@ -186,7 +186,7 @@ Roughly in order of effort:value.
 8. **Replace the AI-generated paragraphs** on the home, about, weddings, parties, corporate, sizes, packages, gallery and Hampshire pages. The smoking gun is on the gallery page (`capri-marquee-hire.html`) where raw ChatGPT conversation HTML — including `data-message-model-slug="gpt-5-3"` — has been pasted into the source. A diligent customer Googling phrases from the site can find this, and it directly undermines every other trust signal.
 9. **Solicit five fresh, recent (2024-2026), named, photographed customer reviews** and embed them with structured data. The existing four are warm but undated.
 10. **Reword the "royal wedding" sidebar line** for clarity, per section 3 above.
-11. **Add an owner / team page** with Joanne's name, a photo, and a one-paragraph bio. The named-owner signal in the testimonial is strong; making it explicit is stronger.
+11. **Add an owner / team page** introducing David and Joanne by name with a photograph and a one-paragraph bio for each (years in the trade, role split — bookings vs workshop / install). The named-owner signal in the testimonial is strong; making the husband-and-wife ownership explicit on the site is stronger, and it directly neutralises the "anonymous van and a website" objection.
 
 ---
 
