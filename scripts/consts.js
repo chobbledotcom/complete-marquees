@@ -18,6 +18,8 @@ export const sourceExcludes = [
   ".*",
   "*.nix",
   "README.md",
+  "VOICE.md",
+  "EEAT-CREDENTIALS.md",
   "scripts",
   "node_modules",
   "package*.json",
