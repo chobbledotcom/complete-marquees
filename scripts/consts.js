@@ -21,6 +21,7 @@ export const sourceExcludes = [
   "CLAUDE.md",
   "VOICE.md",
   "EEAT-CREDENTIALS.md",
+  "LOCATION-PAGES-PLAN.md",
   "scripts",
   "node_modules",
   "package*.json",
