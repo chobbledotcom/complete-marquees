@@ -3,6 +3,7 @@ header_text: Not Found
 layout: complete-marquees
 meta_description:
 meta_title: Not Found
+name: Not Found
 no_index: true
 
 permalink: /bunnycdn_errors/404.html
