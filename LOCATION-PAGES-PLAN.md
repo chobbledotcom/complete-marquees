@@ -121,12 +121,8 @@ After phase 1: the corpus is no longer self-evidently AI-generated to a casual r
 
 Five-or-so pages per PR keeps each one reviewable. Rough effort: 30 minutes of writing per page once the boilerplate is shared, so a batch of five is half a day.
 
-### Phase 5 — SEO consolidation review
-After phases 1-4 are done, sit down with the owner and look at what's actually unique on each page. Pages that ended up with a generic two-line lead because we genuinely have no real specifics for them should be considered for consolidation. Two options for the consolidation candidates:
-- Merge into a parent "Surrey marquee hire" or "Hampshire marquee hire" page with a town-by-town section.
-- Keep as a thin redirect to the parent, preserving the URL.
-
-This decision is best taken with the owner, and only after the genuine-content pass in phase 4 has shown which pages we can credibly fill out and which we can't.
+### Phase 5 — dropped
+Owner has confirmed all 27 pages stay. Plan ends at phase 4.
 
 ---
 
@@ -189,17 +185,17 @@ A practical checklist for each page during phase 1 and phase 4:
 
 ---
 
-## 8. Open questions for the owner
+## 8. Owner answers (captured)
 
-These need answering before phase 3 (writing the model page) starts. They are the difference between credible local pages and generic doorway pages.
+The gating questions from the first draft, with owner answers folded in:
 
-1. **Which towns have you actually delivered in?** All 27, or are some aspirational? An honest list of where we have and haven't worked is the first input.
-2. **Per town we have worked in: any specific venues, parks, halls, estates, fêtes or recurring events you can name?** Even one per town transforms a generic page into a useful one.
-3. **Drive time / route from Havant to each main town** — happy to derive these mechanically (A3 / A31 / M27 / A27 / A3(M)) if that's easier than asking.
-4. **Do we want all 27 pages or are you open to consolidating the smaller ones?** This is the phase-5 question and worth flagging early so we don't over-invest in pages that get merged.
-5. **MUTA membership status** — do we have it? If yes, surface it on every page. If we're pursuing it, hold the work until it lands.
-6. **Public liability cover figure** — what is it, and can we put it on every page?
-7. **The royal wedding context** — do you want to keep referencing it at all? The honest phrasing is fine but uses a sentence's worth of attention; if you'd rather lean on the 2002-onwards trading record and the named testimonials, that's a defensible choice too.
+1. **All 27 towns have genuinely been delivered in.** None are aspirational. The trading record is real. ✓
+2. **No specific named venues to publish at this point.** Each location page will have to differentiate on route, drive time, area characteristic and trading-record rather than on named venues. The follow-up ask is in section 11 below. ⚠
+3. **Drive times and routes** will be derived mechanically from Havant (A3 / A3(M) / A27 / M27 / A31 / A24 / M3) since no per-town venue data is available. ✓
+4. **Keep all 27 pages.** Phase 5 (consolidation) is dropped. The plan now ends at phase 4. ✓
+5. **No MUTA membership.** Honest copy must not imply otherwise. The gap stays in EEAT-CREDENTIALS.md section 5; commercial decision on whether to pursue. ✗
+6. **£10 million public liability cover.** This is a strong line — double the £5m wedding-tier baseline. Surface on every page from phase 1 onwards. ✓
+7. **The royal wedding line is dropped** from public copy. The sidebar CTA has been replaced with the £10m / family-run / in-house-team line in `_includes/sidebar-cta.html`. ✓
 
 ---
 
@@ -226,10 +222,82 @@ Every page after phase 4 should pass all of these checks:
 
 | Phase | Scope | Effort estimate | Deliverable |
 |---|---|---|---|
-| 1 | Strip ChatGPT artefacts, em-dashes, emojis, royal-wedding wording | Half a day | One PR, mechanical |
-| 2 | Refactor boilerplate into 3 new shared includes | Half a day | One PR, structural |
-| 3 | Pilot model page (Havant or Portsmouth or Guildford) | One day with owner input | One PR, sets the bar |
+| 1 | Strip ChatGPT artefacts, em-dashes, emojis. Surface £10m PL on every page. (Royal-wedding sidebar already done.) | Half a day | One PR, mechanical |
+| 2 | Refactor boilerplate into shared includes (credentials, rules, packages CTA) | Half a day | One PR, structural |
+| 3 | Pilot model page (Havant or Portsmouth or Guildford) | Half a day | One PR, sets the bar |
 | 4 | Roll out to remaining 26 pages in 3 batches | Two to three days | Three PRs |
-| 5 | SEO consolidation review with owner | One sitting | Decision doc + redirects PR |
 
-Total: roughly a week of focused work, broken into reviewable PRs. Phase 1 alone visibly improves the site in an afternoon and is worth doing first regardless of what's decided about the rest.
+Phase 5 (consolidation) is dropped per owner direction. Total: roughly four days of focused work across six PRs.
+
+Phase 1 alone visibly improves the site in an afternoon and is worth doing first regardless of how phases 2-4 are sequenced.
+
+---
+
+## 11. Thin-page risk and per-town asks
+
+Without named venue references (per owner answer 2 above), every location page is differentiated only by route, drive time, area type, and the standard EEAT block. For the bigger commercial centres this is enough — the area itself supplies content. For smaller commuter villages the lead paragraph risks being little more than "we drive to X from Havant".
+
+The list below sorts the 27 pages into three risk tiers and notes what's writable today versus what could transform each page if even one detail per town is supplied.
+
+### Tier A — area itself supplies content (writable now, no owner input needed)
+Fourteen pages. The area, distance, road or characteristic gives the lead naturally:
+
+| Page | Lead anchors |
+|---|---|
+| `hampshire.html` | County overview, our home county. |
+| `surrey.html` | County overview, the routes north of Havant up the A3. |
+| `portsmouth.html` | Adjacent to Havant; where the geographic phone rings. The Solent, the naval city. |
+| `southampton.html` | Port city, M27 west, the university. |
+| `winchester.html` | Cathedral city, county town, M3 corridor. |
+| `salisbury.html` | Cathedral city, A36 / A30 over the Wiltshire border. |
+| `chichester.html` | Roman walled city, A27 east, the festival theatre, the Goodwood country. |
+| `bournemouth.html` | Coast, A31 west into Dorset, Sandbanks side. |
+| `aldershot.html` | Army garrison town, A331. |
+| `reading.html` | Thames Valley, M4 / A33, Berkshire edge of the area. |
+| `guildford.html` | Surrey county town, North Downs, A3 north. |
+| `woking.html` | Surrey commuter belt, A3 / A320. |
+| `basingstoke.html` | Big commercial centre, M3 north, business parks. |
+| `andover.html` | North Hampshire market town, A303 / A343. |
+
+### Tier B — writable but thinner without specifics
+Seven pages. Real content is available on route and area type; one specific from the owner per town would meaningfully thicken each.
+
+| Page | Lead anchors today | One owner specific that would transform it |
+|---|---|---|
+| `fareham.html` | Between Portsmouth and Southampton, M27 corridor. | A garden / estate / hall we've delivered to, or a recurring local event. |
+| `camberley.html` | Surrey / Hampshire border, near Sandhurst, M3. | Any military / officers' mess / private regimental event we can credibly reference (without breaching client confidence). |
+| `dorking.html` | North Downs, Box Hill country, A24. | A named house, garden, or village fête we've covered. |
+| `epsom.html` | Surrey, the Downs, racecourse country. | A garden party, a private event around Derby week, anything outside the racecourse itself. |
+| `godalming.html` | River Wey, Charterhouse country. | A village name, a recurring summer event, or a school / charity job. |
+| `wokingham.html` | Berkshire commuter, M4 corridor. | Any named event or area we've worked. |
+| `crawley.html` | West Sussex, Gatwick edge. | A corporate / business-park job, or a private garden in the surrounding villages. |
+
+### Tier C — at genuine risk of being thin
+Six pages. The lead is sustainable on route and Surrey-belt characterisation, but each is small enough that without one detail the page reads as a near-duplicate of the next one.
+
+| Page | Lead anchors today | One owner specific that would transform it |
+|---|---|---|
+| `cobham.html` | Small Surrey village, A3 corridor, large gardens, big-house country. | A named estate, garden, or recurring event we've delivered to. |
+| `oxshott.html` | Very small Surrey village near Cobham, big-garden territory. | Any named estate, garden, charity day, or recurring event. |
+| `esher.html` | Surrey, near the racecourse, A3 corridor. | Same — anything off the racecourse itself. |
+| `chessington.html` | Surrey, A3 / A243. | A garden party, school event, village fête, anything outside the theme park. |
+| `leatherhead.html` | M25 / A24 junction, Surrey. | A street, a school, an estate, a recurring event. |
+| `sutton.html` | London edge of our coverage area, A24 / A3 link. | Any named estate, garden, recurring event, or the most distant job we've actually delivered into. |
+
+### What we'd ideally get from the owner
+
+Even one of any of these per Tier B/C town transforms the page from generic to credible:
+
+- A first-name memory of a job ("the Hardisty wedding in Cobham, the church fête in Oxshott").
+- A named house, estate, garden centre or hall we've set up at.
+- A recurring event we cover (an annual fête, a regimental do, a charity fundraiser).
+- A single street, area or village name within the town that customers come from.
+- A funny or memorable job ("the one in Esher where the dog ate the matting") — even an anonymised anecdote.
+- A landmark we use as a delivery reference ("a garden behind the church", "off the Portsmouth Road past the petrol station").
+
+Send these in any form — text message, voice note, scribble. We take what comes in, paraphrase it into the house voice, and slot it into the relevant lead paragraph during phase 4.
+
+If nothing comes in, every page is still writable. They just won't be the version of the page they could be.
+
+### A separate observation: the £330 sidebar price
+While editing the sidebar in this work, the second CTA card still reads *"Packages from only £330"*. The cheapest currently-published package on `packages.html` is **£390 + VAT** (25-guest standing-only). The £330 figure is either out of date or a different basis (single-marquee minimum, perhaps). Worth checking with the owner and aligning before phase 1 is published — the wrong figure on every page is a small but real credibility leak.

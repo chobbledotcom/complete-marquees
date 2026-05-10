@@ -92,22 +92,15 @@ Four named, schema.org/Review-marked testimonials with content that would be har
 
 ---
 
-## 3. What "royal wedding" actually means (correction)
+## 3. Owner-confirmed facts (added after first audit)
 
-The sidebar CTA on every page reads:
-> "From small gatherings to a royal wedding, we have the right marquee whatever the event."
+After the first draft, the owner confirmed the following directly. These are now treated as verified rather than self-stated:
 
-**Per the owner, this means Complete Marquees supplied a marquee for a private party connected to a royal wedding (e.g. a guest's adjacent celebration), not that they were a supplier to the royal wedding ceremony itself.** That is still a meaningful trust signal — a customer in that orbit had to trust them with a logistically and reputationally sensitive job — but it must not be advertised as "we did the royal wedding".
-
-Honest phrasings the company can use:
-- *"We've covered everything from small garden parties to a private celebration around a royal wedding."*
-- *"Our customers have ranged from small family parties to a private function tied to a royal wedding."*
-
-What it must not be allowed to imply:
-- That Complete Marquees was a supplier to a royal wedding ceremony or reception.
-- That the company holds a royal warrant or any similar appointment.
-
-The current sidebar phrasing is borderline — defensible if the underlying private-party fact is true, but easy for a casual reader to misread. Recommend reworking the line for clarity rather than leaning on it harder.
+- **£10 million public liability cover.** This is the corporate / festival / council baseline, double the £5m most wedding-luxury operators quote, and a serious credential to surface on every page. It moves Complete Marquees from "PL not stated" (a phase-1 gap) to "over-insured for its market tier".
+- **Genuinely delivered into all 27 named locations.** The location pages are not aspirational. The trading record across Hampshire, Surrey, West Sussex, Berkshire, Wiltshire and the Greater London edge is real.
+- **No MUTA membership.** This stays a gap — the only one missing the strongest external trade-body signal — but it is now confirmed rather than assumed. Honest copy should not imply MUTA membership.
+- **No specific named-venue references** to publish at this point. Location pages will need to differentiate on route, drive time, area characteristic and trading-record, not on named venues.
+- **The royal-wedding line is dropped** from public copy. The sidebar CTA has been replaced with the £10m / family-run / in-house-team line.
 
 ---
 
@@ -138,8 +131,8 @@ The honest part. These are the gaps a buyer comparing Complete Marquees against 
 
 | Industry-standard credential | On the site? | Notes |
 |---|---|---|
-| **MUTA membership** | Not advertised | No mention found anywhere on the site. Either uphold or pursue. |
-| **Public liability insurance — £5 m / £10 m** | Not advertised | No insurance cover figure stated. Most competitors quote it on the homepage. |
+| **MUTA membership** | Not held (owner-confirmed) | The single biggest external trade-body gap. Pursue if commercially viable; do not imply it in copy. |
+| **Public liability insurance — £5 m / £10 m** | Held: £10m (owner-confirmed). Not yet displayed on the site. | Above the £5m wedding-tier baseline. Surface on every page; certificate available on request. |
 | **BS EN 13782:2015 compliance documentation** | Not advertised | Applies to ≥50 m² tents. Three of four Capri sizes qualify. |
 | **Fire-retardancy certification (BS 7837 / DIN 4102 B1)** | Not advertised | Wedding venues frequently ask for the certificate. |
 | **Wind-loading certificates / structural calcs** | Not advertised | Standard ask for any pitch on a council-licensed site. |
@@ -165,10 +158,10 @@ Several "claims" in earlier drafts of this document also need hedging:
 | Tier | Examples | Typical credentials | 80-guest price band |
 |---|---|---|---|
 | **Wedding-luxury / MUTA-tier** | Lewis Marquees, Monaco Marquees, Alresford Marquees, County Marquees | MUTA member, £5-10 m PL, BS EN 13782 docs, fire certs, branded styling, traditional canvas-pole and clearspan stock, dedicated wedding planner | £2,000-£3,600+ |
-| **Regional mid-market / value** | **Complete Marquees**, many comparable Capri specialists | Limited company, geographic phone, public prices, in-house install, family-run, 15-25 yrs trading, Capri / Pagoda fleet, no MUTA / insurance disclosure visible | £900-£1,400 |
+| **Regional mid-market / value** | **Complete Marquees**, many comparable Capri specialists | Limited company, geographic phone, public prices, in-house install, family-run, 15-25 yrs trading, Capri / Pagoda fleet. **Complete Marquees specifically: £10m PL cover, no MUTA membership.** | £900-£1,400 |
 | **Hobbyist / back-garden / one-van** | Bark.com listings, Facebook-Marketplace operators, seasonal | Sole trader, mobile only, no fixed address, on-the-phone pricing, often no insurance, often no contract | £400-£900 |
 
-Complete Marquees clearly belongs in the middle tier and should pitch from there. The honest sell is **"professional, transparently-priced, family-run regional operator with 24 years on the books"** — not "wedding-luxury" and not "the cheapest tent in your back garden". Trying to compete with the top tier without addressing the gaps in section 5 will get caught out by any moderately diligent customer; trying to compete with the bottom tier on price will erode the very trading record that's the company's main asset.
+Complete Marquees clearly belongs in the middle tier and should pitch from there. The honest sell is **"professional, transparently-priced, family-run regional operator with 24 years on the books and £10m public liability cover"** — not "wedding-luxury" and not "the cheapest tent in your back garden". The £10m PL is the single strongest line item separating Complete Marquees from the rest of the mid-market — it matches or exceeds the wedding-tier operators and dwarfs anything the back-garden hirers can show. Trying to compete with the top tier on MUTA / fabric-cert paperwork without holding those credentials will get caught out by any moderately diligent customer; trying to compete with the bottom tier on price will erode the very trading record and insurance position that are the company's main assets.
 
 ---
 
@@ -177,15 +170,15 @@ Complete Marquees clearly belongs in the middle tier and should pitch from there
 Roughly in order of effort:value.
 
 1. **Verify and publish the Companies House entry** with a direct link from the site footer. Confirm the number 1090110 resolves correctly and the company status is active.
-2. **Publish the public liability cover figure** (with the certificate available on request). If the cover is below £5 m, increase it.
+2. **Publish the £10m public liability cover figure on every page** (with the certificate available on request). The figure is held; it just isn't yet on the site. This is the highest-leverage single content change available.
 3. **Get fire-retardancy certificates from the fabric supplier** scanned and available on request; mention them on the FAQ.
-4. **Pursue MUTA membership** if not already held. The eligibility threshold (>2 years trading, code of practice) is comfortably met. Membership immediately closes the largest gap against the wedding-tier competition.
+4. **Consider MUTA membership.** Confirmed not held. The eligibility threshold (>2 years trading, code of practice) is comfortably met. Membership would close the largest remaining gap against the wedding-tier competition. A commercial decision; cost-benefit depends on how much wedding-tier work the business actively chases.
 5. **Move email from `@gmail.com` to `@completemarquees.co.uk`** — a one-day job that materially raises perceived professionalism.
 6. **Publish a one-page terms-of-business / standard contract** (deposit, cancellation, weather, ground damage, customer obligations) so customers can read the agreement before enquiring.
 7. **Add a site-visit offer** to the booking flow. It removes the biggest red flag consumer guides warn about.
 8. **Replace the AI-generated paragraphs** on the home, about, weddings, parties, corporate, sizes, packages, gallery and Hampshire pages. The smoking gun is on the gallery page (`capri-marquee-hire.html`) where raw ChatGPT conversation HTML — including `data-message-model-slug="gpt-5-3"` — has been pasted into the source. A diligent customer Googling phrases from the site can find this, and it directly undermines every other trust signal.
 9. **Solicit five fresh, recent (2024-2026), named, photographed customer reviews** and embed them with structured data. The existing four are warm but undated.
-10. **Reword the "royal wedding" sidebar line** for clarity, per section 3 above.
+10. ~~**Reword the "royal wedding" sidebar line**~~ — done. The sidebar copy on every page now reads *"Family-run from Havant since 2002, with £10m public liability cover and our own install team."*
 11. **Add an owner / team page** introducing David and Joanne by name with a photograph and a one-paragraph bio for each (years in the trade, role split — bookings vs workshop / install). The named-owner signal in the testimonial is strong; making the husband-and-wife ownership explicit on the site is stronger, and it directly neutralises the "anonymous van and a website" objection.
 
 ---
@@ -193,9 +186,9 @@ Roughly in order of effort:value.
 ## 8. Notes for marketing copy
 
 - The strongest verifiable line for the homepage hero is something like:
-  *"Family-run from Havant since 2002, with 27 towns covered across Hampshire, Surrey and West Sussex — a Capri and Pagoda specialist for weddings, parties, corporate days and community events."*
+  *"Family-run from Havant since 2002. Twenty-seven towns covered across Hampshire, Surrey and West Sussex. £10 million public liability cover. Capri and Pagoda specialist for weddings, parties, corporate days and community events."*
 - The "Dear Joanne" testimonial is the single most persuasive piece of content on the site and should be quoted in full somewhere prominent.
 - The honest FAQ constraints (no crepe paper, weatherproof-but-not-stormproof, must be flat grass) are an asset and should not be rewritten by anything that smooths them out.
-- Drop the literal phrase "royal wedding" from headline copy; rework as section 3.
-- Lead with **transparent pricing** as the differentiator vs the bottom of the market. Lead with **24 years of operating record + named owner + published company number** as the differentiator vs anyone less established.
-- Do **not** try to lead with "experience" alone — the MUTA-tier competition can match or beat the years-trading number and back it with insurance and accreditation paperwork that Complete Marquees currently can't display.
+- The royal-wedding line is dropped from public copy. Do not reintroduce.
+- Lead with **transparent pricing** and **£10 million public liability cover** as the differentiators vs the bottom of the market. Lead with **24 years on the books, named husband-and-wife owners, and the £10m PL** as the differentiators vs anyone less established.
+- The £10m PL line is the single most useful sentence to add to every page. It is verifiable on demand, materially uncommon at this price tier, and immediately answers the unspoken question planners have ("what happens if it blows over?").
