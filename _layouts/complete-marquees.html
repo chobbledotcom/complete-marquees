@@ -2,6 +2,7 @@
   <title>{{ meta_title }} - Complete Marquees</title>
   {% if meta_description %}<meta name="description" content="{{ meta_description }}" />{% endif %}
   {% if no_index %}<meta name="robots" content="noindex, nofollow" />{% endif %}
+  {% include "canonical.html" %}
   {% include "og-meta-static.html" %}
   {% include "head.html" %}
 </head>
