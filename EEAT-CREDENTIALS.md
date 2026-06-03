@@ -55,11 +55,10 @@ This is the single strongest trust signal we have, and it ties both businesses t
 | Facebook | https://www.facebook.com/completemarquees/ | `_data/site.json` |
 | Language / market | en-GB (UK) | `_data/meta.json` |
 
-⚠️ **Phone-number inconsistency to reconcile before quoting:** the site currently
-shows three different numbers — `02392 717 925` (site.json / contact display & FAQ
-intro on home), `01428 751745` (FAQ body text and contact-us meta description), and
-`02392397722` (the `tel:` link on the contact page). Pick the correct primary
-number and standardise it everywhere; do not present conflicting numbers as fact.
+✅ **Definitive phone number: `02392 717 925`** (tel: `02392717925`). The site
+previously carried two stale numbers — `01428 751745` (FAQ body + contact-us meta)
+and `02392397722` (contact page `tel:` link) — which have now been corrected to the
+definitive number. Always use `02392 717 925` going forward.
 
 ---
 
@@ -257,9 +256,76 @@ service pages).
 
 ---
 
-## 11. Caveats & things to verify before publishing
+## 11. How we compare to other Capri marquee companies (South East UK)
 
-- ⚠️ **Standardise the phone number** (see §2) — three different numbers currently appear.
+Competitor research across the main Capri marquee firms operating in our patch
+(Hampshire, Surrey, Sussex and the wider South East). Use this to frame honest,
+differentiating "why choose us" copy — every comparison point below is backed by the
+competitor's own live site.
+
+### Competitor snapshot
+
+| Company | Base / area | Trading since | Family-run | Published prices? | Season | Notable |
+|---------|-------------|---------------|-----------|-------------------|--------|---------|
+| **Complete Marquees (us)** | Havant, Hants — Hants/Surrey/W.Sussex (+Berks/London) | **2002 (20+ yrs)** | **Yes** | **Yes — sizes *and* full packages** (£295–£650 / £390–£3,100) | **Year-round** (no stated seasonal limit) | Sister company **Monster Event Hire**; group RPII/PIPA/PAT + £10m PL |
+| Out Is In | Horsham, Sussex — Sussex/Surrey/Kent/Hants | "over a decade" (~2010s) | Yes | No (quote on request; VAT & insurance included) | Not stated | Can pitch in awkward spots & **attach to buildings**; showroom marquee to view |
+| Marquees by Nixon | Fareham, Hants — Hants/W.Sussex/Dorset/Berks/Wilts/Surrey/IoW | Not stated | Not stated | Yes — base sizes only (£275–£475 +VAT) | **1 Apr–early Oct only**, grass only | 6% damage/loss waiver; also frame/stretch/bell tents/igloos |
+| Medstead Marquees | Near Alton, Hants — Hants/Surrey/W.Sussex | 2008 (16 yrs) | Not stated (run by Allister Sly) | Partial (example pkg £1,990 for 80) | Year-round | Also **Matrix (hexagonal)** marquees; framed tents |
+
+*(Capri sizes and capacities are broadly similar across all four — the standard
+20×20, 20×30, 28×28/28×38 footprints with comparable guest numbers. Differentiation
+is therefore mostly on track record, transparency, breadth of offer and trust, not
+on the marquees themselves.)*
+
+### What sets Complete Marquees apart in the South East
+
+1. **Longest, clearest track record.** Trading **since 2002 (20+ years)** — longer
+   than Out Is In ("over a decade"), Medstead (2008) and Nixon (unstated) — and one of
+   the few that is explicitly **family-run** with named owners. Strongest **Experience**
+   signal in the peer group.
+2. **One-stop event partner via Monster Event Hire.** No competitor in this list pairs
+   marquee hire with a sister entertainment company offering hundreds of activities
+   (inflatables, photo booths, games, rodeo rides, etc.). We can furnish *and*
+   entertain the whole event from one trusted, commonly-owned operation.
+3. **Most transparent pricing.** We publish **both** per-size prices **and** complete,
+   itemised package prices (with guest counts and exactly what's included). Out Is In
+   publishes none; Nixon shows base sizes only; Medstead shows one example. Transparent
+   pricing is a direct **Trust** signal and a conversion advantage.
+4. **Year-round availability.** Nixon restricts hire to **1 April–early October**; we
+   place no such seasonal limit, so we can serve winter weddings, Christmas parties and
+   off-season corporate events competitors turn away.
+5. **Unusually strong safety/insurance backbone.** Through the shared operation we can
+   point to **£10m public liability, RPII/PIPA accreditation, PAT testing, DBS-checked
+   and trained staff, and BS EN 14960:2019** standards — credentials that are rare for
+   a marquee firm and exceed what competitors advertise (Nixon's strongest stated
+   assurance is a 6% damage waiver).
+6. **Breadth of capacity & style in-house.** Capri **plus Pagoda** marquees, four core
+   Capri sizes up to **28×58ft (150 standing)**, and linking to cover 100–150+ seated —
+   matching or exceeding the peer range, all with our own equipment and team.
+
+### Honest gaps to be aware of (so copy stays credible)
+
+- **Our prices are quoted *exclusive of VAT***; Out Is In states its prices **include
+  VAT and insurance**. When comparing on price, present like-for-like or note the VAT
+  position clearly.
+- **We can't attach marquees to buildings** (Capri shape) and require **flat grass**;
+  Out Is In markets the ability to pitch in awkward spots and attach to buildings, and
+  Nixon is also grass-only. Don't claim siting flexibility we don't have.
+- Some competitors offer **additional structure types** (Nixon: stretch tents, bell
+  tents, igloos; Medstead: hexagonal Matrix marquees). Our edge is depth in Capri/Pagoda
+  + the entertainment tie-in, not the widest catalogue of tent shapes.
+
+> Rewriting tip: the sharpest, defensible angle for South-East pages is
+> **"Family-run since 2002, fully transparent pricing, and the only marquee hire in the
+> region backed by an in-house, fully-accredited event-hire operation (Monster Event
+> Hire)."** Lead with track record + transparency + the one-stop/safety story.
+
+---
+
+## 12. Caveats & things to verify before publishing
+
+- ✅ **Phone number resolved** — `02392 717 925` is definitive and the stale numbers
+  have been corrected across the site (see §2).
 - The **£10m public liability**, **DBS checks**, **RPII/PIPA** and **PAT** credentials
   are sourced from **Monster Event Hire's** pages. They reflect the same ownership/team,
   but confirm the exact figures and wording apply to marquee hire before stating them
