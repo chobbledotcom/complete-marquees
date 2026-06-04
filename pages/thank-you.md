@@ -6,6 +6,7 @@ meta_title: Thank You
 name: Thank You
 navigationParent: Contact
 no_index: true
+eleventyExcludeFromCollections: true
 ---
 
 ## Thank You

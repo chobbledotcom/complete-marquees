@@ -5,6 +5,7 @@ meta_description:
 meta_title: Not Found
 name: Not Found
 no_index: true
+eleventyExcludeFromCollections: true
 
 permalink: /bunnycdn_errors/404.html
 ---

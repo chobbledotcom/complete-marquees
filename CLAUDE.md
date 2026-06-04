@@ -1,3 +1,8 @@
+---
+permalink: false
+eleventyExcludeFromCollections: true
+---
+
 # CLAUDE.md - AI Assistant Guide for Chobble Client
 
 ## Project Overview
