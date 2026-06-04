@@ -169,7 +169,7 @@ content:
         label: Phone Number
         type: object
         fields:
-          - { name: display, type: string, label: Display Format (e.g. "02392 717 925") }
+          - { name: display, type: string, label: Display Format (e.g. "01428 751745") }
           - { name: tel, type: string, label: Tel Link Format (digits only) }
       - { name: email, type: string, label: Contact Email }
       - name: opening_times

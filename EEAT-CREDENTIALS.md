@@ -47,7 +47,7 @@ This is the single strongest trust signal we have, and it ties both businesses t
 |-------|-------|--------|
 | Trading name | Complete Marquees | `_data/site.json` |
 | Website | https://www.completemarquees.co.uk | `_data/site.json` |
-| Phone (display) | 02392 717 925 | `_data/site.json` |
+| Phone (display) | 01428 751 745 | `_data/site.json` |
 | Email | completemarquee@gmail.com | `_data/site.json` |
 | Registered address | 27 The Oakwood Centre, Downley Road, Havant, Hampshire, PO9 2NP, GB | `_data/meta.json` |
 | Base / locality | Havant, Hampshire — near Southampton & Portsmouth | `_data/meta.json` |
@@ -55,10 +55,9 @@ This is the single strongest trust signal we have, and it ties both businesses t
 | Facebook | https://www.facebook.com/completemarquees/ | `_data/site.json` |
 | Language / market | en-GB (UK) | `_data/meta.json` |
 
-✅ **Definitive phone number: `02392 717 925`** (tel: `02392717925`). The site
-previously carried two stale numbers — `01428 751745` (FAQ body + contact-us meta)
-and `02392397722` (contact page `tel:` link) — which have now been corrected to the
-definitive number. Always use `02392 717 925` going forward.
+✅ **Definitive phone number: `01428 751 745`** (tel: `01428751745`). This was
+standardised site-wide on `main`. Always use `01428 751 745` going forward — do not
+reuse the older `02392 717 925` / `02392397722` numbers that previously appeared.
 
 ---
 
@@ -324,8 +323,7 @@ on the marquees themselves.)*
 
 ## 12. Caveats & things to verify before publishing
 
-- ✅ **Phone number resolved** — `02392 717 925` is definitive and the stale numbers
-  have been corrected across the site (see §2).
+- ✅ **Phone number** — `01428 751 745` is definitive and standardised site-wide (see §2).
 - The **£10m public liability**, **DBS checks**, **RPII/PIPA** and **PAT** credentials
   are sourced from **Monster Event Hire's** pages. They reflect the same ownership/team,
   but confirm the exact figures and wording apply to marquee hire before stating them

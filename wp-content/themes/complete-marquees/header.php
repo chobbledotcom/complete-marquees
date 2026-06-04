@@ -77,7 +77,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   --><div class="contact__info">
       <span class="header__text">make your event extra special</span>
        
-       <div class="telephone__number"><span class="callustoday">Call Us Today</span> <a href="tel:02392717925">02392 717 925</a></div>
+       <div class="telephone__number"><span class="callustoday">Call Us Today</span> <a href="tel:01428751745">01428 751745</a></div>
       
       
       
@@ -92,7 +92,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
       <div class="mobile__nav__trigger">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </div><!--
-      --><a class="fixednumber rulertel" href="tel:02392717925">02392 717 925</a>
+      --><a class="fixednumber rulertel" href="tel:01428751745">01428 751745</a>
     </div>
     <div id="desktop__nav">
       <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
