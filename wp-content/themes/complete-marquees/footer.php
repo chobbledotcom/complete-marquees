@@ -19,7 +19,7 @@
             Contact Info
           </div>
           <ul> 
-            <li><a href="tel:01428751745" class="">01428 751745</a></li>
+            <li><a href="tel:01428751745" class="">01428 751 745</a></li>
             <li><a href="mailto:completemarquee@gmail.com">completemarquee@gmail.com</a></li>
             <li class="social_li"><a href="https://www.facebook.com/completemarquees/"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://twitter.com/completemarquee"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
           </ul>
