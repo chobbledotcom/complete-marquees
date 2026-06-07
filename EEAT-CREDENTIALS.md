@@ -48,7 +48,7 @@ This is the single strongest trust signal we have, and it ties both businesses t
 | Trading name | Complete Marquees | `_data/site.json` |
 | Website | https://www.completemarquees.co.uk | `_data/site.json` |
 | Phone (display) | 01428 751 745 | `_data/site.json` |
-| Email | completemarquee@gmail.com | `_data/site.json` |
+| Email | info@completemarquees.co.uk | `_data/site.json` |
 | Registered address | 27 The Oakwood Centre, Downley Road, Havant, Hampshire, PO9 2NP, GB | `_data/meta.json` |
 | Base / locality | Havant, Hampshire — near Southampton & Portsmouth | `_data/meta.json` |
 | Opening hours | Mon–Fri 8am–9pm; Weekends 8am–8pm | `_data/site.json` |
