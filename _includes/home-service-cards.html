@@ -1,0 +1,14 @@
+<section class="tabs">
+  <div class="container--large">
+    <div class="cards">
+{% for card in homepage.service_cards %}
+      <article id="{{ card.id }}" class="card" itemscope itemtype="http://schema.org/Service">
+        <img src="{{ card.image_src }}" alt="{{ card.image_alt }}" itemprop="image" />
+        <div class="title" itemprop="name">{{ card.title }}</div>
+        <p class="text" itemprop="description">{{ card.description }}</p>
+        <a class="btn--small--full--green" href="{{ card.link_url }}" itemprop="url">{{ card.link_text }}</a>
+      </article>
+{% endfor %}
+    </div>
+  </div>
+</section>

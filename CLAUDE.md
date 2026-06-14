@@ -43,6 +43,21 @@ chobble-client/
 
 ---
 
+## Styling / CSS
+
+**No inline CSS.** Never add `<style>` blocks or `style="..."` attributes in layouts, includes, or content. All styles live in SCSS that compiles into the design-system bundle.
+
+- **Where styles go:**
+  - `css/theme.scss` — design-system `:root` token overrides (brand colours, fonts, font-size re-basing, radius). It is `@use`d last by the template's `design-system-bundle.scss`, so it wins the cascade.
+  - `css/_*.scss` partials (e.g. `css/_home.scss`) — page/component styles, pulled into the bundle with `@use "..."` from `css/theme.scss`.
+- **Linking:** the compiled `/css/design-system-bundle.css` is linked in `<head>` by the block layouts (`_layouts/blocks-page.html`, `_layouts/home.html`). Add new client CSS through the SCSS bundle, not a new `<link>`.
+- **Scope page styles** under the page's `<body>` class (e.g. `.home …`) so they don't leak.
+- **Root font-size gotcha:** the legacy WordPress theme sets `html { font-size: 62.5% }` (1rem = 10px). The design-system's rem font tokens are re-based ×1.6 in `theme.scss` to compensate — account for this when adding rem-based sizing.
+
+The large inline `<style>` blocks in `_includes/head.html` are the legacy WordPress export — leave them; the no-inline-CSS rule applies to our own code.
+
+---
+
 ## Functional Programming Style
 
 This codebase uses a functional programming approach with curried, composable functions. **This is ideal for a static site generator**, which is fundamentally a series of transforms with no mutable state:

@@ -1,0 +1,77 @@
+// =============================================================================
+// Complete Marquees theme
+// =============================================================================
+// Overrides the design-system :root tokens (declared in
+// design-system/_base.scss) to match the existing WordPress site styling.
+// This file is `@use`d LAST in design-system-bundle.scss, so these values win
+// the cascade over the design-system defaults at the same :root specificity.
+//
+// Brand palette (extracted from the live theme):
+//   green  #51b848 (primary)  ·  dark green #398132 (hover)  ·  pale #ddf1db
+//   orange #f37321 (secondary / accent)
+//   text   #2d3235  ·  muted #5a5a5a
+//   bg     #ffffff  ·  alt sections #f0efef  ·  cards #ffffff
+//   font   ek_mukta (regular + bold) — @font-face'd by the WordPress theme
+// =============================================================================
+
+// Page-specific client styles (compiled into the bundle through this file).
+@use "home";
+
+:root {
+  // --- Backgrounds ---
+  --color-bg: #ffffff;
+  --body-background: #ffffff;
+  --body-background-alt: #f0efef; // light-grey alternating sections
+  --color-card-bg: #ffffff;
+  --color-accent: #f0efef;
+
+  // --- Text ---
+  --color-text: #2d3235;
+  --color-text-muted: #5a5a5a;
+
+  // --- Brand primary (green): links, primary buttons, list markers ---
+  --color-link: #51b848;
+  --color-link-hover: #398132;
+  --color-tint: #ddf1db; // pale-green badge / highlight backgrounds
+
+  // --- Brand secondary (orange): accents & gradients ---
+  --color-secondary: #f37321;
+
+  // --- Hover wash ---
+  --color-hover-bg: rgb(0 0 0 / 5%);
+
+  // --- Call-to-action gradient: brand green -> orange ---
+  --color-gradient-start: rgba(81, 184, 72, 0.18);
+  --color-gradient-end: rgba(243, 115, 33, 0.18);
+
+  // --- Typography (fonts loaded via @font-face in the WordPress head) ---
+  --font-family-body: "ek_muktaregular", "Helvetica Neue", Arial, sans-serif;
+  --font-family-heading: "ek_muktabold", "Helvetica Neue", Arial, sans-serif;
+
+  // --- Font sizes, re-based for the WordPress root ---
+  // The WordPress theme sets `html { font-size: 62.5% }` (1rem = 10px), so the
+  // design-system's rem tokens (authored for a 16px root) would otherwise render
+  // ~37% too small. Scale them by 1.6 so they resolve to their intended px.
+  --font-size-xs: 1.2rem; // 12px
+  --font-size-sm: 1.4rem; // 14px
+  --font-size-base: 1.6rem; // 16px
+  --font-size-md: 1.8rem; // 18px
+  --font-size-lg: 2rem; // 20px
+  --font-size-xl: 2.4rem; // 24px
+  --font-size-2xl: 3.2rem; // 32px
+  --font-size-3xl: 4rem; // 40px
+  --font-size-4xl: 4.8rem; // 48px
+  --font-size-5xl: 6.4rem; // 64px
+
+  // --- Shape ---
+  --border-radius: 4px;
+
+  // --- Links underlined, matching the site ---
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-style: solid;
+}
+
+.design-system {
+  background: var(--color-bg);
+}

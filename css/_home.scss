@@ -1,0 +1,45 @@
+// =============================================================================
+// Homepage page styles
+// =============================================================================
+// Loaded via `@use "home"` from theme.scss, so it compiles into
+// design-system-bundle.css (which the home layout links). Selectors are scoped
+// under `.home` (the homepage <body> class) so they only affect the homepage.
+// =============================================================================
+
+.home .tabs {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    @media (min-width: 500px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 800px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  // Each card is a flex column so the CTA aligns to the bottom of equal-height cards
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    .title {
+      padding: 20px 20px 0;
+    }
+
+    .text {
+      flex: 1;
+      margin: 0 0 15px;
+      padding: 0 20px;
+    }
+
+    .btn--small--full--green {
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+}

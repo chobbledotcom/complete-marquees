@@ -1,0 +1,26 @@
+<section class="testimonials">
+
+  <div class="container--large">
+
+    <div class="grid">
+
+      <div class="grid__item--whole">
+        <h2>What our customers say:</h2>
+      </div><!--
+    --><!--
+    -->
+{%- for review in collections.reviews limit:3 %}{% if review.data.homepage_excerpt %}
+      <div class="grid__item--third" itemscope itemtype="http://schema.org/Service">
+        <div class="testimonial" itemprop="review" itemscope itemtype="http://schema.org/Review">
+          <article itemprop="description">
+            {{ review.data.homepage_excerpt }} </article>
+        </div>
+      </div><!--
+    --><!--
+    -->
+{%- endif %}{% endfor %}
+    </div>
+
+  </div>
+
+</section>

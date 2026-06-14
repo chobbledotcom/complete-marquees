@@ -3,11 +3,7 @@
 		"title": "Marquee Hire Across Hampshire, Surrey , sussex – Weddings, Parties & Events",
 		"body": "Friendly, Family-Run Marquee Hire in Hampshire.\n            Complete Marquees is a family-run company based in Havant, near Southampton and Portsmouth. We provide professional marquee hire and event solutions across Surrey, Hampshire & West Sussex.",
 		"primary_cta": { "url": "packages/", "label": "View Packages" },
-		"secondary_cta": { "url": "sizes-prices/", "label": "View Prices" },
-		"image_before": "wp-content/themes/complete-marquees/img/slider-before.jpg",
-		"image_before_alt": "Night marquee party",
-		"image_after": "wp-content/themes/complete-marquees/img/slider-after.jpg",
-		"image_after_alt": "stunning marquee event"
+		"secondary_cta": { "url": "sizes-prices/", "label": "View Prices" }
 	},
 	"service_cards": [
 		{
