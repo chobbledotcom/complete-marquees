@@ -1,3 +1,8 @@
+---
+layout: ""
+permalink: false
+---
+
 # EEAT Credentials — Complete Marquees
 
 This document compiles every **concrete, verifiable selling point** about Complete
@@ -12,6 +17,7 @@ source so it can be re-verified. Items flagged ⚠️ are inconsistencies in the
 current site that should be reconciled before being quoted as fact.
 
 Sources scraped:
+
 - All Complete Marquees pages in this repository (the live `completemarquees.co.uk` content)
 - `monstereventhire.co.uk` — home, `/about-us/`, `/health-safety/`, `/inflatable-testing-and-pipa-inspections/`, `/testimonials/`
 
@@ -43,17 +49,17 @@ This is the single strongest trust signal we have, and it ties both businesses t
 
 ## 2. Business identity & contact facts (Complete Marquees)
 
-| Field | Value | Source |
-|-------|-------|--------|
-| Trading name | Complete Marquees | `_data/site.json` |
-| Website | https://www.completemarquees.co.uk | `_data/site.json` |
-| Phone (display) | 01428 751 745 | `_data/site.json` |
-| Email | info@completemarquees.co.uk | `_data/site.json` |
+| Field              | Value                                                               | Source            |
+| ------------------ | ------------------------------------------------------------------- | ----------------- |
+| Trading name       | Complete Marquees                                                   | `_data/site.json` |
+| Website            | https://www.completemarquees.co.uk                                  | `_data/site.json` |
+| Phone (display)    | 01428 751 745                                                       | `_data/site.json` |
+| Email              | info@completemarquees.co.uk                                         | `_data/site.json` |
 | Registered address | 27 The Oakwood Centre, Downley Road, Havant, Hampshire, PO9 2NP, GB | `_data/meta.json` |
-| Base / locality | Havant, Hampshire — near Southampton & Portsmouth | `_data/meta.json` |
-| Opening hours | Mon–Fri 8am–9pm; Weekends 8am–8pm | `_data/site.json` |
-| Facebook | https://www.facebook.com/completemarquees/ | `_data/site.json` |
-| Language / market | en-GB (UK) | `_data/meta.json` |
+| Base / locality    | Havant, Hampshire — near Southampton & Portsmouth                   | `_data/meta.json` |
+| Opening hours      | Mon–Fri 8am–9pm; Weekends 8am–8pm                                   | `_data/site.json` |
+| Facebook           | https://www.facebook.com/completemarquees/                          | `_data/site.json` |
+| Language / market  | en-GB (UK)                                                          | `_data/meta.json` |
 
 ✅ **Definitive phone number: `01428 751 745`** (tel: `01428751745`). This was
 standardised site-wide on `main`. Always use `01428 751 745` going forward — do not
@@ -107,44 +113,44 @@ reuse the older `02392 717 925` / `02392397722` numbers that previously appeared
 
 ### Marquee sizes & capacities (Sizes & Prices page)
 
-| Type | Size (approx.) | Seated | Standing | From |
-|------|----------------|-------:|---------:|-----:|
-| Capri | 20' × 20' | 20 | 25 | £295 |
-| Capri | 20' × 30' | 48 | 60 | £395 |
-| Capri | 28' × 38' | 80 | 100 | £450 |
-| Capri | 28ft × 58ft | 120 | 150 | £650 |
-| Pagoda | 6m × 6m | 40 | — | £395 |
+| Type   | Size (approx.) | Seated | Standing | From |
+| ------ | -------------- | -----: | -------: | ---: |
+| Capri  | 20' × 20'      |     20 |       25 | £295 |
+| Capri  | 20' × 30'      |     48 |       60 | £395 |
+| Capri  | 28' × 38'      |     80 |      100 | £450 |
+| Capri  | 28ft × 58ft    |    120 |      150 | £650 |
+| Pagoda | 6m × 6m        |     40 |        — | £395 |
 
-*All prices quoted are exclusive of VAT — based on delivery Friday / collection Sunday.*
+_All prices quoted are exclusive of VAT — based on delivery Friday / collection Sunday._
 
 ### Packages (all include delivery, installation & removal)
 
-| Package | Includes (summary) | From |
-|---------|--------------------|-----:|
-| 25 guests (standing) | 20×20ft marquee, 2× 6ft trestle tables, flooring, plain & clear side walls | £390 |
-| 40 guests (seated) | 20×30ft marquee, 4× 5ft round tables, 2× 6ft trestles, 40 chairs, flooring, 6 uplighters, side walls | £785 |
-| 80 guests (seated) | 28×38ft marquee, 8× round tables, 2× trestles, 80 chairs, flooring, 6 uplighters, side walls | £995 |
-| 100 guests (seated) | 2× 28×38ft linked (=28×80ft), 10× round tables, 3× trestles, 100 chairs, flooring, dancefloor, 12 uplighters, side walls | £2,100 |
-| 150 guests (seated) | 3× 28×38ft linked, 15× round tables, 3× trestles, 150 chairs, flooring, dancefloor, 18 uplighters, side walls | £3,100 |
+| Package              | Includes (summary)                                                                                                       |   From |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------ | -----: |
+| 25 guests (standing) | 20×20ft marquee, 2× 6ft trestle tables, flooring, plain & clear side walls                                               |   £390 |
+| 40 guests (seated)   | 20×30ft marquee, 4× 5ft round tables, 2× 6ft trestles, 40 chairs, flooring, 6 uplighters, side walls                     |   £785 |
+| 80 guests (seated)   | 28×38ft marquee, 8× round tables, 2× trestles, 80 chairs, flooring, 6 uplighters, side walls                             |   £995 |
+| 100 guests (seated)  | 2× 28×38ft linked (=28×80ft), 10× round tables, 3× trestles, 100 chairs, flooring, dancefloor, 12 uplighters, side walls | £2,100 |
+| 150 guests (seated)  | 3× 28×38ft linked, 15× round tables, 3× trestles, 150 chairs, flooring, dancefloor, 18 uplighters, side walls            | £3,100 |
 
 ### Equipment / add-on pricing (Equipment Hire page)
 
-| Item | Detail | Price |
-|------|--------|------:|
-| Plastic patio tables | seats 4–6 | £4 |
-| Round table (5ft) | seats 8–10 | £7.50 |
-| Round table (4ft) | seats 6–8 | £6 |
-| Trestle table (6ft) | seats 6–8 | £7.50 |
-| White bistro chairs | — | £2.50 |
-| Capri matting 20×20ft | flooring | £100 |
-| Capri matting 20×30ft | flooring | £155 |
-| Capri matting 28×38ft | flooring | £185 |
-| Capri matting 28×58ft | flooring | £355 |
-| Dance floor | 12×12ft (larger on request) | £225 |
-| Up lighters | per marquee, coloured or white | £95 |
-| Ivy garlands | per marquee | £250 |
-| Archway lighting | per marquee | £250 |
-| Archway ivy & lighting | per marquee | £450 |
+| Item                   | Detail                         | Price |
+| ---------------------- | ------------------------------ | ----: |
+| Plastic patio tables   | seats 4–6                      |    £4 |
+| Round table (5ft)      | seats 8–10                     | £7.50 |
+| Round table (4ft)      | seats 6–8                      |    £6 |
+| Trestle table (6ft)    | seats 6–8                      | £7.50 |
+| White bistro chairs    | —                              | £2.50 |
+| Capri matting 20×20ft  | flooring                       |  £100 |
+| Capri matting 20×30ft  | flooring                       |  £155 |
+| Capri matting 28×38ft  | flooring                       |  £185 |
+| Capri matting 28×58ft  | flooring                       |  £355 |
+| Dance floor            | 12×12ft (larger on request)    |  £225 |
+| Up lighters            | per marquee, coloured or white |   £95 |
+| Ivy garlands           | per marquee                    |  £250 |
+| Archway lighting       | per marquee                    |  £250 |
+| Archway ivy & lighting | per marquee                    |  £450 |
 
 > Rewriting tip: transparent, itemised pricing is itself a **Trust** signal. Concrete
 > capacities ("seats 80", "150 standing") also make pages more useful and rankable.
@@ -187,6 +193,7 @@ reuse the older `02392 717 925` / `02392397722` numbers that previously appeared
 ## 8. Trust signals & customer voice
 
 ### Stated service promises
+
 - **"Service, reliability, and punctuality"** — marquee "arrives on time, is
   professionally installed, and ready well before your event begins" (Wedding/Party/Equipment).
 - **"Weather-rated, secure and fully compliant"** structures (home).
@@ -246,12 +253,12 @@ service pages).
 
 ## 10. Quick-reference: strongest claims by EEAT pillar
 
-| Pillar | Best evidence to use |
-|--------|----------------------|
-| **Experience** | Family-run since 2002; hundreds of events delivered; first-party galleries of real installs; full delivery-to-breakdown service in-house |
-| **Expertise** | Capri/Pagoda specialists; detailed spec knowledge (arch heights, weatherproofing, linking, siting, flooring rules); consultative bespoke design |
-| **Authoritativeness** | 20+ year regional presence across Hampshire/Surrey/Sussex; sister company is an accredited RPII/PIPA inspection body trusted by other hire firms |
-| **Trust** | Transparent itemised pricing & packages; named testimonials; £10m PL insurance, DBS-checked & trained staff (group); fixed address & opening hours; safety/compliance ("weather-rated, secure and fully compliant") |
+| Pillar                | Best evidence to use                                                                                                                                                                                                |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Experience**        | Family-run since 2002; hundreds of events delivered; first-party galleries of real installs; full delivery-to-breakdown service in-house                                                                            |
+| **Expertise**         | Capri/Pagoda specialists; detailed spec knowledge (arch heights, weatherproofing, linking, siting, flooring rules); consultative bespoke design                                                                     |
+| **Authoritativeness** | 20+ year regional presence across Hampshire/Surrey/Sussex; sister company is an accredited RPII/PIPA inspection body trusted by other hire firms                                                                    |
+| **Trust**             | Transparent itemised pricing & packages; named testimonials; £10m PL insurance, DBS-checked & trained staff (group); fixed address & opening hours; safety/compliance ("weather-rated, secure and fully compliant") |
 
 ---
 
@@ -264,17 +271,17 @@ competitor's own live site.
 
 ### Competitor snapshot
 
-| Company | Base / area | Trading since | Family-run | Published prices? | Season | Notable |
-|---------|-------------|---------------|-----------|-------------------|--------|---------|
-| **Complete Marquees (us)** | Havant, Hants — Hants/Surrey/W.Sussex (+Berks/London) | **2002 (20+ yrs)** | **Yes** | **Yes — sizes *and* full packages** (£295–£650 / £390–£3,100) | **Year-round** (no stated seasonal limit) | Sister company **Monster Event Hire**; group RPII/PIPA/PAT + £10m PL |
-| Out Is In | Horsham, Sussex — Sussex/Surrey/Kent/Hants | "over a decade" (~2010s) | Yes | No (quote on request; VAT & insurance included) | Not stated | Can pitch in awkward spots & **attach to buildings**; showroom marquee to view |
-| Marquees by Nixon | Fareham, Hants — Hants/W.Sussex/Dorset/Berks/Wilts/Surrey/IoW | Not stated | Not stated | Yes — base sizes only (£275–£475 +VAT) | **1 Apr–early Oct only**, grass only | 6% damage/loss waiver; also frame/stretch/bell tents/igloos |
-| Medstead Marquees | Near Alton, Hants — Hants/Surrey/W.Sussex | 2008 (16 yrs) | Not stated (run by Allister Sly) | Partial (example pkg £1,990 for 80) | Year-round | Also **Matrix (hexagonal)** marquees; framed tents |
+| Company                    | Base / area                                                   | Trading since            | Family-run                       | Published prices?                                             | Season                                    | Notable                                                                        |
+| -------------------------- | ------------------------------------------------------------- | ------------------------ | -------------------------------- | ------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------ |
+| **Complete Marquees (us)** | Havant, Hants — Hants/Surrey/W.Sussex (+Berks/London)         | **2002 (20+ yrs)**       | **Yes**                          | **Yes — sizes _and_ full packages** (£295–£650 / £390–£3,100) | **Year-round** (no stated seasonal limit) | Sister company **Monster Event Hire**; group RPII/PIPA/PAT + £10m PL           |
+| Out Is In                  | Horsham, Sussex — Sussex/Surrey/Kent/Hants                    | "over a decade" (~2010s) | Yes                              | No (quote on request; VAT & insurance included)               | Not stated                                | Can pitch in awkward spots & **attach to buildings**; showroom marquee to view |
+| Marquees by Nixon          | Fareham, Hants — Hants/W.Sussex/Dorset/Berks/Wilts/Surrey/IoW | Not stated               | Not stated                       | Yes — base sizes only (£275–£475 +VAT)                        | **1 Apr–early Oct only**, grass only      | 6% damage/loss waiver; also frame/stretch/bell tents/igloos                    |
+| Medstead Marquees          | Near Alton, Hants — Hants/Surrey/W.Sussex                     | 2008 (16 yrs)            | Not stated (run by Allister Sly) | Partial (example pkg £1,990 for 80)                           | Year-round                                | Also **Matrix (hexagonal)** marquees; framed tents                             |
 
-*(Capri sizes and capacities are broadly similar across all four — the standard
+_(Capri sizes and capacities are broadly similar across all four — the standard
 20×20, 20×30, 28×28/28×38 footprints with comparable guest numbers. Differentiation
 is therefore mostly on track record, transparency, breadth of offer and trust, not
-on the marquees themselves.)*
+on the marquees themselves.)_
 
 ### What sets Complete Marquees apart in the South East
 
@@ -284,7 +291,7 @@ on the marquees themselves.)*
    signal in the peer group.
 2. **One-stop event partner via Monster Event Hire.** No competitor in this list pairs
    marquee hire with a sister entertainment company offering hundreds of activities
-   (inflatables, photo booths, games, rodeo rides, etc.). We can furnish *and*
+   (inflatables, photo booths, games, rodeo rides, etc.). We can furnish _and_
    entertain the whole event from one trusted, commonly-owned operation.
 3. **Most transparent pricing.** We publish **both** per-size prices **and** complete,
    itemised package prices (with guest counts and exactly what's included). Out Is In
@@ -304,7 +311,7 @@ on the marquees themselves.)*
 
 ### Honest gaps to be aware of (so copy stays credible)
 
-- **Our prices are quoted *exclusive of VAT***; Out Is In states its prices **include
+- **Our prices are quoted _exclusive of VAT_**; Out Is In states its prices **include
   VAT and insurance**. When comparing on price, present like-for-like or note the VAT
   position clearly.
 - **We can't attach marquees to buildings** (Capri shape) and require **flat grass**;
@@ -312,7 +319,7 @@ on the marquees themselves.)*
   Nixon is also grass-only. Don't claim siting flexibility we don't have.
 - Some competitors offer **additional structure types** (Nixon: stretch tents, bell
   tents, igloos; Medstead: hexagonal Matrix marquees). Our edge is depth in Capri/Pagoda
-  + the entertainment tie-in, not the widest catalogue of tent shapes.
+  - the entertainment tie-in, not the widest catalogue of tent shapes.
 
 > Rewriting tip: the sharpest, defensible angle for South-East pages is
 > **"Family-run since 2002, fully transparent pricing, and the only marquee hire in the
