@@ -26,15 +26,16 @@ blocks:
     content: |
       Complete Marquees is a modern, family-run **marquee hire company** serving Surrey and surrounding areas. We specialise in providing high-quality marquees for a wide range of events, from intimate garden parties to large corporate gatherings.
   - type: gallery
+    aspect_ratio: "4/3"
     items:
       - image: "/wp-content/uploads/2016/06/marquee41.jpg"
-        caption: "Part Marquee with photo booth"
+        caption: "Party marquee with photo booth"
       - image: "/wp-content/uploads/2016/06/internal9.jpg"
-        caption: "Party Marquee Hire"
+        caption: "Party marquee interior"
       - image: "/wp-content/uploads/2016/06/marquee51.jpg"
-        caption: "marquee with linking kit"
+        caption: "Marquee with linking kit"
       - image: "/wp-content/uploads/2016/06/marquee1.jpg"
-        caption: "Outdoor Event Hire"
+        caption: "Outdoor event hire"
   - type: markdown
     content: |
       If you are looking to hire a marquee for your special event, you’ve come to the right place. Our contemporary **Capri marquees** offer a fresh and modern alternative to traditional styles. You can link multiple Capri marquees together, giving you flexibility to create spaces of any size or layout.

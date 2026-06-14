@@ -43,9 +43,14 @@ blocks:
         answer: |
           A: No during the summer depending on the grass condition, no flooring is needed. If you would like a dance floor in the marquee, we do then have to put flooring down to protect the wooden dance floor.
   - type: gallery
+    aspect_ratio: "4/3"
     items:
       - image: "/wp-content/uploads/2016/06/marquee2.jpg"
-        caption: ""
+        caption: "Capri marquee hire"
+      - image: "/wp-content/uploads/2016/07/capri_inside.jpg"
+        caption: "Inside a Capri marquee"
+      - image: "/wp-content/uploads/2016/06/internal6.jpg"
+        caption: "Wedding marquee interior"
   - type: markdown
     content: |
       ## About Capri Marquees
