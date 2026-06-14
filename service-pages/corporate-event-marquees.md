@@ -21,6 +21,7 @@ blocks:
     figure_src: "/wp-content/uploads/2016/07/wedding-marquee-at-night-polaroid.png"
     figure_alt: "Wedding Marquee Party"
   - type: gallery
+    aspect_ratio: "4/3"
     items:
       - image: "/wp-content/uploads/2016/06/marquee2.jpg"
         caption: "Capri Marquee Hire"

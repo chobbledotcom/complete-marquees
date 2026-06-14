@@ -44,15 +44,8 @@ blocks:
       If you need entertainment as well as shelter, our Monster Event Hire website has photo booths, inflatables, rodeo bulls and plenty more. It is the same team and the same phone number, so you can sort the whole event through one call.
 
       Our party marquee packages start from £390 for a 20 by 20 foot setup with flooring, tables and side walls. Have a look at our [packages and prices](/packages/) for the full list, or call us on **01428 751 745** to check availability.
-  - type: cta
-    content: |
-      To avoid disappointment we always advise checking your potential dates availability with us as soon as possible.
-
-      {{ site.phone.display }}
-    button:
-      text: "Get in touch today"
-      href: "/contact-us/"
   - type: gallery
+    aspect_ratio: "4/3"
     items:
       - image: "/wp-content/uploads/2016/06/marquee.jpg"
         caption: "White marquee on a lawn"

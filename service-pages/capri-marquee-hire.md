@@ -26,112 +26,125 @@ blocks:
 
       Our gallery features both **Capri** and **Pagoda marquees**. Each structure offers a modern, stylish look. You can use them for small gatherings or large-scale events. Need more space? We can link marquees together to create the perfect layout.
   - type: gallery
+    masonry: true
     items:
       - image: "/wp-content/uploads/2016/06/1.jpg"
-        caption: "linked marquees"
+        caption: "Linked Capri marquees"
       - image: "/wp-content/uploads/2019/10/5828ft.jpg"
-        caption: "complete marquees, 28ft x 58ft"
+        caption: "Complete Marquees, 28ft × 58ft"
       - image: "/wp-content/uploads/2016/06/marqueeclient.jpg"
-        caption: "party marquee at night"
+        caption: "Party marquee at night"
       - image: "/wp-content/uploads/2019/10/2858ft.jpg"
-        caption: "28ft x 58ft marquee"
+        caption: "28ft × 58ft marquee"
       - image: "/wp-content/uploads/2016/06/2.jpg"
-        caption: "plain 28ft x 38ft with floor"
+        caption: "Plain 28ft × 38ft with flooring"
       - image: "/wp-content/uploads/2019/10/IMG_8008.jpg"
-        caption: "marquee party with photo booth"
+        caption: "Marquee party with photo booth"
       - image: "/wp-content/uploads/2016/06/pagoda-2.jpg"
-        caption: "pagoda"
+        caption: "Pagoda marquee"
       - image: "/wp-content/uploads/2016/06/3.jpg"
         caption: "Party marquee"
       - image: "/wp-content/uploads/2016/06/7.jpg"
-        caption: "linked marquee’s"
+        caption: "Linked marquees"
       - image: "/wp-content/uploads/2016/06/capri-marquee-night2.jpg"
-        caption: ""
+        caption: "Capri marquee at night"
       - image: "/wp-content/uploads/2022/01/capri-marquee.jpg"
-        caption: "capri party marquee"
+        caption: "Capri party marquee"
       - image: "/wp-content/uploads/2016/06/caprimarqueepic.jpg"
-        caption: "open marquee"
+        caption: "Open-sided marquee"
       - image: "/wp-content/uploads/2016/06/20ft-x-30ft-with-dance-floor.jpg"
-        caption: "Marquee with Dance floor"
+        caption: "Marquee with dance floor"
       - image: "/wp-content/uploads/2016/06/marquee-0.jpg"
-        caption: "linked marquees"
+        caption: "Linked marquees"
       - image: "/wp-content/uploads/2017/05/photo.jpg"
-        caption: "28ft x 38ft capri marquee"
+        caption: "28ft × 38ft Capri marquee"
       - image: "/wp-content/uploads/2016/06/marquee6-14.jpg"
-        caption: "linked marquees"
+        caption: "Linked marquees"
       - image: "/wp-content/uploads/2016/06/photo-1.jpg"
-        caption: "3 x linked marquee’s"
+        caption: "Three linked marquees"
       - image: "/wp-content/uploads/2017/05/capri-spring.jpg"
-        caption: "28ft x 38ft capri marquee"
+        caption: "28ft × 38ft Capri marquee in spring"
       - image: "/wp-content/uploads/2016/06/6.jpg"
-        caption: "corporate day marquee"
+        caption: "Corporate day marquee"
       - image: "/wp-content/uploads/2019/10/capri-20x30.jpg"
-        caption: "20ft x 30ft marquee"
+        caption: "20ft × 30ft marquee"
       - image: "/wp-content/uploads/2016/06/14233307_10153704165457007_1979744370_o.jpg"
-        caption: "28ft x 58ft marquee"
+        caption: "28ft × 58ft marquee"
       - image: "/wp-content/uploads/2016/06/marquee3-1.jpg"
-        caption: "linked marquees"
+        caption: "Linked marquees"
       - image: "/wp-content/uploads/2016/06/mq.jpg"
-        caption: "28ft x 38ft capri marquee"
+        caption: "28ft × 38ft Capri marquee"
       - image: "/wp-content/uploads/2019/10/IMG_8342.jpg"
-        caption: "marquee at night"
+        caption: "Marquee at night"
       - image: "/wp-content/uploads/2022/01/pagoda-scaled.jpg"
-        caption: "pagoda no sides"
+        caption: "Pagoda with no sides"
       - image: "/wp-content/uploads/2016/06/4.jpg"
-        caption: "marquee at fete"
+        caption: "Marquee at a fete"
       - image: "/wp-content/uploads/2017/05/marqueelinked1.jpg"
-        caption: "linked marquees"
+        caption: "Linked marquees"
   - type: markdown
     content: |
       ## Internal Gallery
+
+      Step inside our marquees. From bare interiors ready for your own styling to fully dressed setups with flooring, lighting and dance floors, these shots show what's possible once you're under cover.
   - type: gallery
+    masonry: true
     items:
       - image: "/wp-content/uploads/2016/06/marquee51.jpg"
-        caption: "marquee with linking kit"
+        caption: "Marquee with linking kit"
       - image: "/wp-content/uploads/2016/06/internal4.jpg"
-        caption: "Wedding Marquee Hire no flooring"
+        caption: "Wedding marquee interior, no flooring"
       - image: "/wp-content/uploads/2016/06/internal6.jpg"
-        caption: "Wedding Marquee Hire"
+        caption: "Wedding marquee interior"
       - image: "/wp-content/uploads/2016/06/marquee21.jpg"
-        caption: "Party Marquees"
+        caption: "Party marquee interior"
       - image: "/wp-content/uploads/2016/06/capri-ivy-and-lights-internal_orig.jpg"
-        caption: "Event Marquees for Hire"
+        caption: "Capri interior with ivy and lights"
       - image: "/wp-content/uploads/2016/06/inside-marquee2.jpg"
-        caption: ""
+        caption: "Inside a Capri marquee"
       - image: "/wp-content/uploads/2016/06/internal3.jpg"
-        caption: "Wedding Marquees"
+        caption: "Wedding marquee interior"
       - image: "/wp-content/uploads/2016/06/internal5.jpg"
-        caption: ""
+        caption: "Marquee interior"
       - image: "/wp-content/uploads/2016/06/internal7.jpg"
-        caption: "Event Marquees"
+        caption: "Event marquee interior"
       - image: "/wp-content/uploads/2016/06/internal8.jpg"
-        caption: "Wedding Marquees"
+        caption: "Wedding marquee interior"
       - image: "/wp-content/uploads/2016/06/internal9.jpg"
-        caption: "Party Marquee Hire"
+        caption: "Party marquee interior"
       - image: "/wp-content/uploads/2016/06/marquee41.jpg"
-        caption: "Part Marquee with photo booth"
+        caption: "Party marquee with photo booth"
       - image: "/wp-content/uploads/2016/06/ivy_garlands.jpg"
-        caption: "archway decoration"
+        caption: "Ivy archway decoration"
       - image: "/wp-content/uploads/2016/06/dancefloor2.jpg"
-        caption: "flooring and dance floor"
+        caption: "Flooring and dance floor"
       - image: "/wp-content/uploads/2016/06/stage.jpg"
-        caption: "dance floor and stage"
+        caption: "Dance floor and stage"
       - image: "/wp-content/uploads/2019/10/pagoda-1.jpg"
-        caption: "Garden Marquee Hire pagoda"
+        caption: "Pagoda garden marquee"
       - image: "/wp-content/uploads/2017/05/inside-marquee1.jpg"
-        caption: ""
+        caption: "Inside a Capri marquee"
       - image: "/wp-content/uploads/2017/05/inside-marquee.jpg"
-        caption: ""
+        caption: "Marquee interior detail"
       - image: "/wp-content/uploads/2022/01/pagoda-scaled.jpg"
-        caption: "pagoda no sides"
+        caption: "Pagoda with no sides"
   - type: markdown
     content: |
-      As you browse, you’ll see different layouts, lighting styles, and configurations. This helps you picture what your own event could look like. Whether you want a clean, professional setup or a relaxed, social space, you’ll find ideas here.
+      As you browse, you'll see different layouts, lighting styles, and configurations. This helps you picture what your own event could look like. Whether you want a clean, professional setup or a relaxed, social space, you'll find ideas here.
 
-      Every event is different. That’s why we work closely with each client. We design marquees to match your vision, space, and guest numbers. Our team handles everything, from planning to installation, with care and attention to detail.
+      Every event is different. That's why we work closely with each client. We design marquees to match your vision, space, and guest numbers. Our team handles everything, from planning to installation, with care and attention to detail.
 
-      Looking for inspiration? Start with our **marquee gallery**. It’s a great way to explore styles and find what suits your event best.
+      Looking for inspiration? Start with our **marquee gallery**. It's a great way to explore styles and find what suits your event best.
 
-      Once you’re ready, get in touch. We’ll help you choose the right marquee and create a setup that stands out.
+      Once you're ready, get in touch. We'll help you choose the right marquee and create a setup that stands out.
+  - type: cta
+    content: |
+      ## Like what you see?
+
+      Tell us about your event and we'll recommend the right marquee, layout and finishing touches.
+    button:
+      text: "Get a free quote"
+      href: "/contact-us/"
+      variant: "primary"
+      size: "lg"
 ---
-

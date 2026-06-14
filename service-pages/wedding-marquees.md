@@ -41,15 +41,16 @@ blocks:
 
       Our modern Capri marquees offer a unique look compared to traditional styles, and we’re confident you and your guests will love them. Contact us today on **01428 751 745** to discuss your wedding marquee hire and secure your perfect event space.
   - type: gallery
+    aspect_ratio: "4/3"
     items:
       - image: "/wp-content/uploads/2016/06/ivy_garlands.jpg"
-        caption: "archway decoration"
+        caption: "Ivy archway decoration"
       - image: "/wp-content/uploads/2016/06/marquee41.jpg"
-        caption: "Part Marquee with photo booth"
+        caption: "Party marquee with photo booth"
       - image: "/wp-content/uploads/2016/06/internal6.jpg"
-        caption: "Wedding Marquee Hire"
+        caption: "Wedding marquee interior"
       - image: "/wp-content/uploads/2016/06/marquee.jpg"
-        caption: "marquee hire surrey"
+        caption: "Wedding marquee in Surrey"
       - image: "/wp-content/uploads/2016/06/capri_night.jpg"
         caption: "Evening Marquee Event Hire"
       - image: "/wp-content/uploads/2016/06/inside-marquee2.jpg"
