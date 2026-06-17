@@ -75,7 +75,7 @@ blocks:
         description: "from £450 per marquee"
   - type: markdown
     content: |
-      Capri matting is available in four sizes: 20×20ft (£100), 20×30ft (£155), 28×38ft (£185) and 28×58ft (£355). All prices are per hire — [get in touch](/contact-us/) for a tailored package quote.
+      Capri matting is available in four sizes: 20×20ft (from £100), 20×30ft (from £155), 28×38ft (from £185) and 28×58ft (from £355). All prices are per hire — [get in touch](/contact-us/) for a tailored package quote.
   - type: markdown
     dark: true
     content: |

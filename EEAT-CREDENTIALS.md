@@ -135,7 +135,7 @@ _All prices quoted are exclusive of VAT — based on delivery Friday / collectio
 
 ### Equipment / add-on pricing (Equipment Hire page)
 
-| Item                   | Detail                         | Price |
+| Item                   | Detail                         |  From |
 | ---------------------- | ------------------------------ | ----: |
 | Plastic patio tables   | seats 4–6                      |    £4 |
 | Round table (5ft)      | seats 8–10                     | £7.50 |
