@@ -58,7 +58,7 @@ blocks:
       - image: "/wp-content/themes/complete-marquees/img/equipment/caprimatt.jpg"
         name: "Capri Matting"
         description: "From £100 — 20×20ft up to 28×58ft"
-      - image: "/wp-content/themes/complete-marquees/img/equipment/dancefloor.jpg"
+      - image: "/wp-content/uploads/2016/06/20ft-x-30ft-with-dance-floor.jpg"
         name: "Dance Floor"
         description: "12ft × 12ft · from £225 (larger on request)"
       - image: "/wp-content/themes/complete-marquees/img/equipment/chromeuplight.jpg"
@@ -70,7 +70,7 @@ blocks:
       - image: "/wp-content/themes/complete-marquees/img/equipment/pea-lights.jpg"
         name: "Archway Lighting"
         description: "from £250 per marquee"
-      - image: "/wp-content/themes/complete-marquees/img/equipment/capri-ivy-and-lights-internal.jpg"
+      - image: "/wp-content/uploads/2016/06/capri-ivy-and-lights-internal_orig.jpg"
         name: "Archway Ivy & Lighting"
         description: "from £450 per marquee"
   - type: markdown
