@@ -93,7 +93,7 @@ blocks:
         caption: "Capri Marquee for 150 guests, seated"
   - type: markdown
     content: |
-      | Package | Includes | Price |
+      | Package | Includes | Price From |
       | --- | --- | --- |
       | Capri Marquee for 25 Guests standing only | 20 x 20ft Capri Marquee; 2 x 6ft Trestle Tables; Flooring; Side Walls - Plain and Clear | £390 |
       | Capri Marquee for 40 Guests Seated | 20 x 30ft Capri Marquee; 4 x 5ft Round Tables; 2 x 6ft Trestle Tables; 40 Chairs; Flooring; Lighting ( 6 Uplighters ); Side Walls - Plain and Clear | £785 |
