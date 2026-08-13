@@ -56,26 +56,35 @@ blocks:
       ## Flooring & Accessories
     items:
       - image: "/wp-content/themes/complete-marquees/img/equipment/caprimatt.jpg"
-        name: "Capri Matting"
-        description: "From £100 — 20×20ft up to 28×58ft"
+        name: "Capri Matting — 20ft × 20ft"
+        description: "Flooring for our 20×20ft marquee · from £100"
+      - image: "/wp-content/themes/complete-marquees/img/equipment/caprimatt.jpg"
+        name: "Capri Matting — 20ft × 30ft"
+        description: "Flooring for our 20×30ft marquee · from £155"
+      - image: "/wp-content/themes/complete-marquees/img/equipment/caprimatt.jpg"
+        name: "Capri Matting — 28ft × 38ft"
+        description: "Flooring for our 28×38ft marquee · from £185"
+      - image: "/wp-content/themes/complete-marquees/img/equipment/caprimatt.jpg"
+        name: "Capri Matting — 28ft × 58ft"
+        description: "Flooring for our 28×58ft marquee · from £355"
       - image: "/wp-content/uploads/2016/06/20ft-x-30ft-with-dance-floor.jpg"
         name: "Dance Floor"
         description: "12ft × 12ft · from £225 (larger on request)"
+      - image: "/wp-content/uploads/2016/06/stage.jpg"
+        name: "Stage"
+        description: "from £150"
       - image: "/wp-content/themes/complete-marquees/img/equipment/chromeuplight.jpg"
         name: "Up Lighters"
         description: "from £95 per marquee · coloured or white"
       - image: "/wp-content/themes/complete-marquees/img/equipment/ivygarlands.jpg"
         name: "Ivy Garlands"
         description: "from £250 per marquee"
-      - image: "/wp-content/themes/complete-marquees/img/equipment/pea-lights.jpg"
-        name: "Archway Lighting"
-        description: "from £250 per marquee"
       - image: "/wp-content/uploads/2016/06/capri-ivy-and-lights-internal_orig.jpg"
         name: "Archway Ivy & Lighting"
         description: "from £450 per marquee"
   - type: markdown
     content: |
-      Capri matting is available in four sizes: 20×20ft (from £100), 20×30ft (from £155), 28×38ft (from £185) and 28×58ft (from £355). All prices are per hire — [get in touch](/contact-us/) for a tailored package quote.
+      Capri matting is sized to match each of our marquees, so the flooring covers the full footprint. All prices are per hire — [get in touch](/contact-us/) for a tailored package quote.
   - type: markdown
     dark: true
     content: |
