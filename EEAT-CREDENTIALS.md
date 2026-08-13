@@ -147,9 +147,9 @@ _All prices quoted are exclusive of VAT — based on delivery Friday / collectio
 | Capri matting 28×38ft  | flooring                       |  £185 |
 | Capri matting 28×58ft  | flooring                       |  £355 |
 | Dance floor            | 12×12ft (larger on request)    |  £225 |
+| Stage                  | for live bands & entertainment |  £150 |
 | Up lighters            | per marquee, coloured or white |   £95 |
 | Ivy garlands           | per marquee                    |  £250 |
-| Archway lighting       | per marquee                    |  £250 |
 | Archway ivy & lighting | per marquee                    |  £450 |
 
 > Rewriting tip: transparent, itemised pricing is itself a **Trust** signal. Concrete
