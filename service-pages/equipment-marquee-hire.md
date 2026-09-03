@@ -67,7 +67,7 @@ blocks:
       - image: "/wp-content/themes/complete-marquees/img/equipment/caprimatt.jpg"
         name: "Capri Matting — 28ft × 58ft"
         description: "Flooring for our 28×58ft marquee · from £355"
-      - image: "/wp-content/uploads/2016/06/20ft-x-30ft-with-dance-floor.jpg"
+      - image: "/wp-content/uploads/2026/09/capri-dance-floor-internal.jpg"
         name: "Dance Floor"
         description: "12ft × 12ft · from £225 (larger on request)"
       - image: "/wp-content/uploads/2016/06/stage.jpg"
