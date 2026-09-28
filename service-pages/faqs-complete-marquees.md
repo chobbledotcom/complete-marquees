@@ -1,9 +1,9 @@
 ---
 permalink: "/faqs-complete-marquees/"
 layout: blocks-page
-title: "FAQs - Complete Marquees | Marquee Hire Hampshire, Surrey, West Sussex"
+title: "Marquee Hire FAQs | Complete Marquees"
 header_text: "FAQs"
-meta_description: "Welcome to the Complete Marquees FAQs page. Do you have questions about marquee and event hire? Please get in touch on 01428 751 745."
+meta_description: "Answers to common Capri marquee hire questions: sizes, weatherproofing, site rules and decorating. Family-run since 2002 in Hampshire, Surrey and West Sussex."
 breadcrumb_name: "FAQs"
 og_image: "https://www.completemarquees.co.uk/wp-content/uploads/2016/06/caprimarqueepic.jpg"
 thumbnail_url: "https://www.completemarquees.co.uk/wp-content/uploads/2016/06/caprimarqueepic.jpg"
@@ -15,33 +15,33 @@ nav_current: "faqs"
 blocks:
   - type: markdown
     content: |
-      Please see below for answers to many frequently asked questions. If you can’t find the answer you’re looking for, please contact our team who are happy to help on 01428 751 745.
+      We have been hiring out Capri and Pagoda marquees since 2002, and these are the questions people ask us most about [Capri marquee hire](/capri-marquee-hire/). If you can't find your answer below, call us on 01428 751 745 and we'll get straight back to you.
   - type: faqs
     items:
       - question: "Do the marquees come with side walls?"
         answer: |
-          **A-** Yes, all marquees come with side walls as standard: half clear, half solid walls. On the day of set up, you can choose if you would like to have them on or off, or could even have half on, half off.
+          Yes, all marquees come with side walls as standard: half clear and half solid. On the day of set up you can choose to have them on or off, or even half on and half off.
       - question: "Can I decorate the marquee myself?"
         answer: |
-          **A-** You are more than welcome to decorate the marquees. You would need to use string, not sticky tape or staples, when putting up your decorations. No crepe paper either, as this can stain the marquee.
-      - question: "Are Capri marquees weatherproof?"
+          You're welcome to decorate the marquee yourself. Use string, not sticky tape or staples, when putting up your decorations. No crepe paper either, as that can stain the marquee.
+      - question: "Are Capri marquees waterproof?"
         answer: |
-          **A-** Yes they are waterproof, please note not in stormy weather.
+          Yes, they are waterproof, though not in stormy weather.
       - question: "Can you connect a Capri marquee to a building?"
         answer: |
-          A-  I’m afraid we cannot connect these types of marquees to buildings due to their shape.
+          We can't connect these types of marquees to buildings because of their shape.
       - question: "How high are the Capri marquee arches?"
         answer: |
-          A: They are approximately **7ft to 8ft high** you would have plenty of head space, the arches creating a more open feel in the marquee. They are approx. 16ft high at the centre pole.
+          The arches are around 7ft to 8ft high, which gives you plenty of head room and a more open feel inside. The centre pole is around 16ft high.
       - question: "How much space do we require?"
         answer: |
-          **A-** We have four sizes available, however larger sizes can be made by joining two or more marquees together. Capri marquees can be linked together to form many interesting shapes and sizes. Please contact us for further details to help with this.
+          We have four sizes available, and larger sizes can be made by joining two or more marquees together. Capri marquees can be linked to form all sorts of shapes and sizes, so get in touch if you'd like help working out what fits your space.
       - question: "Do Capri marquees have to go onto a grassed area?"
         answer: |
-          A- All sizes booked must be able to fit on a flat grassed area, with NO TREES, BUSHES OR HEDGES running through the marquee site, the client **MUST** check any space for the size ordered.
+          All sizes booked have to fit on a flat grassed area, with no trees, bushes or hedges running through the marquee site. Please check the space you have against the size you order before you book.
       - question: "Do we need to have flooring?"
         answer: |
-          A: No during the summer depending on the grass condition, no flooring is needed. If you would like a dance floor in the marquee, we do then have to put flooring down to protect the wooden dance floor.
+          Not during the summer, depending on the grass condition. If you'd like a dance floor in the marquee, we do have to put flooring down to protect the wooden dance floor.
   - type: gallery
     aspect_ratio: "4/3"
     items:
@@ -55,8 +55,11 @@ blocks:
     content: |
       ## About Capri Marquees
 
-      What Is A Capri Marquee? Capri marquee is simply a different style of a marquee. A far cry from the traditional rectangles and squares with 4 walls and an apex ceiling, a Capri marquee is what you need when you want to make a real statement. They are wonderfully unusual, extremely eye-catching and very versatile. Most easily recognised by their distinctive multi-peaked ceiling, equipped with matting and archway lighting and work perfectly as an open space or enclosed by PVC sidings. They can come in a range of sizes too.
+      A Capri marquee is simply a different style of marquee. You can spot it by its distinctive multi-peaked ceiling, and it works well as an open space or closed in with the clear or solid side walls.
 
-      Do you need additional entertainment? Visit Monster Event Hire’s website at [Monster Event Hire](https://www.monstereventhire.co.uk/), they have hundreds of activities to choose from, to make your event a special one, from inflatables to photo booths.
+      We hire them in four sizes, from a 20 by 20 foot marquee that seats around 20 people up to a 28 by 58 foot one that seats 120 or more, and we can link several together for bigger events or awkward spaces. You'll find the full list on our [sizes and prices](/sizes-prices/) page, and our [packages](/packages/) include tables, chairs, flooring and lighting if you want the whole lot sorted. Most of our bookings are weddings and parties, so the [wedding marquees](/wedding-marquees/) and [party marquees](/party-marquees/) pages are a good place to start, and we cover [marquee hire across Hampshire](/Complete-Marquees/hampshire/), Surrey and West Sussex.
+
+      If you need entertainment as well as shelter, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk/) has inflatables, photo booths, rodeo bulls and plenty more, run by the same family team.
+
+      If you would like a quote or want to check a date, call us on **01428 751 745** or get in touch through our [contact page](/contact-us/).
 ---
-

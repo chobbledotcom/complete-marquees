@@ -1,10 +1,10 @@
 ---
 permalink: "/corporate-event-marquees/"
 layout: blocks-page
-title: "Corporate Event Marquee Hire"
+title: "Corporate Event Marquee Hire | Launches, Conferences & Parties"
 header_text: "Corporate Event Marquee Hire"
-meta_description: "Corporate event marquee hire for conferences, parties & launches. Modern Capri marquees, flexible packages & professional service."
-meta_description_html: "Corporate event marquee hire for conferences, parties &amp; launches. Modern Capri marquees, flexible packages &amp; professional service."
+meta_description: "Corporate event marquee hire in Hampshire, Surrey & West Sussex. Capri marquees for conferences, launches, Christmas parties & staff days. Call 01428 751 745."
+meta_description_html: "Corporate event marquee hire in Hampshire, Surrey &amp; West Sussex. Capri marquees for conferences, launches, Christmas parties &amp; staff days. Call 01428 751 745."
 breadcrumb_name: "Corporate Event Marquee Hire"
 og_image: "https://www.completemarquees.co.uk/wp-content/uploads/2016/06/marquee2.jpg"
 thumbnail_url: "/wp-content/uploads/2016/07/wedding-marquee-at-night-polaroid-300x230.png"
@@ -15,9 +15,9 @@ body_class: "wp-singular page-template-default page page-id-97 wp-theme-complete
 blocks:
   - type: split-image
     content: |
-      Looking for reliable and stylish corporate event marquee hire? Complete Marquees is a modern, family-run company specialising in high-quality marquees for a wide range of business events. With years of experience, we provide tailored solutions designed to meet your exact requirements, ensuring your event is both professional and memorable.
+      We're Joanne and David Morris, and we've run Complete Marquees from Havant since 2002. The marquee side and the entertainment side of the business work together, so we're used to planning a corporate day from the marquee through to the entertainment.
 
-      Our marquee hire services are perfect for **product launches, corporate parties, training courses, conferences**, and many other corporate events. We understand that every event is unique, which is why we offer flexible packages to suit different sizes, layouts, and budgets.
+      Our Capri marquees are what most of our corporate work goes up in. We hire them for product launches, conferences, training days, staff family days, Christmas parties and client entertaining, on business-park lawns, hotel grounds, school fields and private land across Hampshire, Surrey and West Sussex. A marquee gives you a covered space with proper flooring, lighting, tables and chairs, so the day carries on whatever the sky does.
     figure_src: "/wp-content/uploads/2016/07/wedding-marquee-at-night-polaroid.png"
     figure_alt: "Wedding Marquee Party"
   - type: gallery
@@ -31,16 +31,22 @@ blocks:
         caption: "Party Marquee Hire"
   - type: markdown
     content: |
-      Our contemporary **Capri marquees** offer a sleek and modern alternative to traditional marquees, helping your event stand out. These versatile structures can be linked together, making them ideal for both small gatherings and large-scale corporate functions. Whether you need a stylish space for networking or a fully equipped venue for presentations, we can create the perfect setup.
+      ### What we put up
 
-      At Complete Marquees, we pride ourselves on delivering a professional, reliable service from start to finish. From initial consultation to installation and breakdown, our experienced team will work closely with you to ensure everything runs smoothly.
+      The Capri range has four sizes, from a 20 by 20 foot unit that seats about 20 people up to a 28 by 58 foot unit that seats 120 plus, and we can link several together to cover a bigger or awkwardly shaped space. A 100-person event usually works out as two linked 28 by 38 foot marquees, which leaves room for ten round tables, a dance floor and a bar area. You can see the full list on our [sizes and prices](/sizes-prices/) page.
 
-      If you’re planning a corporate event and need dependable **marquee hire**, we’re here to help. Explore our range of marquees and pricing options to find the ideal solution for your event.
+      Every marquee comes with half-clear, half-solid side walls as standard, so we open the clear panels on a warm day or keep them closed if it turns cold. Flooring, tables, chairs, dance floor, staging, lighting and heaters are add-ons we supply, and packages start from £390 for a 20 by 20 foot setup with delivery, installation and collection included. Our [packages and prices](/packages/) page lists every setup with what's in it.
 
-      Contact Complete Marquees today to discuss your requirements and discover how we can help make your corporate event a success.
+      ### Where we put them
+
+      We're honest about where a marquee can go. It needs flat grass with no trees, bushes or hedges through the footprint, we can't attach it to a building, and we won't put one up in stormy weather. Most business parks and school fields are fine with that, and we'll talk you through your site before you book. We've done corporate work around the business parks at Chineham, Houndmills, Viables and Whiteley, including a staff family day for CooperVision, and we cover the same runs every season. For events in that direction, our [marquee hire in Basingstoke](/Complete-Marquees/basingstoke/) page has more on the area.
+
+      If you need entertainment as well as shelter, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk) supplies photo booths, inflatables, rodeo bulls and garden games to the same corporate events. It's the same family and the same team, so you can sort the whole day through one call. You can see real setups on our [Capri marquee gallery](/capri-marquee-hire/), and weddings are covered on our [wedding marquee hire](/wedding-marquees/) page.
+
+      To check dates for a launch, conference or party, ring us on **01428 751 745** or send the enquiry form via our [contact page](/contact-us/). We'll tell you straight away if your date is free, and we hold the date once the quote suits you.
   - type: cta
     content: |
-      To avoid disappointment we always advise checking your potential dates availability with us as soon as possible.
+      Corporate dates go quickly through the season, so check your date with us before you firm anything up. Ring us on 01428 751 745 or send the enquiry form via our contact page.
 
       {{ site.phone.display }}
     button:

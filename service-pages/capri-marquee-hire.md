@@ -1,9 +1,9 @@
 ---
 permalink: "/capri-marquee-hire/"
 layout: blocks-page
-title: "Our Marquees: Explore Event Setup Inspirations"
+title: "Capri & Pagoda Marquee Hire | Our Marquees"
 header_text: "Our Marquees"
-meta_description: "Marquee hire picture gallery see our beautiful Capri and Pagoda style at a variety of events throughout Hampshire, Surrey and West Sussex."
+meta_description: "Capri and Pagoda marquee hire photos: real setups for weddings, parties and corporate events across Hampshire, Surrey and West Sussex."
 breadcrumb_name: "Our Marquees"
 og_image: "https://www.completemarquees.co.uk/wp-content/uploads/2017/05/capri-spring.jpg"
 thumbnail_url: "https://www.completemarquees.co.uk/wp-content/uploads/2017/05/capri-spring.jpg"
@@ -22,9 +22,13 @@ blocks:
     content: |
       ## Our Gallery
 
-      Welcome to our **gallery**. Here, you can explore a range of real event setups we have delivered. At Complete Marquees, we provide high-quality **marquee hire** for weddings, corporate events, garden parties, and special occasions.
+      These photos are real installs, taken at events we set up ourselves across Hampshire, Surrey and West Sussex. They show the Capri and Pagoda marquees we hire out, the linking we use to cover awkward or oversized spaces, and the way a marquee looks once the lighting, flooring and dance floor are in.
 
-      Our gallery features both **Capri** and **Pagoda marquees**. Each structure offers a modern, stylish look. You can use them for small gatherings or large-scale events. Need more space? We can link marquees together to create the perfect layout.
+      A Capri is a modern-looking marquee with a curved frame and a centre pole, and they come in four sizes, from 20 by 20 feet up to 28 by 58 feet. The smallest seats around 20 people, the biggest seats 120 or more, so we cover everything from a small garden party to a full wedding breakfast. Every marquee comes with half-clear, half-solid side walls as standard, which you can open up in warm weather or keep shut if the weather turns.
+
+      We can link Capri marquees together to make one bigger space, and that's how we handle events where a single marquee isn't enough. You'll see several examples in the photos below. The Pagoda is our standalone option, often used as an entrance to a larger marquee or on its own.
+
+      If you're sizing up your own event, our [sizes and prices](/sizes-prices/) page lists every footprint and what it seats, and our [packages](/packages/) page shows what each hire includes. We also hire out for weddings, parties and corporate days, so the [wedding marquee hire](/wedding-marquees/) page shows how the bigger setups come together.
   - type: gallery
     masonry: true
     items:
@@ -84,9 +88,9 @@ blocks:
         caption: "Linked marquees"
   - type: markdown
     content: |
-      ## Internal Gallery
+      ## Inside the marquees
 
-      Step inside our marquees. From bare interiors ready for your own styling to fully dressed setups with flooring, lighting and dance floors, these shots show what's possible once you're under cover.
+      These shots are the same installs from the other side, once we're under cover. Some interiors are left bare, ready for you to dress them your own way, and some are fully set up with flooring, tables, lighting and a dance floor. Our team builds the whole space, so it's ready before your guests arrive.
   - type: gallery
     masonry: true
     items:
@@ -130,18 +134,16 @@ blocks:
         caption: "Pagoda with no sides"
   - type: markdown
     content: |
-      As you browse, you'll see different layouts, lighting styles, and configurations. This helps you picture what your own event could look like. Whether you want a clean, professional setup or a relaxed, social space, you'll find ideas here.
+      As you browse, you'll see different layouts, lighting styles and configurations, and most of them are at venues we've worked before. That should help you see how your own event could look, whether you want a clean setup for a corporate day or a more relaxed space for a garden party.
 
-      Every event is different. That's why we work closely with each client. We design marquees to match your vision, space, and guest numbers. Our team handles everything, from planning to installation, with care and attention to detail.
+      Every event is different, so we talk through your space, guest numbers and what you want to do with the day before we suggest a layout. We deliver, install and take down the kit ourselves, so it goes up properly and comes back in good order. If you need entertainment as well as shelter, our sister company Monster Event Hire ([monstereventhire.co.uk](https://www.monstereventhire.co.uk)) covers photo booths, inflatables and more, and it's the same team.
 
-      Looking for inspiration? Start with our **marquee gallery**. It's a great way to explore styles and find what suits your event best.
-
-      Once you're ready, get in touch. We'll help you choose the right marquee and create a setup that stands out.
+      We cover Hampshire, Surrey and West Sussex, and our [party marquee hire](/party-marquees/) and [Fareham marquee hire](/Complete-Marquees/fareham/) pages give you more of an idea of what we do locally. When you're ready to talk dates, send us a message or call us on **01428 751 745** and we'll recommend the right marquee and layout.
   - type: cta
     content: |
       ## Like what you see?
 
-      Tell us about your event and we'll recommend the right marquee, layout and finishing touches.
+      Tell us about your event, where it's happening and how many guests you're expecting, and we'll recommend the right marquee, layout and finishing touches. Call us on 01428 751 745 or send a message through our [contact page](/contact-us/).
     button:
       text: "Get a free quote"
       href: "/contact-us/"

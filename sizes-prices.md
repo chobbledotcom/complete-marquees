@@ -1,9 +1,9 @@
 ---
 permalink: "/sizes-prices/"
 layout: blocks-page
-title: "Sizes and Prices | Complete Marquees"
+title: "Marquee Hire Sizes & Prices | Capri & Pagoda"
 header_text: "Sizes & Prices"
-meta_description: "Marquee hire prices for Capri and Pagoda marquees. Ideal for weddings, garden parties, and corporate events in Hampshire, Surrey & Sussex."
+meta_description: "Marquee hire prices for Capri and Pagoda marquees in Hampshire, Surrey and West Sussex. For weddings, parties and corporate events. Call 01428 751 745."
 breadcrumb_name: "Sizes & Prices"
 nav_current: "sizes"
 og_image: "https://www.completemarquees.co.uk/wp-content/uploads/2019/10/5828ft.jpg"
@@ -22,37 +22,37 @@ redirect_from:
 blocks:
   - type: markdown
     content: |
-      ## Marquee Hire – Sizes & Prices
+      ## Marquee Hire - Sizes & Prices
 
-      Plan your next event with **Complete Marquees**, offering high-quality **marquee hire** for weddings, parties, corporate events, and garden celebrations throughout **Hampshire, Surrey, and West Sussex**. Our modern marquees come in multiple sizes, making them perfect for any occasion.
+      We're Joanne and David Morris, the family behind Complete Marquees, and we've been hiring Capri and Pagoda marquees across Hampshire, Surrey and West Sussex since 2002. We deliver, put up and take down every marquee ourselves, so we know exactly what size will fit your garden or field.
 
-      For larger events, link two or more Capri marquees to create custom layouts and unique shapes. You can also enhance your space with stunning lighting and décor that matches your theme. Keep in mind, Capri marquees require grass surfaces.
+      The table below lists our four Capri sizes plus the Pagoda, with the guest numbers each one sits or stands. If you're expecting more than 120 guests, we link two or more Capri marquees together to cover big or awkward spaces. Every Capri comes with half-clear, half-solid side walls as standard, so you can open it up on a warm day or keep the weather out. Capri marquees need flat grass, with no trees, bushes or hedges running through the footprint.
+
+      Prices start at £295 plus VAT for the 20 by 20 foot Capri, or from £390 in our [marquee packages](/packages/), which include tables, chairs, flooring and side walls. For ideas on how people use our marquees, see our [wedding marquee hire](/wedding-marquees/), [party marquee hire](/party-marquees/) and [corporate event marquee hire](/corporate-event-marquees/) pages, or look at the [Capri marquee hire](/capri-marquee-hire/) page for more detail on the structure itself.
   - type: gallery
     items:
       - image: "/wp-content/uploads/2016/06/marquee3.jpg"
         caption: "Capri Marquees Winchester"
       - image: "/wp-content/uploads/2016/06/marqueeclient.jpg"
-        caption: "capri marquee hire"
+        caption: "Capri marquee hire"
   - type: split-image
     content: |
       ## Pagoda Marquees
 
-      Our **Pagoda marquees** feature a striking pitched roof that instantly elevates any event. Use the **Chinese Hat style** as a standalone marquee or as an eye-catching entrance to a larger marquee. Skip the guy ropes, and adjust side walls on the day to suit your event perfectly.
+      Our Pagoda marquees have a pitched roof that stands out, and we use them either on their own or as an entrance to a bigger Capri. The 6 by 6 metre Pagoda seats 40 people. There are no guy ropes to trip over, and we set the side walls on the day, so you can have them open, solid or half-and-half depending on the weather.
 
-      Both Capri and Pagoda marquees offer flexible, elegant spaces that impress guests and enhance your celebration. Our team delivers, sets up, and collects each marquee efficiently, letting you enjoy the day stress-free.
-
-      Whether you plan a small garden party or a large corporate function, we provide the right marquee to make your event unforgettable. Contact Complete Marquees today to book your ideal marquee.
+      We can also supply the extras that go with it, from flooring and tables to lighting and a dance floor. If you need entertainment as well as shelter, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk) has bouncy castles, photo booths and more. It's the same family and the same phone number, so you can sort the whole event in one call.
     figure_src: "/wp-content/uploads/2016/06/pagoda-marquee.jpg"
-    figure_alt: "Pagoda Marquees Surrey"
+    figure_alt: "Pagoda marquee used as an entrance at a Surrey event"
   - type: split-image
     content: |
       ### Why Choose Complete Marquees?
 
-      Both Capri and Pagoda marquees provide flexible, elegant spaces that impress guests and elevate your celebration. Our experienced team manages delivery, installation, and collection, ensuring a smooth, stress-free experience. We work closely with you to design layouts, choose sizes, and incorporate special features such as lighting, flooring, and décor.
+      Because we've been at this since 2002, we've seen most of the problems a marquee can throw at you, and we plan around them. We measure your space before we quote, we tell you straight if your site won't work, and we're usually there well before your guests arrive. We handle delivery, installation and collection ourselves, so the marquee goes up properly and comes down in good order.
 
-      Whether you are planning a small garden party, a large wedding, or a corporate function, Complete Marquees has the perfect solution. Browse our gallery to see real examples of our marquees in action, and contact us today to discuss your requirements. Secure your marquee hire and create an event that will be remembered by all your guests.
+      Our Capri marquees suit weddings, birthday parties, fun days, corporate events and garden parties of pretty much any size. Have a look at our [special events](/special-events/) page for fetes and fundraisers, or [get in touch](/contact-us/) to talk through your dates and guest numbers. We cover Hampshire, Surrey and West Sussex, with [marquee hire in Portsmouth](/Complete-Marquees/portsmouth/) and [Winchester](/Complete-Marquees/winchester/) among the areas we deliver to.
     figure_src: "/wp-content/uploads/2022/01/pagoda-2048x1536.jpg"
-    figure_alt: ""
+    figure_alt: "Pagoda marquee set up on a lawn"
   - type: markdown
     content: |
       | Description | Size ( Approx ) | Seated | Standing | Price From |
@@ -64,5 +64,6 @@ blocks:
       | Pagoda | 6m x 6m | 40 |  | £395 |
 
       All prices quoted are exclusive of VAT - Based on delivery Friday - collection Sunday
----
 
+      Call us on **01428 751 745** to check availability for your date, or send a message through our [contact page](/contact-us/) and we'll get back to you.
+---

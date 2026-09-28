@@ -5,9 +5,9 @@ redirect_from:
 layout: blocks-page
 sidebar: false
 nav_current: "packages"
-title: "Capri marquee hire Packages - complete marquees"
+title: "Capri Marquee Hire Packages for Hampshire, Surrey & Sussex"
 header_text: "Capri Marquee Hire Packages in Hampshire, Surrey & West Sussex"
-meta_description: "Complete Marquees packages. Examples of our most popular packages Covering, Hampshire, Surrey and West Wessex. Capri Marquee hire, pagodas"
+meta_description: "Capri marquee hire packages in Hampshire, Surrey & West Sussex for weddings, parties and corporate events. Prices from £390, with delivery and installation."
 breadcrumb_name: "Capri Marquee Hire Packages"
 og_image: "https://www.completemarquees.co.uk/wp-content/uploads/2017/05/inside-marquee2.jpg"
 og_image_width: "960"
@@ -21,65 +21,53 @@ body_class: "wp-singular page-template page-template-_templates page-template-pa
 blocks:
   - type: split-image
     content: |
-      Make your event truly unforgettable with our **Capri marquee hire packages**. We provide stylish, comfortable, and fully customisable marquees for **weddings, parties, corporate events, and family celebrations**. Every package is tailored to suit your vision, ensuring your event stands out.
+      Every hire starts with a Capri marquee, and the package is what we put around it. We're Joanne and David Morris, a family-run business based in Havant, and we've been supplying marquees in Hampshire, Surrey and West Sussex since 2002. We deliver, install and collect everything ourselves, so the package you book is the one that goes up on the day.
 
-      From flooring, lighting, and furniture to themed décor, we customise each marquee so it perfectly complements your style. Whether you prefer a classic, elegant look or a modern, vibrant theme, we can adjust each package by adding or removing elements.
+      Each package below includes the marquee, its half-clear, half-solid side walls, flooring, and the tables and chairs for your guest numbers. From there we can add a dance floor, staging, lighting or heaters, or take things out if you already have them sorted. Prices start at £390 for a 20 by 20 foot Capri, and you can see how the sizes stack up on our [sizes and prices](/sizes-prices/) page.
     figure_src: "/wp-content/uploads/2017/05/inside-marquee2.jpg"
     figure_alt: "Inside a fully dressed Capri marquee"
   - type: markdown
     content: |
-      ## Flexible Package Options
+      ## What you can add
 
-      We offer a wide variety of options to ensure your marquee meets your exact requirements:
+      The packages below are starting points. On top of the marquee, side walls, flooring and tables you can add:
 
-      - **Marquee Sizes:** Small intimate marquees to large-scale setups for hundreds of guests
-      - **Flooring:** Dance floors, or simple matting
-      - **Lighting:** Fairy lights, LED uplighting, and spotlights
-      - **Furniture:** Tables, chairs, seating lounges, and bar setups
-      - **Extras:** Heaters, fans, or clear sides for an outdoor view
+      - a dance floor for evening parties and wedding receptions
+      - staging for a band or a small stage area
+      - uplighting, fairy lights or a lit archway
+      - heaters if the weather turns cold
+      - clear side panels so the marquee opens onto the garden
 
-      You can select the features you need and remove those you don't, giving you a truly customisable experience.
+      Tell us the shape of the day and we'll build the package around it. If you only want the marquee and you already have the rest sorted, that's fine too, we'll price the hire accordingly.
   - type: markdown
     content: |
-      ## Site Requirements
+      ## Site requirements
 
-      To ensure safety and smooth setup, we require all marquees to be placed on a **flat, grassed area** free from trees, bushes, or hedges. Please check your site in advance to confirm it can accommodate your chosen marquee size.
+      A Capri marquee needs a flat, grassed area with no trees, bushes or hedges through the footprint, and we can't attach one to a building or put it up in stormy weather. That suits most gardens, school fields and village greens, but it's worth measuring the space and checking for obstructions before you book. We'll go through the size you need and whether your site will take it when you get in touch.
 
-      ## Why Choose Capri Marquee Hire?
+      ## Why people hire from us
 
-      - **Flexible Packages** – We design every marquee to match your event's style and size.
-      - **Professional Setup & Breakdown** – Our experienced team delivers, installs, and removes everything efficiently.
-      - **Wide Range of Options** – Choose from flooring, lighting, furniture, and décor tailored to your event.
-      - **Perfect for All Events** – Weddings, private parties, corporate events, family celebrations, and charity fundraisers.
-      - **Local Expertise** – We serve Hampshire, Surrey & West Sussex, providing reliable and professional service.
-      - **Stress-Free Planning** – We take care of logistics so you can focus on your guests.
+      - we've been family-run since 2002, so the people you speak to are the people who turn up
+      - we deliver, install and take down every marquee ourselves, usually well before your guests arrive
+      - you can link Capri marquees together to cover a bigger or awkward space, and we'll sort the layout with you
+      - we cover Hampshire, Surrey and West Sussex, and most of the towns in the next section
   - type: markdown
     content: |
-      ## Perfect for Any Event
+      ## What the packages are used for
 
-      Our **Capri marquees** suit all types of events, including:
+      The same Capri marquee turns up at weddings, birthday parties, christenings, corporate days, school and village events, and the occasional charity fundraiser. We're as happy putting up a single 20 by 20 for a garden party as we are linking three together for a 150-guest reception. If you're planning one, our [wedding marquee hire](/wedding-marquees/), [party marquee hire](/party-marquees/) and [corporate event marquee hire](/corporate-event-marquees/) pages set out what each type of event usually takes.
 
-      - **Weddings** – Elegant spaces for ceremonies, receptions, and evening celebrations
-      - **Birthday Parties & Anniversaries** – Flexible sizes for intimate or large gatherings
-      - **Corporate Events** – Conferences, team-building events, and client entertaining
-      - **Family Celebrations** – Christenings, family reunions, and milestone parties
-      - **Festivals & Community Events** – Market stalls, fun days, and exhibitions
+      ## Areas we cover
 
-      ## Areas We Cover
+      We hire Capri marquees across Hampshire, Surrey and West Sussex. In Hampshire that covers Southampton, Portsmouth, Winchester, Basingstoke, Farnborough and Alton; in Surrey it's Guildford, Woking, Epsom, Camberley and Farnham; and in West Sussex it's Chichester, Worthing, Horsham, Crawley and Haywards Heath. Each town has its own page, such as [marquee hire in Southampton](/Complete-Marquees/southampton/).
 
-      We provide **Capri marquee hire across Hampshire, Surrey & West Sussex**, including:
-
-      - **Hampshire** – Southampton, Portsmouth, Winchester, Basingstoke, Farnborough, Alton
-      - **Surrey** – Guildford, Woking, Epsom, Camberley, Farnham
-      - **West Sussex** – Chichester, Worthing, Horsham, Crawley, Haywards Heath
-
-      Contact us to confirm availability in your area and discuss your exact requirements.
+      A marquee is often part of the same event as the entertainment, and our sister company [Monster Event Hire](https://www.monstereventhire.co.uk) supplies bouncy castles, photo booths and rodeo bulls. It's the same family and the same phone number, so you can sort the shelter and the entertainment through one call.
   - type: gallery
     masonry: true
     intro_content: |
       ## Our Most Popular Packages
 
-      Each Capri package below is a starting point — mix, match and scale to fit your guest numbers.
+      Each package below is a starting point. Mix, match and scale it to fit your guest numbers.
     items:
       - image: "/wp-content/themes/complete-marquees/img/packages/30-standing.png"
         caption: "Capri Marquee for 25 guests, standing only"
@@ -101,9 +89,9 @@ blocks:
       | Capri Marquee for 100 Guests Seated | 2 x 28 x 38ft Capri Marquees (and linking kit) = 28ft x 80ft; 10 x 5ft Round Tables; 3 x 6ft Trestle Tables; 100 Chairs; Flooring; Dancefloor; Lighting ( 12 Uplighters ); Side Walls - Plain and Clear | £2100 |
       | Capri Marquee for 150 Guests Seated | 3 x 28 x 38ft Capri Marquees (and linking kit); 15 x 5ft Round Tables; 3 x 6ft Trestle Tables; 150 Chairs; Flooring; Dancefloor; Lighting ( 18 Uplighters ); Side Walls - Plain and Clear | £3100 |
 
-      ## Booking & Hire
+      ## Booking and delivery
 
-      We offer competitive pricing and flexible hire options. Our packages include **delivery, installation, and removal**, so you can relax and enjoy your event.
+      All the prices above include delivery, installation and collection. If you tell us your date, location and guest numbers, we'll confirm availability and put a package together to suit. Call us on **01428 751 745** or send an enquiry through our [contact page](/contact-us/) and we'll come back to you the same day.
   - type: cta
     content: |
       ## Ready to book your package?

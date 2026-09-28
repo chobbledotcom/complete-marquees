@@ -1,9 +1,9 @@
 ---
 permalink: "/equipment-marquee-hire/"
 layout: blocks-page
-title: "Capri Marquee Hire Surrey, Party Marquee equipment Hampshire"
-header_text: "Equipment Hire Complete Marquees"
-meta_description: "Capri Marquee hire parties, weddings, Hampshire or surrey. Choose from a range of options lighting, dance floor, staging"
+title: "Marquee Equipment Hire in Hampshire, Surrey & West Sussex"
+header_text: "Marquee Equipment Hire"
+meta_description: "Marquee equipment hire in Hampshire, Surrey & West Sussex. Tables, chairs, dance floors, staging, lighting and flooring for weddings and parties."
 breadcrumb_name: "Equipment Hire"
 og_image: "https://www.completemarquees.co.uk/wp-content/uploads/2016/06/internal4.jpg"
 thumbnail_url: "https://www.completemarquees.co.uk/wp-content/uploads/2016/06/internal4-300x174.jpg"
@@ -16,20 +16,22 @@ sidebar: false
 blocks:
   - type: split-image
     content: |
-      ## Wedding & Event Marquee Hire
+      ## Equipment Hire
 
-      At **Complete Marquees**, we specialise in stylish **marquee hire** for weddings, parties, corporate events and garden celebrations. Serving **Hampshire, Surrey, and West Sussex**, our family-run business has delivered hundreds of successful events since 2002.
+      We're Joanne and David Morris, a family-run team based in Havant, and we've been hiring out marquees and event kit since 2002. Alongside our Capri and Pagoda marquees we supply tables, chairs, flooring, dance floors, staging and lighting, and we deliver, install and collect the lot ourselves. You can see how our [Capri marquees](/capri-marquee-hire/) link together to cover big or awkward spaces.
 
-      ### Capri & Pagoda Marquees
-
-      Our modern **Capri marquees** offer a fresh alternative to traditional styles. They come in multiple sizes and link together to cover large or irregular areas. The **Pagoda marquees** feature a striking pitched roof and work alone or as an entrance to a larger marquee.
+      Most of the kit below goes inside a marquee, but some of it works fine on its own. Tables and chairs for a garden party, for example, don't need a marquee at all.
     figure_src: "/wp-content/uploads/2016/06/internal4.jpg"
     figure_alt: "Inside a Capri marquee dressed for an event"
   - type: markdown
     content: |
       ### Equipment Hire & Packages
 
-      We offer fully **customisable packages**. Add or remove items to suit your event — from seating arrangements and plain marquees with dance floors to fully furnished setups. Enhance your marquee with **lighting**, **flooring** and **furniture** to create a stylish, professional environment, and even hire a **stage** for live bands or entertainment.
+      You can build your own package by adding or removing items, or take one of our ready-made ones. The cheapest option starts at £390 and covers a 20 by 20 foot marquee with flooring, tables and side walls, delivered, installed and collected. Our [packages page](/packages/) shows full setups for 25, 40, 80, 100 and 150 guests, and the [sizes and prices page](/sizes-prices/) lists every marquee size we offer.
+
+      ### What each bit is for
+
+      Tables and chairs seat your guests, and a round table packs more people in than the same run of trestles. Flooring keeps the grass out and gives a flat surface underfoot. A dance floor gives the evening a proper surface to dance on. A stage lifts a band or a DJ up so they're easier to see and hear. Lighting keeps the space usable after dark, and up lighters or ivy garlands dress the walls up without much effort.
   - type: image-cards
     image_aspect_ratio: "4/3"
     intro_content: |
@@ -39,13 +41,13 @@ blocks:
         name: "Plastic Patio Tables"
         description: "Seats 4–6 people · from £4"
       - image: "/wp-content/themes/complete-marquees/img/equipment/5roundtable.jpg"
-        name: "Round Table — 5ft"
+        name: "Round Table 5ft"
         description: "Seats 8–10 people · from £7.50"
       - image: "/wp-content/themes/complete-marquees/img/equipment/4roundtable.jpg"
-        name: "Round Table — 4ft"
+        name: "Round Table 4ft"
         description: "Seats 6–8 people · from £6"
       - image: "/wp-content/themes/complete-marquees/img/equipment/trestletable.jpg"
-        name: "Trestle Table — 6ft"
+        name: "Trestle Table 6ft"
         description: "Seats 6–8 people · from £7.50"
       - image: "/wp-content/themes/complete-marquees/img/equipment/bistrochair.jpg"
         name: "White Bistro Chairs"
@@ -56,16 +58,16 @@ blocks:
       ## Flooring & Accessories
     items:
       - image: "/wp-content/themes/complete-marquees/img/equipment/caprimatt.jpg"
-        name: "Capri Matting — 20ft × 20ft"
+        name: "Capri Matting 20ft × 20ft"
         description: "Flooring for our 20×20ft marquee · from £100"
       - image: "/wp-content/themes/complete-marquees/img/equipment/caprimatt.jpg"
-        name: "Capri Matting — 20ft × 30ft"
+        name: "Capri Matting 20ft × 30ft"
         description: "Flooring for our 20×30ft marquee · from £155"
       - image: "/wp-content/themes/complete-marquees/img/equipment/caprimatt.jpg"
-        name: "Capri Matting — 28ft × 38ft"
+        name: "Capri Matting 28ft × 38ft"
         description: "Flooring for our 28×38ft marquee · from £185"
       - image: "/wp-content/themes/complete-marquees/img/equipment/caprimatt.jpg"
-        name: "Capri Matting — 28ft × 58ft"
+        name: "Capri Matting 28ft × 58ft"
         description: "Flooring for our 28×58ft marquee · from £355"
       - image: "/wp-content/uploads/2026/09/capri-dance-floor-internal.jpg"
         name: "Dance Floor"
@@ -84,22 +86,20 @@ blocks:
         description: "from £450 per marquee"
   - type: markdown
     content: |
-      Capri matting is sized to match each of our marquees, so the flooring covers the full footprint. All prices are per hire — [get in touch](/contact-us/) for a tailored package quote.
+      Capri matting is cut to match each of our marquees, so the flooring covers the full footprint. In summer, on decent grass, you can often manage without flooring altogether, but we'd always fit it under a dance floor to keep the panels level and the matting clean. All prices are per hire. [Get in touch](/contact-us/) for a quote, and if you're planning something in [Winchester](/Complete-Marquees/winchester/) or anywhere else across Hampshire, Surrey or West Sussex, we're happy to talk it through.
   - type: markdown
     dark: true
     content: |
-      ### Additional Entertainment
+      ### Entertainment to go with it
 
-      Looking for extra fun? Our sister site, [**Monster Event Hire**](https://www.monstereventhire.co.uk/), offers hundreds of activities, from inflatables to photo booths, making your event even more memorable.
+      If you need the fun side sorted as well, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk/) has bouncy castles, rodeo bulls, photo booths and assault courses. It's the same family, the same team and the same phone line, so you can sort the shelter and the entertainment in one call.
 
-      ### Why Choose Complete Marquees?
-
-      We pride ourselves on **reliability, punctuality, and professional service**. Our experienced team handles delivery, installation and collection, ensuring your event runs smoothly — whether you're planning a small garden party or a large wedding.
+      We deliver, install and collect everything ourselves, and we're usually on site well before your guests arrive. If you'd like a quote, ring us on **01428 751 745** or fill in the contact form, and tell us roughly how many guests you're expecting and what you've already got sorted.
   - type: cta
     content: |
-      ## Build your perfect package
+      ## Build your package
 
-      Tell us what you need and we'll put together a marquee and equipment package to suit your event and budget.
+      Tell us what you need and we'll put together a marquee and equipment package to fit your event and your budget.
     button:
       text: "Get a free quote"
       href: "/contact-us/"

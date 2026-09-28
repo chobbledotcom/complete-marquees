@@ -1,9 +1,9 @@
 ---
 permalink: "/contact-us/"
 layout: blocks-page
-title: "Complete Marquees contact us- capri marquee hire"
-header_text: "Enquire About Your Special Event – Capri Marquee Hire Hampshire, Surrey & West Sussex"
-meta_description: "Contact Complete Marquees on 01428 751 745. Capri marquee hire for any event in Hampshire, Surrey and West Sussex."
+title: "Contact Us | Capri Marquee Hire Hampshire, Surrey & West Sussex"
+header_text: "Enquire About Marquee Hire in Hampshire, Surrey & West Sussex"
+meta_description: "Contact Complete Marquees for Capri marquee hire. Weddings, parties and corporate events across Hampshire, Surrey and West Sussex. Call 01428 751 745."
 breadcrumb_name: "Contact Us"
 nav_current: "contact"
 sidebar: false
@@ -16,21 +16,21 @@ body_class: "wp-singular page-template page-template-_templates page-template-pa
 blocks:
   - type: markdown
     content: |
-      Planning a wedding, birthday, corporate event, or family celebration? **Complete Marquees** can help you create the perfect outdoor venue with our **Capri marquee hire**. We offer stylish, customisable marquees that suit any event and impress your guests.
+      We're Joanne and David Morris, and we've run Complete Marquees from Havant since 2002. We hire out Capri and Pagoda marquees across Hampshire, Surrey and West Sussex, and we deliver, install and collect every one ourselves, so we know it goes up properly and comes down in good order.
 
-      Use the short form below to enquire about any of our **Capri marquee packages**. You can also tell us your own requirements, and we’ll design a bespoke setup just for your special event. Our marquees come fully equipped with **professional lighting, premium flooring, stylish furniture, and themed décor** to make your celebration unforgettable.
+      The quickest way to start is to send us the basics of your event. Tell us the date, the location or postcode, and roughly how many guests you're expecting. From that we can suggest a size and a package, and check that your date is free. Our [marquee sizes and prices](/sizes-prices/) page lists all four Capri sizes, from a 20 by 20 foot setup for around 20 seated to a 28 by 58 foot setup for 120 or more, and the [packages and prices](/packages/) page shows what each one includes.
 
-      We handle everything from **delivery and setup to breakdown**, so you can focus on enjoying your event. Whether you need a small intimate marquee or a large-scale structure for hundreds of guests, our marquees provide a flexible and elegant solution for all occasions.
+      The same kit works for most events. Whether you're planning a [wedding marquee hire](/wedding-marquees/), a [party marquee hire](/party-marquees/) or a [corporate event](/corporate-event-marquees/), we can link Capri marquees together to cover bigger or awkward spaces, and add flooring, tables, chairs, a dance floor or staging as needed.
 
-      **Site Requirements:** All marquees must be placed on a **flat, grassed area** with no trees, bushes, or hedges in the space. Please check your site before booking to ensure the marquee fits safely and allows smooth setup.
+      Before you book, it's worth checking your site. Marquees need flat grass, with no trees, bushes or hedges through the footprint. We can't attach them to buildings, and we don't put them up in stormy weather. If the ground isn't suitable, it's better to find out before we arrive.
 
-      📞 **Contact us today** to discuss your **Capri marquee hire in Hampshire, Surrey, or West Sussex**. Our friendly team will guide you through the available options, answer all your questions, and help you plan a seamless, memorable event.
+      We run Complete Marquees alongside our sister company, Monster Event Hire ([monstereventhire.co.uk](https://www.monstereventhire.co.uk)), which supplies bouncy castles, photo booths and games for the same events. Same team and the same phone number, so you can sort the shelter and the entertainment through one call. If you want a feel for the jobs we take on, our [marquee hire in Hampshire](/Complete-Marquees/hampshire/) page covers the towns we work in.
 
-      Don’t wait—secure your **Capri marquee** today and create a beautiful, fully equipped outdoor venue that your guests will love.
+      Use the form below and we'll come back to you with availability and a price.
   - type: gallery
     items:
       - image: "/wp-content/uploads/2017/05/inside-marquee.jpg"
-        caption: ""
+        caption: "Capri marquee interior set up and ready"
   - type: custom-contact-form
     content: |
       Use the short form below to enquire about your event.
@@ -65,7 +65,9 @@ blocks:
         rows: 6
   - type: markdown
     content: |
-      ### Contact Information
+      ### Contact information
+
+      For a quick answer, call us on 01428 751 745. We answer the phone ourselves, so you'll usually get one of us on the line, and we'll sort out dates, sizes and prices on the spot.
 
       Tel: [{{ site.phone.display }}](tel:{{ site.phone.tel }})
 
@@ -74,7 +76,6 @@ blocks:
     content: |
       ### Opening hours
 
-      - **Mon-Fri:** 8am-9pm
-      - **Weekends:** 8am-8pm
+      - Mon-Fri: 8am-9pm
+      - Weekends: 8am-8pm
 ---
-
