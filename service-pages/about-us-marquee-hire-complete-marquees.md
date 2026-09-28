@@ -45,7 +45,7 @@ blocks:
 
       A few honest notes on siting. We need flat grass with no trees, bushes or hedges through the footprint, we won't install in stormy weather, and the structures can't be attached to buildings. If you're not sure whether your garden or field will work, ring us and we'll talk it through.
 
-      We deliver, set up and collect everything ourselves, so the marquee goes up well before your guests arrive and comes down in good order afterwards. You can read about the areas we cover, starting with [marquee hire in Hampshire](/Complete-Marquees/hampshire/). To check dates and get a quote, ring us on **01428 751 745** or [get in touch](/contact-us/) and we'll let you know straight away.
+      We deliver, set up and collect everything ourselves, so the marquee goes up well before your guests arrive and comes down in good order afterwards. You can read about the areas we cover, starting with [marquee hire in Hampshire](/areas/hampshire/). To check dates and get a quote, ring us on **01428 751 745** or [get in touch](/contact-us/) and we'll let you know straight away.
   - type: cta
     content: |
       ## Let's plan your event

@@ -50,7 +50,7 @@ blocks:
 
       Because we've been at this since 2002, we've seen most of the problems a marquee can throw at you, and we plan around them. We measure your space before we quote, we tell you straight if your site won't work, and we're usually there well before your guests arrive. We handle delivery, installation and collection ourselves, so the marquee goes up properly and comes down in good order.
 
-      Our Capri marquees suit weddings, birthday parties, fun days, corporate events and garden parties of pretty much any size. Have a look at our [special events](/special-events/) page for fetes and fundraisers, or [get in touch](/contact-us/) to talk through your dates and guest numbers. We cover Hampshire, Surrey and West Sussex, with [marquee hire in Portsmouth](/Complete-Marquees/portsmouth/) and [Winchester](/Complete-Marquees/winchester/) among the areas we deliver to.
+      Our Capri marquees suit weddings, birthday parties, fun days, corporate events and garden parties of pretty much any size. Have a look at our [special events](/special-events/) page for fetes and fundraisers, or [get in touch](/contact-us/) to talk through your dates and guest numbers. We cover Hampshire, Surrey and West Sussex, with [marquee hire in Portsmouth](/areas/portsmouth/) and [Winchester](/areas/winchester/) among the areas we deliver to.
     figure_src: "/wp-content/uploads/2022/01/pagoda-2048x1536.jpg"
     figure_alt: "Pagoda marquee set up on a lawn"
   - type: markdown

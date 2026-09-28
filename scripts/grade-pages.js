@@ -28,7 +28,7 @@
  *   bun scripts/grade-pages.js /party-marquees/             # URL shorthand
  *   bun scripts/grade-pages.js locations                    # a whole directory
  *   bun scripts/grade-pages.js -- --type location --limit 20
- *   bun scripts/grade-pages.js -- --prefix /Complete-Marquees/aldershot/
+ *   bun scripts/grade-pages.js -- --prefix /areas/aldershot/
  *   bun scripts/grade-pages.js service-pages/x.md -- --no-jev  # mechanical only
  *   bun scripts/grade-pages.js -- --json / --csv out.csv / --list-checks
  *
@@ -1796,7 +1796,7 @@ const usage = () =>
 Targets (default: every gradeable page):
   service-pages/party-marquees.md      a source file
   /party-marquees/                     URL shorthand (redirect_from aliases work too)
-  ${SITE_URL}/Complete-Marquees/aldershot/
+  ${SITE_URL}/areas/aldershot/
   locations                            a directory
 
 Options:

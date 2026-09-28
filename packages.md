@@ -59,7 +59,7 @@ blocks:
 
       ## Areas we cover
 
-      We hire Capri marquees across Hampshire, Surrey and West Sussex. In Hampshire that covers Southampton, Portsmouth, Winchester, Basingstoke, Farnborough and Alton; in Surrey it's Guildford, Woking, Epsom, Camberley and Farnham; and in West Sussex it's Chichester, Worthing, Horsham, Crawley and Haywards Heath. Each town has its own page, such as [marquee hire in Southampton](/Complete-Marquees/southampton/).
+      We hire Capri marquees across Hampshire, Surrey and West Sussex. In Hampshire that covers Southampton, Portsmouth, Winchester, Basingstoke, Farnborough and Alton; in Surrey it's Guildford, Woking, Epsom, Camberley and Farnham; and in West Sussex it's Chichester, Worthing, Horsham, Crawley and Haywards Heath. Each town has its own page, such as [marquee hire in Southampton](/areas/southampton/).
 
       A marquee is often part of the same event as the entertainment, and our sister company [Monster Event Hire](https://www.monstereventhire.co.uk) supplies bouncy castles, photo booths and rodeo bulls. It's the same family and the same phone number, so you can sort the shelter and the entertainment through one call.
   - type: gallery

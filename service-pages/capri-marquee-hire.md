@@ -138,7 +138,7 @@ blocks:
 
       Every event is different, so we talk through your space, guest numbers and what you want to do with the day before we suggest a layout. We deliver, install and take down the kit ourselves, so it goes up properly and comes back in good order. If you need entertainment as well as shelter, our sister company Monster Event Hire ([monstereventhire.co.uk](https://www.monstereventhire.co.uk)) covers photo booths, inflatables and more, and it's the same team.
 
-      We cover Hampshire, Surrey and West Sussex, and our [party marquee hire](/party-marquees/) and [Fareham marquee hire](/Complete-Marquees/fareham/) pages give you more of an idea of what we do locally. When you're ready to talk dates, send us a message or call us on **01428 751 745** and we'll recommend the right marquee and layout.
+      We cover Hampshire, Surrey and West Sussex, and our [party marquee hire](/party-marquees/) and [Fareham marquee hire](/areas/fareham/) pages give you more of an idea of what we do locally. When you're ready to talk dates, send us a message or call us on **01428 751 745** and we'll recommend the right marquee and layout.
   - type: cta
     content: |
       ## Like what you see?

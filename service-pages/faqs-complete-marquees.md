@@ -57,7 +57,7 @@ blocks:
 
       A Capri marquee is simply a different style of marquee. You can spot it by its distinctive multi-peaked ceiling, and it works well as an open space or closed in with the clear or solid side walls.
 
-      We hire them in four sizes, from a 20 by 20 foot marquee that seats around 20 people up to a 28 by 58 foot one that seats 120 or more, and we can link several together for bigger events or awkward spaces. You'll find the full list on our [sizes and prices](/sizes-prices/) page, and our [packages](/packages/) include tables, chairs, flooring and lighting if you want the whole lot sorted. Most of our bookings are weddings and parties, so the [wedding marquees](/wedding-marquees/) and [party marquees](/party-marquees/) pages are a good place to start, and we cover [marquee hire across Hampshire](/Complete-Marquees/hampshire/), Surrey and West Sussex.
+      We hire them in four sizes, from a 20 by 20 foot marquee that seats around 20 people up to a 28 by 58 foot one that seats 120 or more, and we can link several together for bigger events or awkward spaces. You'll find the full list on our [sizes and prices](/sizes-prices/) page, and our [packages](/packages/) include tables, chairs, flooring and lighting if you want the whole lot sorted. Most of our bookings are weddings and parties, so the [wedding marquees](/wedding-marquees/) and [party marquees](/party-marquees/) pages are a good place to start, and we cover [marquee hire across Hampshire](/areas/hampshire/), Surrey and West Sussex.
 
       If you need entertainment as well as shelter, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk/) has inflatables, photo booths, rodeo bulls and plenty more, run by the same family team.
 

@@ -39,7 +39,7 @@ blocks:
 
       ### Where we put them
 
-      We're honest about where a marquee can go. It needs flat grass with no trees, bushes or hedges through the footprint, we can't attach it to a building, and we won't put one up in stormy weather. Most business parks and school fields are fine with that, and we'll talk you through your site before you book. We've done corporate work around the business parks at Chineham, Houndmills, Viables and Whiteley, including a staff family day for CooperVision, and we cover the same runs every season. For events in that direction, our [marquee hire in Basingstoke](/Complete-Marquees/basingstoke/) page has more on the area.
+      We're honest about where a marquee can go. It needs flat grass with no trees, bushes or hedges through the footprint, we can't attach it to a building, and we won't put one up in stormy weather. Most business parks and school fields are fine with that, and we'll talk you through your site before you book. We've done corporate work around the business parks at Chineham, Houndmills, Viables and Whiteley, including a staff family day for CooperVision, and we cover the same runs every season. For events in that direction, our [marquee hire in Basingstoke](/areas/basingstoke/) page has more on the area.
 
       If you need entertainment as well as shelter, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk) supplies photo booths, inflatables, rodeo bulls and garden games to the same corporate events. It's the same family and the same team, so you can sort the whole day through one call. You can see real setups on our [Capri marquee gallery](/capri-marquee-hire/), and weddings are covered on our [wedding marquee hire](/wedding-marquees/) page.
 

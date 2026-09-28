@@ -28,7 +28,7 @@ blocks:
     content: |
       Special events are where a marquee earns its keep, and it's the side of the business we know well. The family business has worked with East Hampshire District Council on their community festival and with Winchester City Council on Party in the Park, and we regularly put up Capri marquees for garden parties, school fun days and charity fundraisers across Hampshire, Surrey and West Sussex.
 
-      We're based in Havant, so most of Hampshire is an easy run, and we're in and out of Surrey and West Sussex most weekends through the season. If you're planning something in the Winchester area, our [marquee hire in Winchester](/Complete-Marquees/winchester/) page has more on what we set up there.
+      We're based in Havant, so most of Hampshire is an easy run, and we're in and out of Surrey and West Sussex most weekends through the season. If you're planning something in the Winchester area, our [marquee hire in Winchester](/areas/winchester/) page has more on what we set up there.
   - type: gallery
     aspect_ratio: "4/3"
     items:

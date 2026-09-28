@@ -86,7 +86,7 @@ blocks:
         description: "from £450 per marquee"
   - type: markdown
     content: |
-      Capri matting is cut to match each of our marquees, so the flooring covers the full footprint. In summer, on decent grass, you can often manage without flooring altogether, but we'd always fit it under a dance floor to keep the panels level and the matting clean. All prices are per hire. [Get in touch](/contact-us/) for a quote, and if you're planning something in [Winchester](/Complete-Marquees/winchester/) or anywhere else across Hampshire, Surrey or West Sussex, we're happy to talk it through.
+      Capri matting is cut to match each of our marquees, so the flooring covers the full footprint. In summer, on decent grass, you can often manage without flooring altogether, but we'd always fit it under a dance floor to keep the panels level and the matting clean. All prices are per hire. [Get in touch](/contact-us/) for a quote, and if you're planning something in [Winchester](/areas/winchester/) or anywhere else across Hampshire, Surrey or West Sussex, we're happy to talk it through.
   - type: markdown
     dark: true
     content: |

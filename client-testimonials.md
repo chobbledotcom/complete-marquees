@@ -19,7 +19,7 @@ blocks:
 
       The reviews cover both sides of the family business. Our sister company, [Monster Event Hire](https://www.monstereventhire.co.uk), looks after the bouncy castles, photo booths and other entertainment for the same events, so a review that mentions those is one of ours too.
 
-      If you're planning a [wedding](/wedding-marquees/), a [party](/party-marquees/) or a [corporate event](/corporate-event-marquees/), read what people say below, then look at our [packages and prices](/packages/) or [get in touch](/contact-us/) with any questions. We cover the whole of [Hampshire](/Complete-Marquees/hampshire/) and the surrounding counties.
+      If you're planning a [wedding](/wedding-marquees/), a [party](/party-marquees/) or a [corporate event](/corporate-event-marquees/), read what people say below, then look at our [packages and prices](/packages/) or [get in touch](/contact-us/) with any questions. We cover the whole of [Hampshire](/areas/hampshire/) and the surrounding counties.
 
       To check your dates, call us on **01428 751 745** and we'll let you know availability straight away.
   - type: reviews

@@ -24,7 +24,7 @@ blocks:
 
       Before you book, it's worth checking your site. Marquees need flat grass, with no trees, bushes or hedges through the footprint. We can't attach them to buildings, and we don't put them up in stormy weather. If the ground isn't suitable, it's better to find out before we arrive.
 
-      We run Complete Marquees alongside our sister company, Monster Event Hire ([monstereventhire.co.uk](https://www.monstereventhire.co.uk)), which supplies bouncy castles, photo booths and games for the same events. Same team and the same phone number, so you can sort the shelter and the entertainment through one call. If you want a feel for the jobs we take on, our [marquee hire in Hampshire](/Complete-Marquees/hampshire/) page covers the towns we work in.
+      We run Complete Marquees alongside our sister company, Monster Event Hire ([monstereventhire.co.uk](https://www.monstereventhire.co.uk)), which supplies bouncy castles, photo booths and games for the same events. Same team and the same phone number, so you can sort the shelter and the entertainment through one call. If you want a feel for the jobs we take on, our [marquee hire in Hampshire](/areas/hampshire/) page covers the towns we work in.
 
       Use the form below and we'll come back to you with availability and a price.
   - type: gallery

@@ -39,7 +39,7 @@ blocks:
 
       ### The practical side
 
-      Our own crew delivers, installs and collects every marquee, and we're usually in well before your guests arrive. Wedding marquees go up on flat grass, with no trees, bushes or hedges through the footprint. If a site is sloping or tight we'll flag it when we quote, the same as we do for weddings around Titchfield and Wickham in Hampshire and the country-house weddings in the Surrey Hills near [Guildford](/Complete-Marquees/guildford/) and Dorking. We don't attach marquees to buildings, and we don't put them up in stormy weather.
+      Our own crew delivers, installs and collects every marquee, and we're usually in well before your guests arrive. Wedding marquees go up on flat grass, with no trees, bushes or hedges through the footprint. If a site is sloping or tight we'll flag it when we quote, the same as we do for weddings around Titchfield and Wickham in Hampshire and the country-house weddings in the Surrey Hills near [Guildford](/areas/guildford/) and Dorking. We don't attach marquees to buildings, and we don't put them up in stormy weather.
 
       If you need entertainment as well as shelter, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk) has photo booths, bouncy castles and plenty more. It's the same family business and the same team, so one phone call sorts the marquee and the fun.
 

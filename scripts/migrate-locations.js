@@ -56,8 +56,10 @@ const convert = (filename) => {
 
   const frontmatterLines = [
     "---",
-    `permalink: "/Complete-Marquees/${slug}/"`,
+    `permalink: "/areas/${slug}/"`,
     "layout: location",
+    `redirect_from:`,
+    `  - /Complete-Marquees/${slug}/`,
     `title: ${yamlEscape(title)}`,
     ...(titleHtml !== title ? [`title_html: ${yamlEscape(titleHtml)}`] : []),
     `description: ${yamlEscape(description)}`,
