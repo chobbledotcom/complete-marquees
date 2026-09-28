@@ -43,3 +43,15 @@
     }
   }
 }
+
+// "Powered by Chobble Web Design" footer credit. The legacy WordPress
+// stylesheet (head.html) sets a global `a { color: #fff }`, which is
+// invisible on the white footer — the credit only renders on the homepage,
+// so it's fixed here. Dark green is the brand hover shade from theme.scss.
+.home footer .created__by a {
+  color: #398132;
+
+  &:hover {
+    color: #2d3235;
+  }
+}
