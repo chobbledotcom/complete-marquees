@@ -41,7 +41,7 @@ blocks:
 
       Our Pagoda marquees have a pitched roof that stands out, and we use them either on their own or as an entrance to a bigger Capri. The 6 by 6 metre Pagoda seats 40 people. There are no guy ropes to trip over, and we set the side walls on the day, so you can have them open, solid or half-and-half depending on the weather.
 
-      We can also supply the extras that go with it, from flooring and tables to lighting and a dance floor. If you need entertainment as well as shelter, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk) has bouncy castles, photo booths and more. It's the same family and the same phone number, so you can sort the whole event in one call.
+      We can also supply the extras that go with it, from flooring and tables to lighting and a dance floor. If you need entertainment as well as shelter, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk) has bouncy castles, photo booths and more. It's the same family running both, so you can sort the whole event in one call.
     figure_src: "/wp-content/uploads/2016/06/pagoda-marquee.jpg"
     figure_alt: "Pagoda marquee used as an entrance at a Surrey event"
   - type: split-image
@@ -64,6 +64,8 @@ blocks:
       | Pagoda | 6m x 6m | 40 |  | £395 |
 
       All prices quoted are exclusive of VAT - Based on delivery Friday - collection Sunday
+
+      The prices below are what we charge across Hampshire, Surrey and West Sussex: the same marquee costs the same whether it goes up in Portsmouth or Woking, and there's no seasonal surcharge hiding in the small print. The 28 by 38 is the workhorse of the range: wedding receptions in Farnham, corporate days on the Guildford business parks and the bigger school fairs in Portsmouth all go up in it.
 
       Call us on **01428 751 745** to check availability for your date, or send a message through our [contact page](/contact-us/) and we'll get back to you.
 ---

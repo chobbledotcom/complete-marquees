@@ -92,9 +92,9 @@ blocks:
     content: |
       ### Entertainment to go with it
 
-      If you need the fun side sorted as well, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk/) has bouncy castles, rodeo bulls, photo booths and assault courses. It's the same family, the same team and the same phone line, so you can sort the shelter and the entertainment in one call.
+      If you need the fun side sorted as well, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk/) has bouncy castles, rodeo bulls, photo booths and assault courses. It's the same family and the same team running both, so you can sort the shelter and the entertainment in one call.
 
-      We deliver, install and collect everything ourselves, and we're usually on site well before your guests arrive. If you'd like a quote, ring us on **01428 751 745** or fill in the contact form, and tell us roughly how many guests you're expecting and what you've already got sorted.
+      We deliver, install and collect everything ourselves, and we're usually on site well before your guests arrive. Judith's note afterwards said the crew were "polite on set up and take down", which is the standard we hold our own install crew to. If you'd like a quote, ring us on **01428 751 745** or fill in the contact form, and tell us roughly how many guests you're expecting and what you've already got sorted.
   - type: cta
     content: |
       ## Build your package

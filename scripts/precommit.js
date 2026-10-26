@@ -12,9 +12,15 @@ import {
 
 const verbose = process.argv.includes("--verbose");
 
+const copyStep = {
+  name: "duplicate copy",
+  cmd: "bun",
+  args: ["run", "check:copy"],
+};
+
 const buildStep = { name: "build", cmd: "bun", args: ["run", "build"] };
 
-const steps = [COMMON_STEPS.lintFix, COMMON_STEPS.cpd, buildStep];
+const steps = [COMMON_STEPS.lintFix, copyStep, COMMON_STEPS.cpd, buildStep];
 
 console.log(
   verbose

@@ -6,16 +6,32 @@
     "**/node_modules/**",
     "**/_site/**",
     "**/.build/**",
-    "**/packages/**",
     "**/chobble-template/**",
     "**/wp-content/**",
-    "**/wp-includes/**"
+    "**/wp-includes/**",
+    "**/_includes/head.html",
+    "**/_includes/site-header.html",
+    "**/_layouts/**",
+    "**/locations/**",
+    "**/scripts/migrate-*.js",
+    "**/scripts/clean-descriptions.js",
+    "**/scripts/fetch-*.js"
   ],
   "format": ["javascript", "markup", "css"],
   "absolute": false,
   "gitignore": true,
   "exitCode": 1,
   "minLines": 3,
-  "minTokens": 50,
-  "path": ["."]
+  "minTokens": 39,
+  "path": [
+    "scripts",
+    "_includes",
+    "_layouts",
+    "_data",
+    "css",
+    "locations",
+    "service-pages",
+    "pages",
+    "reviews"
+  ]
 }

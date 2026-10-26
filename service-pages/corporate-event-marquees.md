@@ -6,7 +6,7 @@ header_text: "Corporate Event Marquee Hire"
 meta_description: "Corporate event marquee hire in Hampshire, Surrey & West Sussex. Capri marquees for conferences, launches, Christmas parties & staff days. Call 01428 751 745."
 meta_description_html: "Corporate event marquee hire in Hampshire, Surrey &amp; West Sussex. Capri marquees for conferences, launches, Christmas parties &amp; staff days. Call 01428 751 745."
 breadcrumb_name: "Corporate Event Marquee Hire"
-og_image: "https://www.completemarquees.co.uk/wp-content/uploads/2016/06/marquee2.jpg"
+og_image: "https://www.completemarquees.co.uk/wp-content/uploads/2016/06/marquee6-14.jpg"
 thumbnail_url: "/wp-content/uploads/2016/07/wedding-marquee-at-night-polaroid-300x230.png"
 date_published: "2016-07-04T09:58:10+00:00"
 date_modified: "2026-04-04T16:20:14+00:00"
@@ -15,7 +15,7 @@ body_class: "wp-singular page-template-default page page-id-97 wp-theme-complete
 blocks:
   - type: split-image
     content: |
-      We're Joanne and David Morris, and we've run Complete Marquees from Havant since 2002. The marquee side and the entertainment side of the business work together, so we're used to planning a corporate day from the marquee through to the entertainment.
+      We're Joanne and David Morris, and we've been running Complete Marquees from Havant since 2002. The marquee side and the entertainment side of the business work together, so we're used to planning a corporate day from the marquee through to the entertainment.
 
       Our Capri marquees are what most of our corporate work goes up in. We hire them for product launches, conferences, training days, staff family days, Christmas parties and client entertaining, on business-park lawns, hotel grounds, school fields and private land across Hampshire, Surrey and West Sussex. A marquee gives you a covered space with proper flooring, lighting, tables and chairs, so the day carries on whatever the sky does.
     figure_src: "/wp-content/uploads/2016/07/wedding-marquee-at-night-polaroid.png"

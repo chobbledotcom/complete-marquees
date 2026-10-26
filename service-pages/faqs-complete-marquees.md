@@ -61,5 +61,7 @@ blocks:
 
       If you need entertainment as well as shelter, our sister company [Monster Event Hire](https://www.monstereventhire.co.uk/) has inflatables, photo booths, rodeo bulls and plenty more, run by the same family team.
 
+      One note that came back after a job, from Lucy: "The guys you sent to set-up were really friendly and efficient." That's the same crew that turns up to every install, not a separate outfit.
+
       If you would like a quote or want to check a date, call us on **01428 751 745** or get in touch through our [contact page](/contact-us/).
 ---

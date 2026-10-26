@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+#
+# Pre-commit hook: run the duplicate-copy check, the page grader (mechanical
+# checks) and the copy-paste detection.
+#
+# 1. Fails when a sentence of body copy appears word-for-word on more than one
+#    page and is not listed in .duplicate-copy.json.
+# 2. Grades staged content pages with the mechanical half of scripts/grade-pages.js
+#    (voice patterns, meta fields, links, alt text, phones - no model calls).
+# 3. Runs jscpd at the .jscpd.json threshold, then the ratchet, which fails if
+#    the threshold could be lowered.
+#
+# Installed automatically by `bun install` (sets core.hooksPath to .githooks).
+# Run checks manually with: bun run check:copy /
+# bun scripts/grade-pages.js --no-jev <files> / bun run cpd / bun run cpd:ratchet
+# Skip once with: git commit --no-verify
+
+bun run check:copy || exit 1
+
+staged_pages=$(git diff --cached --name-only --diff-filter=ACMR -- 'locations/*.html' 'service-pages/*.md' 'pages/*.md' 'packages.md' 'sizes-prices.md' 'contact-us.md' 'client-testimonials.md' 'index.html')
+if [ -n "$staged_pages" ]; then
+  # shellcheck disable=SC2086
+  bun scripts/grade-pages.js --no-jev --fail-on-critical $staged_pages || exit 1
+fi
+
+bun run cpd || exit 1
+exec bun run cpd:ratchet

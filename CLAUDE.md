@@ -31,8 +31,49 @@ bun run serve        # Development server with hot reload
 bun run test         # Run tests
 bun run lint         # Check code with Biome
 bun run lint:fix     # Auto-fix lint issues
-bun run cpd          # Copy-paste detection on scripts/
+bun run cpd          # jscpd over scripts, includes, layouts, CSS and content
+bun run cpd:ratchet  # Fails if the jscpd minTokens threshold could be lowered
+bun run check:copy   # Flags sentences repeated word-for-word across pages
+bun run grade        # Page grader: voice, meta, links, business invariants
 ```
+
+### Development environment
+
+The shell is [devenv](https://devenv.sh): `devenv shell` (or `direnv allow`
+with a `use devenv` `.envrc`) provides bun, git and vips plus one PATH command
+per package.json script. `devenv.yaml`/`devenv.nix`/`devenv.lock` are
+committed; `.devenv/` and `.bin/` (the jscpd binary `scripts/jscpd.js`
+installs) are not.
+
+### Page grader
+
+`bun scripts/grade-pages.js` grades every gradeable page (mechanical checks
+always; the Jev LLM checks when `OPENCODE_API_KEY` or
+`/run/secrets/opencode_api_key` is available). Mechanical checks pin the
+business invariants: only phone `01428 751 745` may appear in copy, no
+private payment detail, location map embeds must show the right town, no
+template/model leakage, no paste cruft. Useful flags: `--no-jev`
+(mechanical only — what the pre-commit hook runs on staged pages),
+`--fail-on-critical` (batch exit code), `--gate` (single page: exit 1 unless
+no FAILs, score >= 85, EEAT >= 70; fails closed without Jev), `--list-checks`.
+
+### Copy-paste detection
+
+`.jscpd.json` scans maintained code (`scripts/`, `_includes/`, `_data/`,
+`css/`) and the markdown content dirs (`service-pages/`, `pages/`,
+`reviews/`) at `minTokens: 39` (the ratchet floor — `bun run cpd:ratchet`
+fails if the threshold could be lowered). The WordPress-export layers are
+fenced out the same way CLAUDE.md fences the legacy `<style>` blocks:
+`_includes/head.html`, `_includes/site-header.html`, `_layouts/`,
+`locations/` (their WP gallery markup — the prose is guarded by check:copy)
+and the one-off/upstream-synced scripts (`migrate-*.js`,
+`clean-descriptions.js`, `fetch-*.js`). jscpd never sees frontmatter prose
+blocks — that is `bun run check:copy`'s job, which reads the prose on
+`locations/`, `service-pages/`, `pages/` and the root pages and fails on any
+sentence repeated word-for-word across pages (`--all` also covers
+`client-testimonials.md`). The pre-commit hook (`.githooks/pre-commit`,
+installed by `bun install`) runs check:copy, the mechanical grader on staged
+pages, cpd and the ratchet.
 
 ### Directory Structure
 

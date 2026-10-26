@@ -15,8 +15,13 @@
  * bar, plus the bounded SEO decisions that need no human interpretation:
  * title/heading/meta-description accuracy and location-page differentiation
  * (a town page with only the town name swapped is a template, not a local
- * page). Batch runs also aggregate exact-duplicate meta descriptions and
- * titles, the classic many-pages-one-snippet failure.
+ * page). Mechanical checks also pin the business invariants: the only phone
+ * number that may appear in copy is 01428 751 745, private payment detail
+ * never leaks into public pages, location-page map embeds point at the right
+ * town, and paste cruft (HTML entities, Word/Grammarly markup, template
+ * placeholders) never ships. Batch runs also aggregate exact-duplicate meta
+ * descriptions, titles and OG images — the classic many-pages-one-snippet
+ * failure.
  *
  * Single page: full per-check report. No args or several pages: parallel
  * batch with a worst-first table and aggregate failure stats, so a sweep of
@@ -33,9 +38,11 @@
  *   bun scripts/grade-pages.js -- --json / --csv out.csv / --list-checks
  *
  * The Jev API key is read from OPENCODE_API_KEY (bun loads .env) or
- * /run/secrets/opencode_api_key. Batch mode always exits 0 (it is a report);
- * single-page mode exits 1 on critical failures such as a broken internal
- * link.
+ * /run/secrets/opencode_api_key. Batch mode exits 0 unless --fail-on-critical
+ * is set, when any critical failure (broken link, template leakage, wrong
+ * phone number) exits 1. Single-page mode exits 1 on critical failures, or
+ * when --gate is set and the page does not clear it: no FAIL checks, weighted
+ * score >= 85, EEAT >= 70. The gate fails closed when Jev did not run.
  */
 
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -46,6 +53,17 @@ const SITE_URL = "https://www.completemarquees.co.uk";
 const ZEN_SYSTEMONE_URL = "https://opencode.ai/zen/v1/systemone";
 const DEFAULT_MODEL = "jev-1.13";
 const DEFAULT_KEY_FILE = "/run/secrets/opencode_api_key";
+
+// The only phone number that may appear in copy; anything else is a stale
+// number from an old site, a supplier's site or a paste.
+const LIVE_PHONE = "01428 751 745";
+const LIVE_PHONE_DIGITS = "01428751745";
+
+// The shipping gate: a page is publishable when nothing fails, the weighted
+// score clears 85 and the EEAT headline clears 70. Runs without Jev (no key
+// or --no-jev) fail the gate closed - content quality unjudged.
+const GATE_MIN_SCORE = 85;
+const GATE_MIN_EEAT = 70;
 
 // Payload guard on the prose sent to Jev per page. The longest pages here run
 // to around 14k characters; an over-limit state comes back as HTTP 400 and
@@ -285,9 +303,12 @@ const blockAlts = (fm) =>
   (Array.isArray(fm.blocks) ? fm.blocks : []).flatMap(blockAltFor);
 
 /** Alt text from raw HTML (location pages carry `<img alt=...>` in their
- * description body). */
+ * description body). An img with no alt attribute counts as empty so the
+ * alt-text check sees it. */
 const htmlAlts = (html) =>
-  [...html.matchAll(/<img[^>]*\s+alt="([^"]*)"/gi)].map((m) => m[1]);
+  [...html.matchAll(/<img[^>]*>/gi)].map(
+    (m) => /\balt=["']([^"']*)["']/i.exec(m[0])?.[1] ?? "",
+  );
 
 const pageUrl = (rel, fm) =>
   normaliseUrl(fm.permalink ?? `/${rel.replace(/\.(md|html)$/, "")}/`);
@@ -299,6 +320,16 @@ const faqCountOf = (fm) =>
 
 const altsOf = (pageType, fm) =>
   pageType === "location" ? htmlAlts(fm.description ?? "") : blockAlts(fm);
+
+/** Frontmatter `reading_time: "2 minutes"` -> 2 (0 when absent). */
+const readingTimeOf = (v) => {
+  const m = String(v ?? "").match(/(\d+)/);
+  return m ? Number.parseInt(m[1], 10) : 0;
+};
+
+/** tel: hrefs from raw copy so a wrong number in a link is caught too. */
+const telHrefsOf = (md) =>
+  [...md.matchAll(/href=['"]tel:([^'"]+)['"]/gi)].map((m) => m[1]);
 
 /** Build the extraction state for one page. */
 const extractPage = (file, forcedType) => {
@@ -327,6 +358,12 @@ const extractPage = (file, forcedType) => {
     subCount: (main.match(/^#{2,3} /gm) ?? []).length,
     faqCount: faqCountOf(fm),
     alts: altsOf(pageType, fm),
+    ogImage: fm.og_image ?? "",
+    mapEmbed: fm.map_embed ?? "",
+    readingTimeMinutes: readingTimeOf(fm.reading_time),
+    datePublished: fm.date_published ?? "",
+    dateModified: fm.date_modified ?? "",
+    telHrefs: telHrefsOf(main),
     // the close of the page's own copy, before any FAQ block
     tail: markdownToText(stripQuoted(main)).slice(-400),
   };
@@ -390,6 +427,13 @@ const NO_GO_PATTERNS = [
   [/\bseamless\b/i, "seamless"],
   [/\bimpress(es|ing)? (your|their) guests\b/i, "impress your guests"],
   [/\bbring (your|their) vision to life\b/i, "vision to life"],
+  [/\blook no further\b/i, "look no further"],
+  [/\bgame-?changer\b/i, "game-changer"],
+  [
+    /\bcutting-edge\b|\bstate of the art\b|\bstate-of-the-art\b/i,
+    "cutting-edge / state of the art",
+  ],
+  [/\belevate (your|the|their)\b/i, "elevate your ..."],
 ];
 
 // Voice anti-patterns that are worth a look but not always wrong.
@@ -401,6 +445,10 @@ const VOICE_PATTERNS = [
   [/\bweather-?proof\b|\bweather-?ready\b/i, "weather-proof/ready"],
   [/\bstunning\b|\bmagical\b|\btruly\b/i, "stunning/magical/truly"],
   [/\bperfect (choice|solution|fit)\b/i, "perfect choice/solution"],
+  [/\b(nestled|boasts|vibrant|bustling)\b/i, "brochure adjective"],
+  [/\bin the heart of\b/i, "in the heart of"],
+  [/\bhidden gem\b/i, "hidden gem"],
+  [/\bwhether you'?re\b/i, "whether you're X or Y framing"],
 ];
 
 const CONTRAST_PATTERNS = [
@@ -712,6 +760,253 @@ const checkVagueAnchors = (x) => {
   ];
 };
 
+// Template and model leftovers that must never ship: unrendered placeholders,
+// research markers, model tells. Liquid in copy is legitimate on this site
+// (the location layout renders `description` through Liquid), so braces are
+// not flagged; broken interpolation (`undefined`, `[object Object]`) is.
+const LEAKAGE_PATTERNS = [
+  [/\bTODO\b|\bTBC\b|\bFIXME\b|\bXXX\b/, "placeholder marker"],
+  [/lorem ipsum/i, "lorem ipsum"],
+  [/\[insert|\[your |\[name\]|\[town\]|\[company\]/i, "template placeholder"],
+  [/placeholder text|\+ placeholder/i, "placeholder text"],
+  [/\bas an ai\b/i, "model tell"],
+  [/\bundefined\b|\[object Object\]|\bNaN\b/, "unrendered value"],
+];
+
+const checkTemplateLeakage = (x) => {
+  const meta = `${x.metaTitle}\n${x.metaDescription}`;
+  const metaHits = hitsOf(LEAKAGE_PATTERNS, meta);
+  const bodyHits = hitsOf(LEAKAGE_PATTERNS, x.proseHouse);
+  if (!metaHits.length && !bodyHits.length)
+    return ["PASS", 1, "no template or model leakage"];
+  return [
+    "FAIL",
+    0,
+    `leakage in ${[metaHits.length && "meta", bodyHits.length && "body"].filter(Boolean).join(" and ")}: ${listHits([...new Set([...metaHits, ...bodyHits])])}`,
+  ];
+};
+
+// Private booking detail never belongs in public copy - it reads as a leaked
+// ledger and tells competitors what people pay.
+const PAYMENT_PATTERNS = [
+  [
+    /\bpaid in full\b|\bdeposit (received|cleared|paid)\b|\bpayment (received|cleared)\b|\bbalance (paid|received|cleared)\b/i,
+    "payment status",
+  ],
+  [
+    /\bbacs\b|\bbank transfer\b|\bsort code\b|\binvoice (paid|sent|number)\b|\breceipt\b/i,
+    "payment logistics",
+  ],
+];
+
+/** Any UK phone number other than the live one is a stale or wrong number. */
+const PHONE_RE = /(?<!\d)0(?:\d[ \-/]?){9,10}\d(?!\d)/g;
+
+const checkPhoneNumbers = (x) => {
+  const corpus = `${x.proseHouse}\n${x.telHrefs.join("\n")}`;
+  const wrong = [];
+  for (const m of corpus.matchAll(PHONE_RE)) {
+    if (m[0].replace(/\D/g, "") !== LIVE_PHONE_DIGITS) wrong.push(m[0].trim());
+  }
+  if (wrong.length)
+    return [
+      "FAIL",
+      0,
+      `phone number(s) that are not ${LIVE_PHONE}: ${listHits([...new Set(wrong)])}`,
+    ];
+  return ["PASS", 1, `only ${LIVE_PHONE} appears`];
+};
+
+const checkLivePhonePresent = (x) =>
+  x.proseHouse.includes(LIVE_PHONE)
+    ? ["PASS", 1, `${LIVE_PHONE} in the copy`]
+    : [
+        "WARN",
+        0.5,
+        `${LIVE_PHONE} absent from the copy - say how to reach a human`,
+      ];
+
+/** Itemised pence prices read as invoice data; location copy states package
+ * prices, and the price pages list per-item hire rates instead. */
+const checkPencePrices = (x) => {
+  const hits = [...new Set(x.proseHouse.match(/£\d[\d,]*\.\d{2}\b/g) ?? [])];
+  return hits.length
+    ? ["WARN", 0, `pence-priced figure(s) (${listHits(hits)})`]
+    : ["PASS", 1, "no itemised pence prices"];
+};
+
+/** The map embed must show the town the page is about - the Guildford page
+ * once shipped an Aldershot embed. */
+const MAP_PLACE_RE = /!2s([A-Za-z0-9+%]+)/;
+
+const decodePlace = (raw) => {
+  const spaced = raw.replace(/\+/g, " ");
+  try {
+    return decodeURIComponent(spaced);
+  } catch {
+    return spaced;
+  }
+};
+
+const checkMapEmbed = (x) => {
+  if (!x.mapEmbed)
+    return ["WARN", 0.5, "no map_embed - the other town pages embed one"];
+  const m = MAP_PLACE_RE.exec(x.mapEmbed);
+  if (!m) return ["PASS", 1, "map embedded (no place name to verify)"];
+  const place = decodePlace(m[1]);
+  const town = x.town.toLowerCase();
+  if (
+    !town ||
+    place.toLowerCase().includes(town) ||
+    town.includes(place.toLowerCase())
+  )
+    return ["PASS", 1, `map shows ${place}`];
+  return [
+    "WARN",
+    0,
+    `map embed shows "${place}" on the ${x.town} page - wrong place`,
+  ];
+};
+
+const checkReadingTime = (x) => {
+  if (!x.readingTimeMinutes) return ["SKIP", 0, "no reading_time frontmatter"];
+  const est = Math.max(1, Math.round(x.words / 200));
+  const diff = Math.abs(est - x.readingTimeMinutes);
+  if (diff <= 1)
+    return [
+      "PASS",
+      1,
+      `reading_time ${x.readingTimeMinutes} min vs ~${est} min at 200 wpm`,
+    ];
+  return [
+    "WARN",
+    0,
+    `reading_time says ${x.readingTimeMinutes} min; ~${est} min at 200 wpm - stale frontmatter`,
+  ];
+};
+
+const checkDates = (x) => {
+  if (!x.datePublished || !x.dateModified)
+    return ["SKIP", 0, "missing date_published/date_modified"];
+  const published = Date.parse(x.datePublished);
+  const modified = Date.parse(x.dateModified);
+  if (Number.isNaN(published) || Number.isNaN(modified))
+    return ["WARN", 0.5, "unparseable date_published/date_modified"];
+  if (modified < published)
+    return [
+      "FAIL",
+      0,
+      `date_modified ${x.dateModified} predates date_published ${x.datePublished}`,
+    ];
+  if (Math.max(published, modified) > Date.now() + 86_400_000)
+    return ["WARN", 0, "a page date is in the future"];
+  return ["PASS", 1, "dates coherent"];
+};
+
+// Typographic entities and editor cruft are paste artefacts; the copy uses
+// literal UTF-8 characters. `&amp;` is excluded: it is valid escaping in the
+// meta fields and renders correctly through markdown.
+const ENTITY_RE = /&(pound|ndash|rsquo|lsquo|ldquo|rdquo|mdash|hellip|nbsp);/gi;
+const NUMERIC_ENTITY_RE = /&#\d+;/g;
+const CRUFT_RE = /class="gr_|MsoNormal|<wbr>|<!--\[if/i;
+
+const checkHtmlHygiene = (x) => {
+  const entities = [
+    ...new Set([
+      ...(x.proseHouse.match(ENTITY_RE) ?? []),
+      ...(x.proseHouse.match(NUMERIC_ENTITY_RE) ?? []),
+    ]),
+  ];
+  const cruft = CRUFT_RE.test(x.markdown);
+  if (!entities.length && !cruft)
+    return ["PASS", 1, "no paste cruft"];
+  return [
+    "FAIL",
+    0,
+    `paste cruft: ${listHits(entities)}${cruft ? ", editor markup" : ""} - use literal UTF-8 characters`,
+  ];
+};
+
+/** Inline images on location pages must declare width/height or they shift
+ * the layout while loading. */
+const checkImgDimensions = (x) => {
+  if (x.pageType !== "location") return ["SKIP", 0, "layout handles sizing"];
+  const tags = x.markdown.match(/<img[^>]*>/gi) ?? [];
+  if (!tags.length) return ["SKIP", 0, "no inline images"];
+  const missing = tags.filter(
+    (t) => !/\bwidth=/i.test(t) || !/\bheight=/i.test(t),
+  );
+  if (!missing.length)
+    return ["PASS", 1, `${tags.length} inline image(s) sized`];
+  return [
+    "WARN",
+    0.5,
+    `${missing.length} of ${tags.length} inline image(s) missing width/height`,
+  ];
+};
+
+const checkOgImage = (x) =>
+  x.ogImage
+    ? ["PASS", 1, "og_image set"]
+    : ["WARN", 0.5, "no og_image - social shares get a generic card"];
+
+// --- Quoted customer speech must be real ---------------------------------
+//
+// Every quoted span on a page has to match a real review in reviews/ (the
+// four named reviewer pages). A quote that matches nothing is either
+// fabricated or so mangled it no longer says what the customer said.
+
+/** reviews/*.html -> [{ name, text }] with entities decoded for matching. */
+const reviewsDataset = () => {
+  const dir = path("reviews");
+  if (!existsSync(dir)) return [];
+  return walkMarkdown(dir)
+    .map((file) => {
+      const { data: fm, body } = readPage(file);
+      return {
+        name: String(fm.name ?? ""),
+        text: unEntity(markdownToText(`${fm.homepage_excerpt ?? ""}\n${body}`)),
+      };
+    })
+    .filter((r) => r.name && r.text);
+};
+
+const unEntity = (s) =>
+  s
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&[a-z]+;/gi, " ");
+
+const QUOTE_SPAN_RE = /[“"]([^“”"]{12,300})[”"]/g;
+
+const matchesReview = (quote, text) => {
+  if (text.includes(quote)) return true;
+  const words = quote.toLowerCase().split(/\s+/).filter((w) => w.length >= 4);
+  if (!words.length) return false;
+  const hay = text.toLowerCase();
+  const hits = words.filter((w) => hay.includes(w)).length;
+  return hits / words.length >= 0.5;
+};
+
+const checkReviewQuotes = (x) => {
+  const dataset = reviewsDataset();
+  if (!dataset.length)
+    return ["SKIP", 0, "no reviews/ dataset to verify against"];
+  const quotes = [...x.prose.matchAll(QUOTE_SPAN_RE)].map((m) =>
+    unEntity(m[1].trim()),
+  );
+  if (!quotes.length) return ["SKIP", 0, "no quoted speech on the page"];
+  const bad = quotes.filter(
+    (quote) => !dataset.some((r) => matchesReview(quote, r.text)),
+  );
+  if (!bad.length)
+    return ["PASS", 1, `${quotes.length} quote(s) match real reviews`];
+  return [
+    "FAIL",
+    0,
+    `quoted text matches no real review: ${listHits(bad.map((q) => `"${q.slice(0, 60)}..."`))}`,
+  ];
+};
+
 const code = (id, label, fn, weight, types = ALL_TYPES, extra = {}) => ({
   id,
   label,
@@ -827,6 +1122,44 @@ const CODE_CHECKS = [
     "Descriptive link text",
     checkVagueAnchors,
     2,
+    ALL_TYPES,
+  ),
+  code("template_leakage", "No template or model leakage", checkTemplateLeakage, 5, ALL_TYPES, {
+    critical: true,
+  }),
+  code("payment_status", "No private payment detail", patternCheck(PAYMENT_PATTERNS, "FAIL", 0, "private payment detail"), 3),
+  code("phone_numbers", "Only the live phone number", checkPhoneNumbers, 4, ALL_TYPES, {
+    critical: true,
+  }),
+  code(
+    "live_phone",
+    "Phone number in the copy",
+    checkLivePhonePresent,
+    2,
+    SELLING_TYPES,
+  ),
+  code("pence_prices", "No itemised pence prices", checkPencePrices, 2, [
+    "location",
+  ]),
+  code("map_embed", "Map embed shows the right place", checkMapEmbed, 3, [
+    "location",
+  ]),
+  code("reading_time", "reading_time matches copy length", checkReadingTime, 1),
+  code("date_sanity", "Publish/modified dates coherent", checkDates, 2),
+  code("html_hygiene", "No paste cruft", checkHtmlHygiene, 3),
+  code(
+    "img_dimensions",
+    "Inline images declare width/height",
+    checkImgDimensions,
+    1,
+    ["location"],
+  ),
+  code("og_image", "Social share image set", checkOgImage, 1),
+  code(
+    "review_quotes",
+    "Quotes match real reviews",
+    checkReviewQuotes,
+    3,
     ALL_TYPES,
   ),
 ];
@@ -1134,11 +1467,14 @@ const JEV_CHECKS = [
     "local_differentiation",
     "Local page differentiation",
     4,
-    "This is a location page for `page.town`. Does `body` contain meaningful " +
-      "local content specific to this town - local venues, landmarks, " +
-      "schools, businesses, nearby towns, local events, or anything that " +
-      "could not be said with the town name swapped for any other? Or is it a " +
-      "generic marquee template with the town name dropped in?",
+    "This is a location page for `page.town`. `sibling_sample` is the body " +
+      "of another town's page on this site, for comparison. Does `body` " +
+      "contain meaningful local content specific to this town - local " +
+      "venues, landmarks, schools, businesses, nearby towns, local events, " +
+      "travel routes - anything that could not be said with the town name " +
+      "swapped for any other, and that goes beyond what the sibling page " +
+      "already says? Or is it a generic marquee template with the town name " +
+      "dropped in?",
     [
       "Generic template - only the town name differs from any other location page",
       "Mostly generic with one or two token local mentions",
@@ -1146,6 +1482,79 @@ const JEV_CHECKS = [
       "Rich local content - specific local venues, landmarks and local relevance throughout",
     ],
     ["location"],
+  ),
+  jevScore(
+    "scaled_content",
+    "Substance matches the page's job",
+    4,
+    "Does `body` carry the substance a visitor needs for this page type, or " +
+      "is it padded with repetition and filler to hit a length? A marquee " +
+      "service or town page earns its length with sizes, prices, site " +
+      "requirements, local detail and a clear enquiry path - not with the " +
+      "same reassurance reworded four times.",
+    [
+      "Thin or almost entirely filler",
+      "Some substance but heavily padded with repetition",
+      "Mostly substantive with a little padding",
+      "Dense with useful substance throughout - no padding",
+    ],
+  ),
+  jevScore(
+    "people_first",
+    "Written for people, not search engines",
+    4,
+    "Judge `body` against the helpful-content bar: is it written for a person " +
+      "planning a marquee hire (answers their questions, honest, easy to " +
+      "act on), or for a search engine (keyword-heavy headings like 'Marquee " +
+      "Hire in Town for Weddings and Parties', location names sprinkled " +
+      "unnaturally, content that exists to rank rather than to help)?",
+    [
+      "Search-engine-first - keyword-driven, unhelpful to a human reader",
+      "Mostly helpful but with visible keyword-grinding",
+      "People-first with occasional SEO phrasing",
+      "Entirely people-first - reads as advice from the owners, rankings are a side effect",
+    ],
+  ),
+  jevNoul(
+    "keyword_stuffing",
+    "Not keyword-stuffed",
+    2,
+    "Is `body` stuffed with repeats of the money phrases ('marquee hire in " +
+      "[town]', 'Hampshire, Surrey and West Sussex') beyond what natural " +
+      "writing needs?",
+    {
+      true: "Phrases repeat unnaturally often - reads as keyword targeting",
+      false: "Money phrases appear no more than natural writing needs",
+    },
+    { invert: true },
+  ),
+  jevNoul(
+    "overclaims",
+    "No overclaims",
+    3,
+    "Does `body` promise more than a marquee company can promise: 'fully " +
+      "weatherproof', 'guaranteed', 'never', 'whatever the weather', " +
+      "'any location', 'any size event'? Honest caveats (flat grass needed, " +
+      "not in storms, no attaching to buildings) are the opposite of this " +
+      "and are good.",
+    {
+      true: "Makes absolute promises a booking could disprove",
+      false: "Promises are qualified and honest",
+    },
+    { invert: true },
+  ),
+  jevNoul(
+    "spec_consistency",
+    "Numbers agree with each other",
+    3,
+    "Do all the numbers in `body` agree with each other - marquee sizes, " +
+      "guest capacities, prices, dates, distances? Contradictions between " +
+      "sections (a size quoted as seating 80 in one block and 120 in " +
+      "another) destroy trust and usually mean one section is stale.",
+    {
+      true: "Numbers contradict each other between sections",
+      false: "All numbers are internally consistent",
+    },
   ),
 ];
 
@@ -1213,6 +1622,39 @@ const callJev = async (state, questions, model, apiKey, sessionId) => {
 // Grading
 // ---------------------------------------------------------------------------
 
+// One sibling page's opening prose, so the differentiation and voice checks
+// compare against a real example instead of imagining one. Built lazily and
+// once per run: the alphabetical successor of the same page type keeps the
+// choice stable across runs.
+let siblingIndex = null;
+
+const siblingSampleFor = (x) => {
+  if (x.pageType !== "location" && x.pageType !== "service") return null;
+  if (!siblingIndex) {
+    siblingIndex = new Map(
+      ["location", "service"].map((type) => [
+        type,
+        allContentFiles()
+          .map(relPath)
+          .filter(
+            (rel) =>
+              !SKIP_GRADE.has(rel) &&
+              detectPageType(rel, readPage(path(rel)).data) === type,
+          )
+          .sort()
+          .map((rel) => ({
+            rel,
+            prose: extractPage(path(rel)).prose.slice(0, 1600),
+          })),
+      ]),
+    );
+  }
+  const list = siblingIndex.get(x.pageType) ?? [];
+  if (list.length < 2) return null;
+  const at = list.findIndex((e) => e.rel === x.file);
+  return list[(at + 1) % list.length] ?? null;
+};
+
 const buildJevState = (x) => ({
   page: {
     url: `${SITE_URL}${x.url}`,
@@ -1228,6 +1670,7 @@ const buildJevState = (x) => ({
   // quoted reviews stripped - customer voices are not judged on house voice
   body_house: x.proseHouse.slice(0, MAX_BODY_CHARS),
   internal_links: x.links,
+  sibling_sample: siblingSampleFor(x),
   business: {
     name: "Complete Marquees",
     who: "family-run marquee and event hire business run by Joanne and David Morris from Havant, Hampshire, since 2002",
@@ -1427,6 +1870,7 @@ const gradePage = async (file, opts, urlMap) => {
       page_type: x.pageType,
       meta_title: x.metaTitle,
       meta_description: x.metaDescription,
+      og_image: x.ogImage,
       ...summarise(results),
       checks: results,
       eeat: computeEeat(results),
@@ -1624,6 +2068,7 @@ const printSummary = (rows, seconds) => {
     graded,
   );
   printDuplicateMeta("Duplicate meta titles:", "meta_title", graded);
+  printDuplicateMeta("Duplicate OG images:", "og_image", graded);
 };
 
 const printTable = (rows, opts, seconds) => {
@@ -1692,7 +2137,47 @@ const runBatch = async (targets, opts, urlMap) => {
   if (opts.json) console.log(JSON.stringify(rows, null, 2));
   else printTable(rows, opts, (Date.now() - start) / 1000);
   if (opts.csv) writeCsv(rows, opts.csv);
+  if (opts.failOnCritical) {
+    const criticals = rows.reduce(
+      (n, r) =>
+        n +
+        Object.values(r.checks).filter((c) => c.critical && c.status === "FAIL")
+          .length,
+      0,
+    );
+    if (criticals) {
+      console.error(`\n${criticals} critical failure(s) across the batch`);
+      return 1;
+    }
+  }
   return 0;
+};
+
+/** The publish gate: no FAILs, score >= GATE_MIN_SCORE, EEAT >= GATE_MIN_EEAT.
+ * No EEAT (Jev absent or errored) fails the gate closed - content quality
+ * unjudged is not a pass. */
+const gateResult = (result) => {
+  const fails = Object.values(result.checks).filter(
+    (r) => r.status === "FAIL",
+  ).length;
+  if (!result.eeat)
+    return [
+      false,
+      `gate blocked: score ${result.score}, ${fails} FAIL, EEAT unjudged (Jev did not run)`,
+    ];
+  if (fails > 0)
+    return [
+      false,
+      `gate blocked: ${fails} FAIL check(s), score ${result.score}, EEAT ${result.eeat.score}`,
+    ];
+  if (result.score < GATE_MIN_SCORE)
+    return [false, `gate blocked: score ${result.score} < ${GATE_MIN_SCORE}`];
+  if (result.eeat.score < GATE_MIN_EEAT)
+    return [
+      false,
+      `gate blocked: EEAT ${result.eeat.score} < ${GATE_MIN_EEAT}`,
+    ];
+  return [true, `gate passed: score ${result.score}, EEAT ${result.eeat.score}, no FAILs`];
 };
 
 const runSingle = async (file, opts, urlMap) => {
@@ -1710,6 +2195,11 @@ const runSingle = async (file, opts, urlMap) => {
     (r) => r.critical && r.status === "FAIL",
   );
   for (const r of critical) console.log(`CRITICAL: ${r.label}: ${r.note}`);
+  if (opts.gate) {
+    const [ok, why] = gateResult(result);
+    console.log(`${ok ? "PASS" : "FAIL"} - ${why}`);
+    if (!ok) return 1;
+  }
   return critical.length ? 1 : 0;
 };
 
@@ -1809,6 +2299,8 @@ Options:
   --no-jev        mechanical checks only
   --model <id>    Jev model id (default ${DEFAULT_MODEL})
   --force-type <t> grade the targets as this page type
+  --fail-on-critical  batch mode: exit 1 if any critical check fails
+  --gate          single page: exit 1 unless no FAILs, score >= 85, EEAT >= 70
   --list-checks   print the check schema and exit
   --verbose       dump the Jev request and response
   --help          this message`);
@@ -1842,6 +2334,8 @@ const BOOL_FLAGS = {
   "--no-jev": "noJev",
   "--list-checks": "listChecks",
   "--verbose": "verbose",
+  "--fail-on-critical": "failOnCritical",
+  "--gate": "gate",
   "--help": "help",
   "-h": "help",
 };

@@ -16,7 +16,7 @@ body_class: "wp-singular page-template page-template-_templates page-template-pa
 blocks:
   - type: markdown
     content: |
-      We're Joanne and David Morris, and we've run Complete Marquees from Havant since 2002. We hire out Capri and Pagoda marquees across Hampshire, Surrey and West Sussex, and we deliver, install and collect every one ourselves, so we know it goes up properly and comes down in good order.
+      Complete Marquees is run by Joanne and David Morris from Havant, and has been since 2002. We hire out Capri and Pagoda marquees across Hampshire, Surrey and West Sussex, and we deliver, install and collect every one ourselves, so we know it goes up properly and comes down in good order. The reviews come in addressed to Joanne personally, and Jane's note after her party said "the marquee looked incredible".
 
       The quickest way to start is to send us the basics of your event. Tell us the date, the location or postcode, and roughly how many guests you're expecting. From that we can suggest a size and a package, and check that your date is free. Our [marquee sizes and prices](/sizes-prices/) page lists all four Capri sizes, from a 20 by 20 foot setup for around 20 seated to a 28 by 58 foot setup for 120 or more, and the [packages and prices](/packages/) page shows what each one includes.
 
@@ -24,7 +24,7 @@ blocks:
 
       Before you book, it's worth checking your site. Marquees need flat grass, with no trees, bushes or hedges through the footprint. We can't attach them to buildings, and we don't put them up in stormy weather. If the ground isn't suitable, it's better to find out before we arrive.
 
-      We run Complete Marquees alongside our sister company, Monster Event Hire ([monstereventhire.co.uk](https://www.monstereventhire.co.uk)), which supplies bouncy castles, photo booths and games for the same events. Same team and the same phone number, so you can sort the shelter and the entertainment through one call. If you want a feel for the jobs we take on, our [marquee hire in Hampshire](/areas/hampshire/) page covers the towns we work in.
+      We run Complete Marquees alongside our sister company, Monster Event Hire ([monstereventhire.co.uk](https://www.monstereventhire.co.uk)), which supplies bouncy castles, photo booths and games for the same events. Same team behind both, so you can sort the shelter and the entertainment through one call. If you want a feel for the jobs we take on, our [marquee hire in Hampshire](/areas/hampshire/) page covers the towns we work in.
 
       Use the form below and we'll come back to you with availability and a price.
   - type: gallery

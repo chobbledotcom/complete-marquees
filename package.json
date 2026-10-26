@@ -6,6 +6,7 @@
 	"description": "Chobble.com client website",
 	"scripts": {
 		"preinstall": "node -e \"if(!process.env.npm_config_user_agent.startsWith('bun')){console.error('Use bun, not npm/yarn/pnpm');process.exit(1)}\"",
+		"postinstall": "bun scripts/install-hooks.js",
 		"serve": "bun scripts/serve.js",
 		"build": "bun scripts/build.js",
 		"prepare-dev": "bun scripts/prepare-dev.js",
@@ -16,11 +17,14 @@
 		"fetch-instagram-posts": "bun scripts/fetch-instagram-posts.js",
 		"screenshot": "bun scripts/screenshot.js",
 		"clean": "rm -rf .build _site",
+		"check:copy": "bun scripts/check-duplicate-copy.js",
+		"grade": "bun scripts/grade-pages.js",
 		"test": "bun scripts/test.js",
 		"precommit": "bun scripts/precommit.js",
 		"lint": "bunx @biomejs/biome check --config-path=biome.json --error-on-warnings scripts/",
 		"lint:fix": "bunx @biomejs/biome check --config-path=biome.json --write scripts/",
-		"cpd": "bunx jscpd"
+		"cpd": "bun scripts/cpd.js",
+		"cpd:ratchet": "bun scripts/cpd-ratchet.js"
 	},
 	"imports": {
 		"#fp": "@chobble/js-toolkit/fp",

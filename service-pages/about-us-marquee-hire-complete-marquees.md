@@ -39,11 +39,11 @@ blocks:
         caption: "Party marquee setup"
   - type: markdown
     content: |
-      The county knows us from the work we've done here. East Hampshire District Council have had us involved with their community festival every year since it first started, and CooperVision have used us on their staff family days. Our sister company, [Monster Event Hire](https://www.monstereventhire.co.uk), supplies the entertainment for a lot of the same events, so you can sort the shelter and the fun through one family business. We also run our annual PIPA inspections from the same site for other Hampshire hire firms, which means the standards we check other operators against are the ones we hold our own kit to.
+      Hampshire is home ground, and the work here is what the county knows us for. East Hampshire District Council have had us involved with their community festival every year since it first started, and CooperVision have used us on their staff family days. Our sister company, [Monster Event Hire](https://www.monstereventhire.co.uk), supplies the entertainment for a lot of the same events, so you can sort the shelter and the fun through one family business. We also run our annual PIPA inspections from the same site for other Hampshire hire firms, which means the standards we check other operators against are the ones we hold our own kit to.
 
       ### Where the marquee can go
 
-      A few honest notes on siting. We need flat grass with no trees, bushes or hedges through the footprint, we won't install in stormy weather, and the structures can't be attached to buildings. If you're not sure whether your garden or field will work, ring us and we'll talk it through.
+      A few honest notes on siting. We need flat grass with no trees, bushes or hedges through the footprint, we won't install in stormy weather, and the structures can't be attached to buildings. When a garden or field looks marginal, ring us and we'll talk the site through before you commit.
 
       We deliver, set up and collect everything ourselves, so the marquee goes up well before your guests arrive and comes down in good order afterwards. You can read about the areas we cover, starting with [marquee hire in Hampshire](/areas/hampshire/). To check dates and get a quote, ring us on **01428 751 745** or [get in touch](/contact-us/) and we'll let you know straight away.
   - type: cta
