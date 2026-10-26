@@ -1,6 +1,7 @@
 ---
 permalink: "/client-testimonials/"
 layout: blocks-page
+name: "Testimonials"
 title: "Marquee Hire Testimonials | Complete Marquees"
 header_text: "Testimonials"
 meta_description: "Marquee hire testimonials from real customers across Hampshire, Surrey and West Sussex. Weddings, parties and corporate events since 2002."

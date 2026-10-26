@@ -15,6 +15,7 @@ content:
       primary: header_text
       sort: [header_text]
     fields:
+      - { name: name, type: string, label: Name, required: true }
       - { name: header_image, type: image, label: Header Image }
       - { name: header_text, type: string, label: Header Text }
       - { name: subtitle, type: string, label: Subtitle }
@@ -41,6 +42,7 @@ content:
       primary: breadcrumb_name
       sort: [breadcrumb_name]
     fields:
+      - { name: name, type: string, label: Name, required: true }
       - { name: title, type: string, label: Title (raw, used in JSON-LD) }
       - { name: title_html, type: string, label: Title (HTML-escaped, optional) }
       - { name: meta_description, type: string, label: Meta Description (SEO, plain text) }
@@ -74,6 +76,7 @@ content:
       primary: breadcrumb_name
       sort: [breadcrumb_name]
     fields:
+      - { name: name, type: string, label: Name, required: true }
       - { name: title, type: string, label: Title (raw, used in JSON-LD) }
       - { name: title_html, type: string, label: Title (HTML-escaped, optional) }
       - { name: meta_description, type: string, label: Meta Description (SEO, plain text) }

@@ -3,6 +3,7 @@ permalink: "/about-us-marquee-hire-complete-marquees/"
 layout: blocks-page
 title: "About Us | Family-Run Marquee Hire Since 2002"
 title_html: "About Us | Family-Run Marquee Hire Since 2002"
+name: "About Us"
 header_text: "About Us"
 meta_description: "Family-run marquee hire in Hampshire, Surrey & West Sussex since 2002. Capri and Pagoda marquees for weddings, parties, corporate events. Call 01428 751 745."
 meta_description_html: "Family-run marquee hire in Hampshire, Surrey &amp; West Sussex since 2002. Capri and Pagoda marquees for weddings, parties, corporate events. Call 01428 751 745."

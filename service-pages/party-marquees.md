@@ -2,6 +2,7 @@
 permalink: "/party-marquees/"
 layout: blocks-page
 title: "Party Marquee Hire | Birthdays, Christenings & Garden Parties"
+name: "Party Marquee Hire"
 header_text: "Party Marquee Hire"
 meta_description: "Party marquee hire in Hampshire, Surrey & West Sussex. Capri marquees for birthdays, christenings & garden parties. Packages from £390. Call 01428 751 745."
 breadcrumb_name: "Party Marquee Hire"

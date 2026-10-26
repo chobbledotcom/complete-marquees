@@ -1,6 +1,7 @@
 ---
 permalink: "/privacy/"
 layout: blocks-page
+name: "Privacy Policy"
 title: "Privacy Policy"
 header_text: "Privacy Policy"
 meta_description: "Privacy Notice This is the privacy notice of Complete Marquees. In this document, “we”, “our”, or “us” refer to Complete Marquees. We are company number 1090110 registered in England, United Kingdom. Our registered office is at Southleigh Farm, Havant, Hampshire, PO9 2NX . In addition to this privacy policy, our cookie policy can be found […]"

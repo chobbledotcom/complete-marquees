@@ -2,6 +2,7 @@
 permalink: "/special-events/"
 layout: blocks-page
 title: "Marquee Hire for Special Events | Fun Days & Garden Parties"
+name: "Marquee Hire for Special Events"
 header_text: "Marquee Hire for Special Events"
 meta_description: "Marquee hire for special events in Hampshire, Surrey and West Sussex. Capri marquees for fun days, festivals and garden parties. Call 01428 751 745."
 breadcrumb_name: "Special Events Marquee Hire"

@@ -83,18 +83,21 @@ const MIRROR_PASSTHROUGH_MARKER = "// chobble-client: wp mirror passthrough";
 export const addMirrorPassthroughCopy = (configPath) => {
   const source = readFileSync(configPath, "utf8");
   if (source.includes(MIRROR_PASSTHROUGH_MARKER)) return;
-  const target = '.addPassthroughCopy("src/assets")';
+  const target = '  eleventyConfig\n    .addPassthroughCopy("src/assets")';
   if (!source.includes(target)) {
     throw new Error(
       `Could not find passthrough anchor in ${configPath}; wp mirror assets will not be copied`,
     );
   }
+  // Passthrough copying alone does not exclude mirror HTML/SCSS as templates.
   const replacement = [
+    `  ${MIRROR_PASSTHROUGH_MARKER}`,
+    '  eleventyConfig.ignores.add("src/wp-content/**");',
+    '  eleventyConfig.ignores.add("src/wp-includes/**");',
     target,
-    `    ${MIRROR_PASSTHROUGH_MARKER}`,
     '    .addPassthroughCopy("src/wp-content")',
     '    .addPassthroughCopy("src/wp-includes")',
-  ].join("\n    ");
+  ].join("\n");
   writeFileSync(configPath, source.replace(target, replacement));
 };
 

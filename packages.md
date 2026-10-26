@@ -5,6 +5,7 @@ redirect_from:
 layout: blocks-page
 sidebar: false
 nav_current: "packages"
+name: "Capri Marquee Hire Packages"
 title: "Capri Marquee Hire Packages for Hampshire, Surrey & Sussex"
 header_text: "Capri Marquee Hire Packages in Hampshire, Surrey & West Sussex"
 meta_description: "Capri marquee hire packages in Hampshire, Surrey & West Sussex for weddings, parties and corporate events. Prices from £390, with delivery and installation."

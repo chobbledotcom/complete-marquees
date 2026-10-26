@@ -2,6 +2,7 @@
 permalink: "/wedding-marquees/"
 layout: blocks-page
 title: "Wedding Marquee Hire | Ceremonies & Receptions in Hampshire"
+name: "Wedding Marquee Hire"
 header_text: "Wedding Marquee Hire"
 meta_description: "Wedding marquee hire in Hampshire, Surrey and West Sussex from a family-run business. Capri marquees for ceremonies and receptions. Call 01428 751 745."
 breadcrumb_name: "Wedding Marquee Hire"

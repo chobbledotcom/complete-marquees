@@ -2,6 +2,7 @@
 permalink: "/faqs-complete-marquees/"
 layout: blocks-page
 title: "Marquee Hire FAQs | Complete Marquees"
+name: "FAQs"
 header_text: "FAQs"
 meta_description: "Answers to common Capri marquee hire questions: sizes, weatherproofing, site rules and decorating. Family-run since 2002 in Hampshire, Surrey and West Sussex."
 breadcrumb_name: "FAQs"

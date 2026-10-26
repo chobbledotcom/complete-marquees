@@ -1,6 +1,7 @@
 ---
 permalink: "/contact-us/"
 layout: blocks-page
+name: "Contact Us"
 title: "Contact Us | Capri Marquee Hire Hampshire, Surrey & West Sussex"
 header_text: "Enquire About Marquee Hire in Hampshire, Surrey & West Sussex"
 meta_description: "Contact Complete Marquees for Capri marquee hire. Weddings, parties and corporate events across Hampshire, Surrey and West Sussex. Call 01428 751 745."

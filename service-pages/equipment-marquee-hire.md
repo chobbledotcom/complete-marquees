@@ -2,6 +2,7 @@
 permalink: "/equipment-marquee-hire/"
 layout: blocks-page
 title: "Marquee Equipment Hire in Hampshire, Surrey & West Sussex"
+name: "Marquee Equipment Hire"
 header_text: "Marquee Equipment Hire"
 meta_description: "Marquee equipment hire in Hampshire, Surrey & West Sussex. Tables, chairs, dance floors, staging, lighting and flooring for weddings and parties."
 breadcrumb_name: "Equipment Hire"

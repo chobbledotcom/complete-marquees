@@ -2,6 +2,7 @@
 permalink: "/capri-marquee-hire/"
 layout: blocks-page
 title: "Capri & Pagoda Marquee Hire | Our Marquees"
+name: "Our Marquees"
 header_text: "Our Marquees"
 meta_description: "Capri and Pagoda marquee hire photos: real setups for weddings, parties and corporate events across Hampshire, Surrey and West Sussex."
 breadcrumb_name: "Our Marquees"

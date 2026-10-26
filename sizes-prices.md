@@ -1,6 +1,7 @@
 ---
 permalink: "/sizes-prices/"
 layout: blocks-page
+name: "Sizes & Prices"
 title: "Marquee Hire Sizes & Prices | Capri & Pagoda"
 header_text: "Sizes & Prices"
 meta_description: "Marquee hire prices for Capri and Pagoda marquees in Hampshire, Surrey and West Sussex. For weddings, parties and corporate events. Call 01428 751 745."

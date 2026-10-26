@@ -2,6 +2,7 @@
 permalink: "/corporate-event-marquees/"
 layout: blocks-page
 title: "Corporate Event Marquee Hire | Launches, Conferences & Parties"
+name: "Corporate Event Marquee Hire"
 header_text: "Corporate Event Marquee Hire"
 meta_description: "Corporate event marquee hire in Hampshire, Surrey & West Sussex. Capri marquees for conferences, launches, Christmas parties & staff days. Call 01428 751 745."
 meta_description_html: "Corporate event marquee hire in Hampshire, Surrey &amp; West Sussex. Capri marquees for conferences, launches, Christmas parties &amp; staff days. Call 01428 751 745."
