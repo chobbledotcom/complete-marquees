@@ -1,0 +1,16 @@
+@use "breakpoints" as breakpoint;
+
+.page-template-page-testimonials {
+  .design-system > section:has(.reviews-grid) {
+    --section-padding-y: var(--space-md);
+
+    @include breakpoint.up("md") {
+      --section-padding-y: var(--space-lg);
+    }
+  }
+
+  // The legacy WordPress grid uses a negative gutter; CSS Grid does not.
+  .design-system .reviews-grid {
+    margin-inline: 0;
+  }
+}

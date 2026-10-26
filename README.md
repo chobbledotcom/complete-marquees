@@ -42,6 +42,10 @@ Every published page needs a `name` in its frontmatter. The Pages, Service
 Pages and Locations CMS collections require it too. Keep this page name
 separate from SEO titles and custom header text.
 
+Page-specific SCSS is loaded through `css/theme.scss`. Testimonials spacing
+lives in `css/_testimonials.scss`, scoped to its existing body class to
+prevent the legacy WordPress grid gutter from shifting the review cards.
+
 The mirrored `wp-content/` and `wp-includes/` trees are static assets. Local
 preparation and `scripts/ci-merge.js` exclude them from Eleventy's template
 discovery while copying them to `_site/` unchanged, so legacy HTML and SCSS
