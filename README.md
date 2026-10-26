@@ -48,6 +48,18 @@ discovery while copying them to `_site/` unchanged, so legacy HTML and SCSS
 are not rendered as pages. The Google verification template has no layout
 and is excluded from collections.
 
+### Review imports
+
+The Google Reviews workflow runs on Mondays at 09:00 UTC and supports manual
+dispatch. It reads the full Google Maps business URL from
+`_data/site.json` → `socials.Google` and requires the `APIFY_API_TOKEN`
+repository secret. Run it locally with `bun run fetch-google-reviews` and
+the same token in `.env`.
+
+Instagram imports are not scheduled. The existing manual command,
+`bun run fetch-instagram-posts`, remains available after configuring
+`socials.Instagram` and the Apify token.
+
 ## Configuration
 
 Set these GitHub secrets for your repo:

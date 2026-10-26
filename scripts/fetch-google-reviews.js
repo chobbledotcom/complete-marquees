@@ -21,7 +21,7 @@ const formatFilename = (name, date) => {
   return `${safeName}-google-${date.toISOString().split("T")[0]}.md`;
 };
 
-const fetchReviews = async (placeId, opts = {}) => {
+const fetchReviews = async (mapsUrl, opts = {}) => {
   const url = `https://api.apify.com/v2/acts/${CONFIG.actorId}/run-sync-get-dataset-items?token=${process.env.APIFY_API_TOKEN}`;
 
   console.log("Fetching all available reviews...");
@@ -30,9 +30,7 @@ const fetchReviews = async (placeId, opts = {}) => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      startUrls: [
-        { url: `https://www.google.com/maps/place/?q=place_id:${placeId}` },
-      ],
+      startUrls: [{ url: mapsUrl }],
       maxReviews: opts.maxReviews || CONFIG.maxReviews,
       reviewsSort: opts.sort || "newest",
       language: opts.language || "en",
@@ -91,14 +89,15 @@ const main = async () => {
   }
 
   const siteConfig = await readJson(CONFIG.siteConfig);
-  if (!siteConfig.google_place_id) {
-    console.error("Error: google_place_id missing from site.json");
+  const mapsUrl = siteConfig.socials?.Google;
+  if (!mapsUrl) {
+    console.error("Error: socials.Google missing from site.json");
     process.exit(1);
   }
 
   fs.mkdir(CONFIG.reviewsDir);
 
-  const reviews = await fetchReviews(siteConfig.google_place_id);
+  const reviews = await fetchReviews(mapsUrl);
   console.log(`Found ${reviews.length} reviews`);
 
   const saved = (
